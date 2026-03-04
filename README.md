@@ -30,8 +30,7 @@ Expected Challenges
 * **Sarcasm & Context:** Literary devices like irony or unreliable narrators are notoriously difficult for machine learning models to interpret correctly without deep contextual embeddings.
 
 ---
-
-### 6. Success Criteria
+Success Criteria
 
 The project will be considered successful if it meets the following benchmarks:
 
