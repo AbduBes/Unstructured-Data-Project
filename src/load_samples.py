@@ -1,6 +1,5 @@
 from io_utils import read_json, setup_logging
 
-
 if __name__ == "__main__":
     
    setup_logging("pipeline.log")

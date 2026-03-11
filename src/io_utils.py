@@ -1,6 +1,7 @@
 import json
 import logging
 from pathlib import Path
+# Promena za commit
 
 
 def setup_logging(log_file):
