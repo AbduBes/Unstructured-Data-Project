@@ -1,1 +1,7 @@
 2026-03-11 12:25:51,569 - INFO - Successfully read JSON file: data/raw/book_1.json
+2026-03-18 12:02:22,304 - INFO - Successfully fetched data from https://openlibrary.org/search.json (Page 1)
+2026-03-18 12:02:24,010 - INFO - Successfully fetched data from https://openlibrary.org/search.json (Page 2)
+2026-03-18 12:02:25,035 - INFO - Successfully fetched data from https://openlibrary.org/search.json (Page 3)
+2026-03-18 12:08:43,414 - INFO - Successfully fetched data from https://openlibrary.org/search.json (Page 1)
+2026-03-18 12:08:44,366 - INFO - Successfully fetched data from https://openlibrary.org/search.json (Page 2)
+2026-03-18 12:08:45,260 - INFO - Successfully fetched data from https://openlibrary.org/search.json (Page 3)
