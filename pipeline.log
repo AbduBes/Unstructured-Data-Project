@@ -5,3 +5,73 @@
 2026-03-18 12:08:43,414 - INFO - Successfully fetched data from https://openlibrary.org/search.json (Page 1)
 2026-03-18 12:08:44,366 - INFO - Successfully fetched data from https://openlibrary.org/search.json (Page 2)
 2026-03-18 12:08:45,260 - INFO - Successfully fetched data from https://openlibrary.org/search.json (Page 3)
+2026-03-25 11:28:52,575 - ERROR - Error on attempt 1: 422 Client Error: Unprocessable Entity for url: https://openlibrary.org/search.json?q=3&page=1
+2026-03-25 11:28:52,576 - ERROR - Response: {"detail":[{"type":"value_error","loc":["query","q"],"msg":"Value error, Query too short, must be at least 3 characters","input":"3","ctx":{"error":{}}}]}
+2026-03-25 11:28:54,635 - ERROR - Error on attempt 2: 422 Client Error: Unprocessable Entity for url: https://openlibrary.org/search.json?q=3&page=1
+2026-03-25 11:28:54,635 - ERROR - Response: {"detail":[{"type":"value_error","loc":["query","q"],"msg":"Value error, Query too short, must be at least 3 characters","input":"3","ctx":{"error":{}}}]}
+2026-03-25 11:28:57,668 - ERROR - Error on attempt 3: 422 Client Error: Unprocessable Entity for url: https://openlibrary.org/search.json?q=3&page=1
+2026-03-25 11:28:57,668 - ERROR - Response: {"detail":[{"type":"value_error","loc":["query","q"],"msg":"Value error, Query too short, must be at least 3 characters","input":"3","ctx":{"error":{}}}]}
+2026-03-25 11:29:01,669 - ERROR - Failed after 3 attempts.
+2026-03-25 11:29:02,700 - ERROR - Error on attempt 1: 422 Client Error: Unprocessable Entity for url: https://openlibrary.org/search.json?q=3&page=2
+2026-03-25 11:29:02,700 - ERROR - Response: {"detail":[{"type":"value_error","loc":["query","q"],"msg":"Value error, Query too short, must be at least 3 characters","input":"3","ctx":{"error":{}}}]}
+2026-03-25 11:29:04,750 - ERROR - Error on attempt 2: 422 Client Error: Unprocessable Entity for url: https://openlibrary.org/search.json?q=3&page=2
+2026-03-25 11:29:04,750 - ERROR - Response: {"detail":[{"type":"value_error","loc":["query","q"],"msg":"Value error, Query too short, must be at least 3 characters","input":"3","ctx":{"error":{}}}]}
+2026-03-25 11:29:07,926 - ERROR - Error on attempt 3: 422 Client Error: Unprocessable Entity for url: https://openlibrary.org/search.json?q=3&page=2
+2026-03-25 11:29:07,927 - ERROR - Response: {"detail":[{"type":"value_error","loc":["query","q"],"msg":"Value error, Query too short, must be at least 3 characters","input":"3","ctx":{"error":{}}}]}
+2026-03-25 11:29:11,927 - ERROR - Failed after 3 attempts.
+2026-03-25 11:29:12,940 - ERROR - Error on attempt 1: 422 Client Error: Unprocessable Entity for url: https://openlibrary.org/search.json?q=3&page=3
+2026-03-25 11:29:12,940 - ERROR - Response: {"detail":[{"type":"value_error","loc":["query","q"],"msg":"Value error, Query too short, must be at least 3 characters","input":"3","ctx":{"error":{}}}]}
+2026-03-25 11:29:14,938 - ERROR - Error on attempt 2: 422 Client Error: Unprocessable Entity for url: https://openlibrary.org/search.json?q=3&page=3
+2026-03-25 11:29:14,938 - ERROR - Response: {"detail":[{"type":"value_error","loc":["query","q"],"msg":"Value error, Query too short, must be at least 3 characters","input":"3","ctx":{"error":{}}}]}
+2026-03-25 11:29:18,061 - ERROR - Error on attempt 3: 422 Client Error: Unprocessable Entity for url: https://openlibrary.org/search.json?q=3&page=3
+2026-03-25 11:29:18,061 - ERROR - Response: {"detail":[{"type":"value_error","loc":["query","q"],"msg":"Value error, Query too short, must be at least 3 characters","input":"3","ctx":{"error":{}}}]}
+2026-03-25 11:29:22,062 - ERROR - Failed after 3 attempts.
+2026-03-25 11:29:22,067 - INFO - Pipeline finished successfully
+2026-03-25 11:29:24,103 - ERROR - Error on attempt 1: 422 Client Error: Unprocessable Entity for url: https://openlibrary.org/search.json?q=3&page=1
+2026-03-25 11:29:24,104 - ERROR - Response: {"detail":[{"type":"value_error","loc":["query","q"],"msg":"Value error, Query too short, must be at least 3 characters","input":"3","ctx":{"error":{}}}]}
+2026-03-25 11:29:26,195 - ERROR - Error on attempt 2: 422 Client Error: Unprocessable Entity for url: https://openlibrary.org/search.json?q=3&page=1
+2026-03-25 11:29:26,195 - ERROR - Response: {"detail":[{"type":"value_error","loc":["query","q"],"msg":"Value error, Query too short, must be at least 3 characters","input":"3","ctx":{"error":{}}}]}
+2026-03-25 11:29:29,329 - ERROR - Error on attempt 3: 422 Client Error: Unprocessable Entity for url: https://openlibrary.org/search.json?q=3&page=1
+2026-03-25 11:29:29,329 - ERROR - Response: {"detail":[{"type":"value_error","loc":["query","q"],"msg":"Value error, Query too short, must be at least 3 characters","input":"3","ctx":{"error":{}}}]}
+2026-03-25 11:29:33,330 - ERROR - Failed after 3 attempts.
+2026-03-25 11:29:34,355 - ERROR - Error on attempt 1: 422 Client Error: Unprocessable Entity for url: https://openlibrary.org/search.json?q=3&page=2
+2026-03-25 11:29:34,355 - ERROR - Response: {"detail":[{"type":"value_error","loc":["query","q"],"msg":"Value error, Query too short, must be at least 3 characters","input":"3","ctx":{"error":{}}}]}
+2026-03-25 11:29:36,400 - ERROR - Error on attempt 2: 422 Client Error: Unprocessable Entity for url: https://openlibrary.org/search.json?q=3&page=2
+2026-03-25 11:29:36,400 - ERROR - Response: {"detail":[{"type":"value_error","loc":["query","q"],"msg":"Value error, Query too short, must be at least 3 characters","input":"3","ctx":{"error":{}}}]}
+2026-03-25 11:29:39,378 - ERROR - Error on attempt 3: 422 Client Error: Unprocessable Entity for url: https://openlibrary.org/search.json?q=3&page=2
+2026-03-25 11:29:39,378 - ERROR - Response: {"detail":[{"type":"value_error","loc":["query","q"],"msg":"Value error, Query too short, must be at least 3 characters","input":"3","ctx":{"error":{}}}]}
+2026-03-25 11:29:43,379 - ERROR - Failed after 3 attempts.
+2026-03-25 11:29:44,378 - ERROR - Error on attempt 1: 422 Client Error: Unprocessable Entity for url: https://openlibrary.org/search.json?q=3&page=3
+2026-03-25 11:29:44,378 - ERROR - Response: {"detail":[{"type":"value_error","loc":["query","q"],"msg":"Value error, Query too short, must be at least 3 characters","input":"3","ctx":{"error":{}}}]}
+2026-03-25 11:29:46,399 - ERROR - Error on attempt 2: 422 Client Error: Unprocessable Entity for url: https://openlibrary.org/search.json?q=3&page=3
+2026-03-25 11:29:46,400 - ERROR - Response: {"detail":[{"type":"value_error","loc":["query","q"],"msg":"Value error, Query too short, must be at least 3 characters","input":"3","ctx":{"error":{}}}]}
+2026-03-25 11:29:49,500 - ERROR - Error on attempt 3: 422 Client Error: Unprocessable Entity for url: https://openlibrary.org/search.json?q=3&page=3
+2026-03-25 11:29:49,500 - ERROR - Response: {"detail":[{"type":"value_error","loc":["query","q"],"msg":"Value error, Query too short, must be at least 3 characters","input":"3","ctx":{"error":{}}}]}
+2026-03-25 11:29:53,500 - ERROR - Failed after 3 attempts.
+2026-03-25 11:29:53,504 - INFO - Pipeline finished successfully
+2026-03-25 11:30:09,168 - ERROR - Error on attempt 1: 422 Client Error: Unprocessable Entity for url: https://openlibrary.org/search.json?q=3&page=1
+2026-03-25 11:30:09,168 - ERROR - Response: {"detail":[{"type":"value_error","loc":["query","q"],"msg":"Value error, Query too short, must be at least 3 characters","input":"3","ctx":{"error":{}}}]}
+2026-03-25 11:30:11,119 - ERROR - Error on attempt 2: 422 Client Error: Unprocessable Entity for url: https://openlibrary.org/search.json?q=3&page=1
+2026-03-25 11:30:11,120 - ERROR - Response: {"detail":[{"type":"value_error","loc":["query","q"],"msg":"Value error, Query too short, must be at least 3 characters","input":"3","ctx":{"error":{}}}]}
+2026-03-25 11:30:14,178 - ERROR - Error on attempt 3: 422 Client Error: Unprocessable Entity for url: https://openlibrary.org/search.json?q=3&page=1
+2026-03-25 11:30:14,178 - ERROR - Response: {"detail":[{"type":"value_error","loc":["query","q"],"msg":"Value error, Query too short, must be at least 3 characters","input":"3","ctx":{"error":{}}}]}
+2026-03-25 11:30:18,178 - ERROR - Failed after 3 attempts.
+2026-03-25 11:30:19,193 - ERROR - Error on attempt 1: 422 Client Error: Unprocessable Entity for url: https://openlibrary.org/search.json?q=3&page=2
+2026-03-25 11:30:19,193 - ERROR - Response: {"detail":[{"type":"value_error","loc":["query","q"],"msg":"Value error, Query too short, must be at least 3 characters","input":"3","ctx":{"error":{}}}]}
+2026-03-25 11:30:21,245 - ERROR - Error on attempt 2: 422 Client Error: Unprocessable Entity for url: https://openlibrary.org/search.json?q=3&page=2
+2026-03-25 11:30:21,245 - ERROR - Response: {"detail":[{"type":"value_error","loc":["query","q"],"msg":"Value error, Query too short, must be at least 3 characters","input":"3","ctx":{"error":{}}}]}
+2026-03-25 11:30:24,168 - ERROR - Error on attempt 3: 422 Client Error: Unprocessable Entity for url: https://openlibrary.org/search.json?q=3&page=2
+2026-03-25 11:30:24,168 - ERROR - Response: {"detail":[{"type":"value_error","loc":["query","q"],"msg":"Value error, Query too short, must be at least 3 characters","input":"3","ctx":{"error":{}}}]}
+2026-03-25 11:30:28,169 - ERROR - Failed after 3 attempts.
+2026-03-25 11:30:29,127 - ERROR - Error on attempt 1: 422 Client Error: Unprocessable Entity for url: https://openlibrary.org/search.json?q=3&page=3
+2026-03-25 11:30:29,127 - ERROR - Response: {"detail":[{"type":"value_error","loc":["query","q"],"msg":"Value error, Query too short, must be at least 3 characters","input":"3","ctx":{"error":{}}}]}
+2026-03-25 11:30:31,175 - ERROR - Error on attempt 2: 422 Client Error: Unprocessable Entity for url: https://openlibrary.org/search.json?q=3&page=3
+2026-03-25 11:30:31,175 - ERROR - Response: {"detail":[{"type":"value_error","loc":["query","q"],"msg":"Value error, Query too short, must be at least 3 characters","input":"3","ctx":{"error":{}}}]}
+2026-03-25 11:30:34,161 - ERROR - Error on attempt 3: 422 Client Error: Unprocessable Entity for url: https://openlibrary.org/search.json?q=3&page=3
+2026-03-25 11:30:34,162 - ERROR - Response: {"detail":[{"type":"value_error","loc":["query","q"],"msg":"Value error, Query too short, must be at least 3 characters","input":"3","ctx":{"error":{}}}]}
+2026-03-25 11:30:38,162 - ERROR - Failed after 3 attempts.
+2026-03-25 11:30:38,166 - INFO - Pipeline finished successfully
+2026-03-25 11:42:24,076 - INFO - Successfully fetched data from https://openlibrary.org/search.json (Page 1)
+2026-03-25 11:42:25,345 - INFO - Successfully fetched data from https://openlibrary.org/search.json (Page 2)
+2026-03-25 11:42:26,550 - INFO - Successfully fetched data from https://openlibrary.org/search.json (Page 3)
+2026-03-25 11:42:26,742 - INFO - Pipeline finished successfully
