@@ -401,3 +401,242 @@
 2026-03-29 22:54:05,414 - INFO - Stored sheet 'Summary' from sample.xlsx in MongoDB
 2026-03-29 22:54:05,414 - INFO - Document extraction pipeline completed successfully
 2026-03-29 22:54:05,414 - INFO - ========== Pipeline Finished ==========
+2026-04-10 11:00:58,961 - ERROR - Error fetching books from Open Library: HTTPSConnectionPool(host='openlibrary.org', port=443): Read timed out. (read timeout=10)
+2026-04-10 11:01:09,631 - ERROR - Error fetching books from Open Library: HTTPSConnectionPool(host='openlibrary.org', port=443): Read timed out. (read timeout=10)
+2026-04-10 11:01:20,263 - ERROR - Error fetching books from Open Library: HTTPSConnectionPool(host='openlibrary.org', port=443): Read timed out. (read timeout=10)
+2026-04-10 11:02:18,013 - INFO - Found 10 books for query: classic literature
+2026-04-10 11:02:21,442 - INFO - Downloaded cover: OL2775807W_Pollyanna.jpg
+2026-04-10 11:02:25,126 - INFO - Downloaded cover: OL39360W_Orlando.jpg
+2026-04-10 11:02:28,630 - INFO - Downloaded cover: OL1455042W_Heidi.jpg
+2026-04-10 11:02:32,148 - INFO - Downloaded cover: OL99541W_The Enchanted Castle.jpg
+2026-04-10 11:02:35,551 - INFO - Downloaded cover: OL51148W_Babbitt.jpg
+2026-04-10 11:02:36,051 - INFO - Successfully downloaded 5 book covers
+2026-04-10 11:02:38,974 - INFO - Found 6 books for query: science fiction
+2026-04-10 11:02:41,991 - INFO - Downloaded cover: OL1960472W_The Science Fiction Hall of Fa.jpg
+2026-04-10 11:02:46,002 - INFO - Downloaded cover: OL46125W_Foundation.jpg
+2026-04-10 11:02:49,629 - INFO - Downloaded cover: OL59688W_Stranger in a Strange Land.jpg
+2026-04-10 11:02:50,130 - INFO - Successfully downloaded 3 book covers
+2026-04-10 11:02:51,206 - INFO - Found 4 books for query: python programming
+2026-04-10 11:02:54,101 - INFO - Downloaded cover: OL30906747W_Core Python Programming.jpg
+2026-04-10 11:02:55,656 - INFO - Downloaded cover: OL12409294W_Core Python programming.jpg
+2026-04-10 11:02:56,157 - INFO - Successfully downloaded 2 book covers
+2026-04-10 11:11:02,378 - INFO - Inspected image: OL12409294W_Core Python programming.jpg
+2026-04-10 11:11:02,393 - INFO - Proportionally resized data/raw/images\OL12409294W_Core Python programming.jpg to 400x564
+2026-04-10 11:11:02,399 - INFO - Resized data/raw/images\OL12409294W_Core Python programming.jpg to 300x400 -> data/processed/resized\OL12409294W_Core Python programming_resized.jpg
+2026-04-10 11:11:02,404 - INFO - Generated thumbnail for data/raw/images\OL12409294W_Core Python programming.jpg -> data/processed/thumbnails\OL12409294W_Core Python programming_thumb.jpg
+2026-04-10 11:11:02,412 - INFO - Generated cover thumbnail for data/raw/images\OL12409294W_Core Python programming.jpg
+2026-04-10 11:11:02,415 - INFO - Cropped data/raw/images\OL12409294W_Core Python programming.jpg to box (0, 0, 354, 250)
+2026-04-10 11:11:02,419 - INFO - Cropped data/raw/images\OL12409294W_Core Python programming.jpg to box (0, 73, 354, 427)
+2026-04-10 11:11:02,525 - INFO - Converted data/raw/images\OL12409294W_Core Python programming.jpg to WEBP -> data/processed/webp\OL12409294W_Core Python programming.webp
+2026-04-10 11:11:02,602 - INFO - Converted data/raw/images\OL12409294W_Core Python programming.jpg to PNG -> data/processed/webp\OL12409294W_Core Python programming.png
+2026-04-10 11:11:02,611 - INFO - Applied blur filter to data/raw/images\OL12409294W_Core Python programming.jpg
+2026-04-10 11:11:02,618 - INFO - Applied sharpen filter to data/raw/images\OL12409294W_Core Python programming.jpg
+2026-04-10 11:11:02,624 - INFO - Adjusted brightness of data/raw/images\OL12409294W_Core Python programming.jpg by factor 1.3
+2026-04-10 11:11:02,629 - INFO - Adjusted contrast of data/raw/images\OL12409294W_Core Python programming.jpg by factor 1.4
+2026-04-10 11:14:37,505 - INFO - Inspected image: OL1455042W_Heidi.jpg
+2026-04-10 11:14:37,525 - INFO - Proportionally resized data/raw/images\OL1455042W_Heidi.jpg to 400x593
+2026-04-10 11:14:37,532 - INFO - Resized data/raw/images\OL1455042W_Heidi.jpg to 300x400 -> data/processed/resized\OL1455042W_Heidi_resized.jpg
+2026-04-10 11:14:37,536 - INFO - Generated thumbnail for data/raw/images\OL1455042W_Heidi.jpg -> data/processed/thumbnails\OL1455042W_Heidi_thumb.jpg
+2026-04-10 11:14:37,541 - INFO - Generated cover thumbnail for data/raw/images\OL1455042W_Heidi.jpg
+2026-04-10 11:14:37,545 - INFO - Cropped data/raw/images\OL1455042W_Heidi.jpg to box (0, 0, 320, 237)
+2026-04-10 11:14:37,548 - INFO - Cropped data/raw/images\OL1455042W_Heidi.jpg to box (0, 77, 320, 397)
+2026-04-10 11:14:37,618 - INFO - Converted data/raw/images\OL1455042W_Heidi.jpg to WEBP -> data/processed/webp\OL1455042W_Heidi.webp
+2026-04-10 11:14:37,682 - INFO - Converted data/raw/images\OL1455042W_Heidi.jpg to PNG -> data/processed/webp\OL1455042W_Heidi.png
+2026-04-10 11:14:37,689 - INFO - Applied blur filter to data/raw/images\OL1455042W_Heidi.jpg
+2026-04-10 11:14:37,694 - INFO - Applied sharpen filter to data/raw/images\OL1455042W_Heidi.jpg
+2026-04-10 11:14:37,699 - INFO - Adjusted brightness of data/raw/images\OL1455042W_Heidi.jpg by factor 1.3
+2026-04-10 11:14:37,704 - INFO - Adjusted contrast of data/raw/images\OL1455042W_Heidi.jpg by factor 1.4
+2026-04-12 17:59:11,155 - INFO - Extracted EXIF data from data/raw/exif_samples\WIN_20260412_17_43_14_Pro.jpg
+2026-04-12 17:59:11,156 - INFO - Extracted GPS data from data/raw/exif_samples\WIN_20260412_17_43_14_Pro.jpg: {'latitude': 43.8161925, 'longitude': 18.313412500000002}
+2026-04-12 17:59:11,157 - INFO - Generated EXIF summary for data/raw/exif_samples\WIN_20260412_17_43_14_Pro.jpg
+2026-04-12 17:59:11,158 - INFO - Extracted EXIF data from data/raw/exif_samples\WIN_20260412_17_43_14_Pro.jpg
+2026-04-12 17:59:11,159 - INFO - Extracted GPS data from data/raw/exif_samples\WIN_20260412_17_43_14_Pro.jpg: {'latitude': 43.8161925, 'longitude': 18.313412500000002}
+2026-04-12 17:59:11,283 - INFO - Saved clean image without EXIF: data/raw/exif_samples\WIN_20260412_17_43_14_Pro_no_exif.jpg
+2026-04-12 17:59:11,304 - INFO - Extracted EXIF data from data/raw/exif_samples\WIN_20260412_17_43_22_Pro.jpg
+2026-04-12 17:59:11,304 - INFO - Extracted GPS data from data/raw/exif_samples\WIN_20260412_17_43_22_Pro.jpg: {'latitude': 43.8161925, 'longitude': 18.313412500000002}
+2026-04-12 17:59:11,305 - INFO - Generated EXIF summary for data/raw/exif_samples\WIN_20260412_17_43_22_Pro.jpg
+2026-04-12 17:59:11,307 - INFO - Extracted EXIF data from data/raw/exif_samples\WIN_20260412_17_43_22_Pro.jpg
+2026-04-12 17:59:11,308 - INFO - Extracted GPS data from data/raw/exif_samples\WIN_20260412_17_43_22_Pro.jpg: {'latitude': 43.8161925, 'longitude': 18.313412500000002}
+2026-04-12 17:59:11,426 - INFO - Saved clean image without EXIF: data/raw/exif_samples\WIN_20260412_17_43_22_Pro_no_exif.jpg
+2026-04-12 18:07:24,978 - INFO - No EXIF data found in data/raw/exif_samples\WhatsApp Image 2026-04-12 at 6.04.33 PM.jpeg
+2026-04-12 18:07:24,979 - INFO - Generated EXIF summary for data/raw/exif_samples\WhatsApp Image 2026-04-12 at 6.04.33 PM.jpeg
+2026-04-12 18:07:24,981 - INFO - No EXIF data found in data/raw/exif_samples\WhatsApp Image 2026-04-12 at 6.04.33 PM.jpeg
+2026-04-12 18:07:25,220 - INFO - Saved clean image without EXIF: data/raw/exif_samples\WhatsApp Image 2026-04-12 at 6.04.33 PM_no_exif.jpg
+2026-04-12 18:07:25,248 - INFO - No EXIF data found in data/raw/exif_samples\WhatsApp Image 2026-04-12 at 6.05.58 PM.jpeg
+2026-04-12 18:07:25,249 - INFO - Generated EXIF summary for data/raw/exif_samples\WhatsApp Image 2026-04-12 at 6.05.58 PM.jpeg
+2026-04-12 18:07:25,251 - INFO - No EXIF data found in data/raw/exif_samples\WhatsApp Image 2026-04-12 at 6.05.58 PM.jpeg
+2026-04-12 18:07:25,503 - INFO - Saved clean image without EXIF: data/raw/exif_samples\WhatsApp Image 2026-04-12 at 6.05.58 PM_no_exif.jpg
+2026-04-12 18:12:34,449 - INFO - Extracted EXIF data from data/raw/exif_samples\IMG_20250929_124453.jpg.jpeg
+2026-04-12 18:12:34,450 - ERROR - Error extracting GPS from data/raw/exif_samples\IMG_20250929_124453.jpg.jpeg: division by zero
+2026-04-12 18:12:34,450 - INFO - Generated EXIF summary for data/raw/exif_samples\IMG_20250929_124453.jpg.jpeg
+2026-04-12 18:12:34,452 - INFO - Extracted EXIF data from data/raw/exif_samples\IMG_20250929_124453.jpg.jpeg
+2026-04-12 18:12:34,453 - ERROR - Error extracting GPS from data/raw/exif_samples\IMG_20250929_124453.jpg.jpeg: division by zero
+2026-04-12 18:12:36,166 - INFO - Saved clean image without EXIF: data/raw/exif_samples\IMG_20250929_124453.jpg_no_exif.jpg
+2026-04-12 18:12:36,454 - INFO - Extracted EXIF data from data/raw/exif_samples\IMG_20260401_025551.jpg.jpeg
+2026-04-12 18:12:36,454 - INFO - Extracted GPS data from data/raw/exif_samples\IMG_20260401_025551.jpg.jpeg: {'latitude': nan, 'longitude': nan}
+2026-04-12 18:12:36,454 - INFO - Generated EXIF summary for data/raw/exif_samples\IMG_20260401_025551.jpg.jpeg
+2026-04-12 18:12:36,456 - INFO - Extracted EXIF data from data/raw/exif_samples\IMG_20260401_025551.jpg.jpeg
+2026-04-12 18:12:36,456 - INFO - Extracted GPS data from data/raw/exif_samples\IMG_20260401_025551.jpg.jpeg: {'latitude': nan, 'longitude': nan}
+2026-04-12 18:12:36,657 - INFO - Saved clean image without EXIF: data/raw/exif_samples\IMG_20260401_025551.jpg_no_exif.jpg
+2026-04-12 18:43:58,416 - INFO - Batch processing 10 images from data\raw\images
+2026-04-12 18:43:58,469 - INFO - Inspected image: OL12409294W_Core Python programming.jpg
+2026-04-12 18:43:58,470 - ERROR - Failed: OL12409294W_Core Python programming.jpg - resize_proportional() got an unexpected keyword argument 'max_width'
+2026-04-12 18:43:58,472 - INFO - Inspected image: OL1455042W_Heidi.jpg
+2026-04-12 18:43:58,472 - ERROR - Failed: OL1455042W_Heidi.jpg - resize_proportional() got an unexpected keyword argument 'max_width'
+2026-04-12 18:43:58,473 - INFO - Inspected image: OL1960472W_The Science Fiction Hall of Fa.jpg
+2026-04-12 18:43:58,473 - ERROR - Failed: OL1960472W_The Science Fiction Hall of Fa.jpg - resize_proportional() got an unexpected keyword argument 'max_width'
+2026-04-12 18:43:58,474 - INFO - Inspected image: OL2775807W_Pollyanna.jpg
+2026-04-12 18:43:58,474 - ERROR - Failed: OL2775807W_Pollyanna.jpg - resize_proportional() got an unexpected keyword argument 'max_width'
+2026-04-12 18:43:58,475 - INFO - Inspected image: OL30906747W_Core Python Programming.jpg
+2026-04-12 18:43:58,475 - ERROR - Failed: OL30906747W_Core Python Programming.jpg - resize_proportional() got an unexpected keyword argument 'max_width'
+2026-04-12 18:43:58,476 - INFO - Inspected image: OL39360W_Orlando.jpg
+2026-04-12 18:43:58,476 - ERROR - Failed: OL39360W_Orlando.jpg - resize_proportional() got an unexpected keyword argument 'max_width'
+2026-04-12 18:43:58,477 - INFO - Inspected image: OL46125W_Foundation.jpg
+2026-04-12 18:43:58,477 - ERROR - Failed: OL46125W_Foundation.jpg - resize_proportional() got an unexpected keyword argument 'max_width'
+2026-04-12 18:43:58,478 - INFO - Inspected image: OL51148W_Babbitt.jpg
+2026-04-12 18:43:58,478 - ERROR - Failed: OL51148W_Babbitt.jpg - resize_proportional() got an unexpected keyword argument 'max_width'
+2026-04-12 18:43:58,478 - INFO - Inspected image: OL59688W_Stranger in a Strange Land.jpg
+2026-04-12 18:43:58,479 - ERROR - Failed: OL59688W_Stranger in a Strange Land.jpg - resize_proportional() got an unexpected keyword argument 'max_width'
+2026-04-12 18:43:58,480 - INFO - Inspected image: OL99541W_The Enchanted Castle.jpg
+2026-04-12 18:43:58,480 - ERROR - Failed: OL99541W_The Enchanted Castle.jpg - resize_proportional() got an unexpected keyword argument 'max_width'
+2026-04-12 18:43:58,480 - INFO - Batch complete. Success: 0, Errors: 10
+2026-04-12 18:44:59,456 - INFO - Batch processing 10 images from data\raw\images
+2026-04-12 18:44:59,482 - INFO - Inspected image: OL12409294W_Core Python programming.jpg
+2026-04-12 18:44:59,482 - ERROR - Failed: OL12409294W_Core Python programming.jpg - resize_proportional() got an unexpected keyword argument 'max_width'
+2026-04-12 18:44:59,482 - INFO - Inspected image: OL1455042W_Heidi.jpg
+2026-04-12 18:44:59,482 - ERROR - Failed: OL1455042W_Heidi.jpg - resize_proportional() got an unexpected keyword argument 'max_width'
+2026-04-12 18:44:59,483 - INFO - Inspected image: OL1960472W_The Science Fiction Hall of Fa.jpg
+2026-04-12 18:44:59,483 - ERROR - Failed: OL1960472W_The Science Fiction Hall of Fa.jpg - resize_proportional() got an unexpected keyword argument 'max_width'
+2026-04-12 18:44:59,483 - INFO - Inspected image: OL2775807W_Pollyanna.jpg
+2026-04-12 18:44:59,484 - ERROR - Failed: OL2775807W_Pollyanna.jpg - resize_proportional() got an unexpected keyword argument 'max_width'
+2026-04-12 18:44:59,484 - INFO - Inspected image: OL30906747W_Core Python Programming.jpg
+2026-04-12 18:44:59,484 - ERROR - Failed: OL30906747W_Core Python Programming.jpg - resize_proportional() got an unexpected keyword argument 'max_width'
+2026-04-12 18:44:59,485 - INFO - Inspected image: OL39360W_Orlando.jpg
+2026-04-12 18:44:59,485 - ERROR - Failed: OL39360W_Orlando.jpg - resize_proportional() got an unexpected keyword argument 'max_width'
+2026-04-12 18:44:59,485 - INFO - Inspected image: OL46125W_Foundation.jpg
+2026-04-12 18:44:59,485 - ERROR - Failed: OL46125W_Foundation.jpg - resize_proportional() got an unexpected keyword argument 'max_width'
+2026-04-12 18:44:59,486 - INFO - Inspected image: OL51148W_Babbitt.jpg
+2026-04-12 18:44:59,486 - ERROR - Failed: OL51148W_Babbitt.jpg - resize_proportional() got an unexpected keyword argument 'max_width'
+2026-04-12 18:44:59,486 - INFO - Inspected image: OL59688W_Stranger in a Strange Land.jpg
+2026-04-12 18:44:59,486 - ERROR - Failed: OL59688W_Stranger in a Strange Land.jpg - resize_proportional() got an unexpected keyword argument 'max_width'
+2026-04-12 18:44:59,486 - INFO - Inspected image: OL99541W_The Enchanted Castle.jpg
+2026-04-12 18:44:59,487 - ERROR - Failed: OL99541W_The Enchanted Castle.jpg - resize_proportional() got an unexpected keyword argument 'max_width'
+2026-04-12 18:44:59,487 - INFO - Batch complete. Success: 0, Errors: 10
+2026-04-12 18:47:00,884 - INFO - Batch processing 10 images from data\raw\images
+2026-04-12 18:47:00,911 - INFO - Inspected image: OL12409294W_Core Python programming.jpg
+2026-04-12 18:47:00,912 - ERROR - Failed: OL12409294W_Core Python programming.jpg - resize_proportional() got an unexpected keyword argument 'max_width'
+2026-04-12 18:47:00,912 - INFO - Inspected image: OL1455042W_Heidi.jpg
+2026-04-12 18:47:00,912 - ERROR - Failed: OL1455042W_Heidi.jpg - resize_proportional() got an unexpected keyword argument 'max_width'
+2026-04-12 18:47:00,912 - INFO - Inspected image: OL1960472W_The Science Fiction Hall of Fa.jpg
+2026-04-12 18:47:00,912 - ERROR - Failed: OL1960472W_The Science Fiction Hall of Fa.jpg - resize_proportional() got an unexpected keyword argument 'max_width'
+2026-04-12 18:47:00,913 - INFO - Inspected image: OL2775807W_Pollyanna.jpg
+2026-04-12 18:47:00,913 - ERROR - Failed: OL2775807W_Pollyanna.jpg - resize_proportional() got an unexpected keyword argument 'max_width'
+2026-04-12 18:47:00,913 - INFO - Inspected image: OL30906747W_Core Python Programming.jpg
+2026-04-12 18:47:00,913 - ERROR - Failed: OL30906747W_Core Python Programming.jpg - resize_proportional() got an unexpected keyword argument 'max_width'
+2026-04-12 18:47:00,913 - INFO - Inspected image: OL39360W_Orlando.jpg
+2026-04-12 18:47:00,913 - ERROR - Failed: OL39360W_Orlando.jpg - resize_proportional() got an unexpected keyword argument 'max_width'
+2026-04-12 18:47:00,913 - INFO - Inspected image: OL46125W_Foundation.jpg
+2026-04-12 18:47:00,914 - ERROR - Failed: OL46125W_Foundation.jpg - resize_proportional() got an unexpected keyword argument 'max_width'
+2026-04-12 18:47:00,914 - INFO - Inspected image: OL51148W_Babbitt.jpg
+2026-04-12 18:47:00,914 - ERROR - Failed: OL51148W_Babbitt.jpg - resize_proportional() got an unexpected keyword argument 'max_width'
+2026-04-12 18:47:00,914 - INFO - Inspected image: OL59688W_Stranger in a Strange Land.jpg
+2026-04-12 18:47:00,914 - ERROR - Failed: OL59688W_Stranger in a Strange Land.jpg - resize_proportional() got an unexpected keyword argument 'max_width'
+2026-04-12 18:47:00,914 - INFO - Inspected image: OL99541W_The Enchanted Castle.jpg
+2026-04-12 18:47:00,914 - ERROR - Failed: OL99541W_The Enchanted Castle.jpg - resize_proportional() got an unexpected keyword argument 'max_width'
+2026-04-12 18:47:00,915 - INFO - Batch complete. Success: 0, Errors: 10
+2026-04-12 18:48:48,121 - INFO - Batch processing 10 images from data\raw\images
+2026-04-12 18:48:48,150 - INFO - Inspected image: OL12409294W_Core Python programming.jpg
+2026-04-12 18:48:48,150 - ERROR - Failed: OL12409294W_Core Python programming.jpg - resize_proportional() got an unexpected keyword argument 'max_width'
+2026-04-12 18:48:48,151 - INFO - Inspected image: OL1455042W_Heidi.jpg
+2026-04-12 18:48:48,151 - ERROR - Failed: OL1455042W_Heidi.jpg - resize_proportional() got an unexpected keyword argument 'max_width'
+2026-04-12 18:48:48,151 - INFO - Inspected image: OL1960472W_The Science Fiction Hall of Fa.jpg
+2026-04-12 18:48:48,152 - ERROR - Failed: OL1960472W_The Science Fiction Hall of Fa.jpg - resize_proportional() got an unexpected keyword argument 'max_width'
+2026-04-12 18:48:48,152 - INFO - Inspected image: OL2775807W_Pollyanna.jpg
+2026-04-12 18:48:48,152 - ERROR - Failed: OL2775807W_Pollyanna.jpg - resize_proportional() got an unexpected keyword argument 'max_width'
+2026-04-12 18:48:48,152 - INFO - Inspected image: OL30906747W_Core Python Programming.jpg
+2026-04-12 18:48:48,153 - ERROR - Failed: OL30906747W_Core Python Programming.jpg - resize_proportional() got an unexpected keyword argument 'max_width'
+2026-04-12 18:48:48,153 - INFO - Inspected image: OL39360W_Orlando.jpg
+2026-04-12 18:48:48,153 - ERROR - Failed: OL39360W_Orlando.jpg - resize_proportional() got an unexpected keyword argument 'max_width'
+2026-04-12 18:48:48,153 - INFO - Inspected image: OL46125W_Foundation.jpg
+2026-04-12 18:48:48,153 - ERROR - Failed: OL46125W_Foundation.jpg - resize_proportional() got an unexpected keyword argument 'max_width'
+2026-04-12 18:48:48,153 - INFO - Inspected image: OL51148W_Babbitt.jpg
+2026-04-12 18:48:48,153 - ERROR - Failed: OL51148W_Babbitt.jpg - resize_proportional() got an unexpected keyword argument 'max_width'
+2026-04-12 18:48:48,154 - INFO - Inspected image: OL59688W_Stranger in a Strange Land.jpg
+2026-04-12 18:48:48,154 - ERROR - Failed: OL59688W_Stranger in a Strange Land.jpg - resize_proportional() got an unexpected keyword argument 'max_width'
+2026-04-12 18:48:48,154 - INFO - Inspected image: OL99541W_The Enchanted Castle.jpg
+2026-04-12 18:48:48,154 - ERROR - Failed: OL99541W_The Enchanted Castle.jpg - resize_proportional() got an unexpected keyword argument 'max_width'
+2026-04-12 18:48:48,154 - INFO - Batch complete. Success: 0, Errors: 10
+2026-04-12 18:50:10,539 - INFO - Batch processing 10 images from data\raw\images
+2026-04-12 18:50:10,567 - INFO - Inspected image: OL12409294W_Core Python programming.jpg
+2026-04-12 18:50:10,568 - ERROR - Error in proportional resize data\raw\images\OL12409294W_Core Python programming.jpg: [WinError 183] Cannot create a file when that file already exists: 'data\\processed\\resized\\OL12409294W_Core Python programming_resized.jpg'
+2026-04-12 18:50:10,568 - ERROR - Failed: OL12409294W_Core Python programming.jpg - generate_thumbnail() got multiple values for argument 'max_size'
+2026-04-12 18:50:10,568 - INFO - Inspected image: OL1455042W_Heidi.jpg
+2026-04-12 18:50:10,568 - ERROR - Error in proportional resize data\raw\images\OL1455042W_Heidi.jpg: [WinError 183] Cannot create a file when that file already exists: 'data\\processed\\resized\\OL1455042W_Heidi_resized.jpg'
+2026-04-12 18:50:10,568 - ERROR - Failed: OL1455042W_Heidi.jpg - generate_thumbnail() got multiple values for argument 'max_size'
+2026-04-12 18:50:10,569 - INFO - Inspected image: OL1960472W_The Science Fiction Hall of Fa.jpg
+2026-04-12 18:50:10,589 - INFO - Proportionally resized data\raw\images\OL1960472W_The Science Fiction Hall of Fa.jpg to 500x744
+2026-04-12 18:50:10,590 - ERROR - Failed: OL1960472W_The Science Fiction Hall of Fa.jpg - generate_thumbnail() got multiple values for argument 'max_size'
+2026-04-12 18:50:10,590 - INFO - Inspected image: OL2775807W_Pollyanna.jpg
+2026-04-12 18:50:10,602 - INFO - Proportionally resized data\raw\images\OL2775807W_Pollyanna.jpg to 500x822
+2026-04-12 18:50:10,602 - ERROR - Failed: OL2775807W_Pollyanna.jpg - generate_thumbnail() got multiple values for argument 'max_size'
+2026-04-12 18:50:10,602 - INFO - Inspected image: OL30906747W_Core Python Programming.jpg
+2026-04-12 18:50:10,613 - INFO - Proportionally resized data\raw\images\OL30906747W_Core Python Programming.jpg to 500x657
+2026-04-12 18:50:10,613 - ERROR - Failed: OL30906747W_Core Python Programming.jpg - generate_thumbnail() got multiple values for argument 'max_size'
+2026-04-12 18:50:10,614 - INFO - Inspected image: OL39360W_Orlando.jpg
+2026-04-12 18:50:10,624 - INFO - Proportionally resized data\raw\images\OL39360W_Orlando.jpg to 500x760
+2026-04-12 18:50:10,625 - ERROR - Failed: OL39360W_Orlando.jpg - generate_thumbnail() got multiple values for argument 'max_size'
+2026-04-12 18:50:10,625 - INFO - Inspected image: OL46125W_Foundation.jpg
+2026-04-12 18:50:10,636 - INFO - Proportionally resized data\raw\images\OL46125W_Foundation.jpg to 500x814
+2026-04-12 18:50:10,636 - ERROR - Failed: OL46125W_Foundation.jpg - generate_thumbnail() got multiple values for argument 'max_size'
+2026-04-12 18:50:10,637 - INFO - Inspected image: OL51148W_Babbitt.jpg
+2026-04-12 18:50:10,648 - INFO - Proportionally resized data\raw\images\OL51148W_Babbitt.jpg to 500x847
+2026-04-12 18:50:10,649 - ERROR - Failed: OL51148W_Babbitt.jpg - generate_thumbnail() got multiple values for argument 'max_size'
+2026-04-12 18:50:10,649 - INFO - Inspected image: OL59688W_Stranger in a Strange Land.jpg
+2026-04-12 18:50:10,660 - INFO - Proportionally resized data\raw\images\OL59688W_Stranger in a Strange Land.jpg to 500x830
+2026-04-12 18:50:10,661 - ERROR - Failed: OL59688W_Stranger in a Strange Land.jpg - generate_thumbnail() got multiple values for argument 'max_size'
+2026-04-12 18:50:10,662 - INFO - Inspected image: OL99541W_The Enchanted Castle.jpg
+2026-04-12 18:50:10,673 - INFO - Proportionally resized data\raw\images\OL99541W_The Enchanted Castle.jpg to 500x730
+2026-04-12 18:50:10,673 - ERROR - Failed: OL99541W_The Enchanted Castle.jpg - generate_thumbnail() got multiple values for argument 'max_size'
+2026-04-12 18:50:10,674 - INFO - Batch complete. Success: 0, Errors: 10
+2026-04-12 18:51:39,528 - INFO - Batch processing 10 images from data\raw\images
+2026-04-12 18:51:39,558 - INFO - Inspected image: OL12409294W_Core Python programming.jpg
+2026-04-12 18:51:39,559 - ERROR - Error in proportional resize data\raw\images\OL12409294W_Core Python programming.jpg: [WinError 183] Cannot create a file when that file already exists: 'data\\processed\\resized\\OL12409294W_Core Python programming_resized.jpg'
+2026-04-12 18:51:39,559 - ERROR - Error generating thumbnail data\raw\images\OL12409294W_Core Python programming.jpg: [WinError 183] Cannot create a file when that file already exists: 'data\\processed\\thumbnails\\OL12409294W_Core Python programming_thumb.jpg'
+2026-04-12 18:51:39,561 - ERROR - Failed: OL12409294W_Core Python programming.jpg - name 'Path' is not defined
+2026-04-12 18:51:39,561 - INFO - Inspected image: OL1455042W_Heidi.jpg
+2026-04-12 18:51:39,562 - ERROR - Error in proportional resize data\raw\images\OL1455042W_Heidi.jpg: [WinError 183] Cannot create a file when that file already exists: 'data\\processed\\resized\\OL1455042W_Heidi_resized.jpg'
+2026-04-12 18:51:39,562 - ERROR - Error generating thumbnail data\raw\images\OL1455042W_Heidi.jpg: [WinError 183] Cannot create a file when that file already exists: 'data\\processed\\thumbnails\\OL1455042W_Heidi_thumb.jpg'
+2026-04-12 18:51:39,564 - ERROR - Failed: OL1455042W_Heidi.jpg - name 'Path' is not defined
+2026-04-12 18:51:39,565 - INFO - Inspected image: OL1960472W_The Science Fiction Hall of Fa.jpg
+2026-04-12 18:51:39,575 - INFO - Proportionally resized data\raw\images\OL1960472W_The Science Fiction Hall of Fa.jpg to 500x744
+2026-04-12 18:51:39,581 - INFO - Generated thumbnail for data\raw\images\OL1960472W_The Science Fiction Hall of Fa.jpg -> data\processed\thumbnails\OL1960472W_The Science Fiction Hall of Fa_thumb.jpg\OL1960472W_The Science Fiction Hall of Fa_thumb.jpg
+2026-04-12 18:51:39,583 - ERROR - Failed: OL1960472W_The Science Fiction Hall of Fa.jpg - name 'Path' is not defined
+2026-04-12 18:51:39,584 - INFO - Inspected image: OL2775807W_Pollyanna.jpg
+2026-04-12 18:51:39,594 - INFO - Proportionally resized data\raw\images\OL2775807W_Pollyanna.jpg to 500x822
+2026-04-12 18:51:39,600 - INFO - Generated thumbnail for data\raw\images\OL2775807W_Pollyanna.jpg -> data\processed\thumbnails\OL2775807W_Pollyanna_thumb.jpg\OL2775807W_Pollyanna_thumb.jpg
+2026-04-12 18:51:39,601 - ERROR - Failed: OL2775807W_Pollyanna.jpg - name 'Path' is not defined
+2026-04-12 18:51:39,602 - INFO - Inspected image: OL30906747W_Core Python Programming.jpg
+2026-04-12 18:51:39,611 - INFO - Proportionally resized data\raw\images\OL30906747W_Core Python Programming.jpg to 500x657
+2026-04-12 18:51:39,617 - INFO - Generated thumbnail for data\raw\images\OL30906747W_Core Python Programming.jpg -> data\processed\thumbnails\OL30906747W_Core Python Programming_thumb.jpg\OL30906747W_Core Python Programming_thumb.jpg
+2026-04-12 18:51:39,619 - ERROR - Failed: OL30906747W_Core Python Programming.jpg - name 'Path' is not defined
+2026-04-12 18:51:39,620 - INFO - Inspected image: OL39360W_Orlando.jpg
+2026-04-12 18:51:39,629 - INFO - Proportionally resized data\raw\images\OL39360W_Orlando.jpg to 500x760
+2026-04-12 18:51:39,633 - INFO - Generated thumbnail for data\raw\images\OL39360W_Orlando.jpg -> data\processed\thumbnails\OL39360W_Orlando_thumb.jpg\OL39360W_Orlando_thumb.jpg
+2026-04-12 18:51:39,635 - ERROR - Failed: OL39360W_Orlando.jpg - name 'Path' is not defined
+2026-04-12 18:51:39,635 - INFO - Inspected image: OL46125W_Foundation.jpg
+2026-04-12 18:51:39,645 - INFO - Proportionally resized data\raw\images\OL46125W_Foundation.jpg to 500x814
+2026-04-12 18:51:39,651 - INFO - Generated thumbnail for data\raw\images\OL46125W_Foundation.jpg -> data\processed\thumbnails\OL46125W_Foundation_thumb.jpg\OL46125W_Foundation_thumb.jpg
+2026-04-12 18:51:39,653 - ERROR - Failed: OL46125W_Foundation.jpg - name 'Path' is not defined
+2026-04-12 18:51:39,653 - INFO - Inspected image: OL51148W_Babbitt.jpg
+2026-04-12 18:51:39,666 - INFO - Proportionally resized data\raw\images\OL51148W_Babbitt.jpg to 500x847
+2026-04-12 18:51:39,671 - INFO - Generated thumbnail for data\raw\images\OL51148W_Babbitt.jpg -> data\processed\thumbnails\OL51148W_Babbitt_thumb.jpg\OL51148W_Babbitt_thumb.jpg
+2026-04-12 18:51:39,672 - ERROR - Failed: OL51148W_Babbitt.jpg - name 'Path' is not defined
+2026-04-12 18:51:39,673 - INFO - Inspected image: OL59688W_Stranger in a Strange Land.jpg
+2026-04-12 18:51:39,684 - INFO - Proportionally resized data\raw\images\OL59688W_Stranger in a Strange Land.jpg to 500x830
+2026-04-12 18:51:39,689 - INFO - Generated thumbnail for data\raw\images\OL59688W_Stranger in a Strange Land.jpg -> data\processed\thumbnails\OL59688W_Stranger in a Strange Land_thumb.jpg\OL59688W_Stranger in a Strange Land_thumb.jpg
+2026-04-12 18:51:39,691 - ERROR - Failed: OL59688W_Stranger in a Strange Land.jpg - name 'Path' is not defined
+2026-04-12 18:51:39,691 - INFO - Inspected image: OL99541W_The Enchanted Castle.jpg
+2026-04-12 18:51:39,702 - INFO - Proportionally resized data\raw\images\OL99541W_The Enchanted Castle.jpg to 500x730
+2026-04-12 18:51:39,707 - INFO - Generated thumbnail for data\raw\images\OL99541W_The Enchanted Castle.jpg -> data\processed\thumbnails\OL99541W_The Enchanted Castle_thumb.jpg\OL99541W_The Enchanted Castle_thumb.jpg
+2026-04-12 18:51:39,709 - ERROR - Failed: OL99541W_The Enchanted Castle.jpg - name 'Path' is not defined
+2026-04-12 18:51:39,710 - INFO - Batch complete. Success: 0, Errors: 10
