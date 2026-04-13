@@ -38,3 +38,89 @@ The project will be considered successful if it meets the following benchmarks:
 * **Performance:** The pipeline can process a 100,000-word novel (ingestion to visualization) in under **60 seconds**.
 * **Insight:** Successfully identify at least three significant "Sentiment Shifts" where modern reviews differ emotionally from the book's internal narrative tone.
 
+
+sample_1.jpeg:
+ImageWidth: 3072
+ImageLength: 4080
+GPSInfo: 3116
+ResolutionUnit: 2
+ExifOffset: 211
+Make: Xiaomi
+Model: 2201117TY
+DateTime: 2025:09:29 12:44:54
+Orientation: 1
+YCbCrPositioning: 1
+XResolution: 72.0
+YResolution: 72.0
+{
+  "camera_make": "Xiaomi",
+  "camera_model": "2201117TY",
+  "date_taken": "2025:09:29 12:44:54",
+  "exposure": "None",
+  "aperture": "None",
+  "iso": null,
+  "focal_length": "None",
+  "orientation": 1,
+  "gps": {
+    "GPSLatitudeRef": "\u0000",
+    "GPSLatitude": [
+      "nan",
+      "nan",
+      "nan"
+    ],
+    "GPSLongitudeRef": "\u0000",
+    "GPSLongitude": [
+      "nan",
+      "nan",
+      "nan"
+    ],
+    "GPSAltitudeRef": "b'\\x00'",
+    "GPSAltitude": "nan",
+    "GPSTimeStamp": [
+      "nan",
+      "nan",
+      "nan"
+    ],
+    "GPSProcessingMethod": "b'\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00'",
+    "GPSDateStamp": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000"
+  }
+}
+
+
+sample_2.jpeg:
+GPSInfo: 1341
+ExifOffset: 123
+Make: Xiaomi
+Model: 2201117TY
+Orientation: 1
+DateTime: 2026:04:01 02:55:51
+{
+  "camera_make": "Xiaomi",
+  "camera_model": "2201117TY",
+  "date_taken": "2026:04:01 02:55:51",
+  "exposure": "None",
+  "aperture": "None",
+  "iso": null,
+  "focal_length": "None",
+  "orientation": 1,
+  "gps": {
+    "GPSLatitudeRef": "\u0000",
+    "GPSLatitude": [
+      "nan",
+      "nan",
+      "nan"
+    ],
+    "GPSLongitudeRef": "\u0000",
+    "GPSLongitude": [
+      "nan",
+      "nan",
+      "nan"
+    ],
+    "GPSTimeStamp": [
+      "nan",
+      "nan",
+      "nan"
+    ],
+    "GPSDateStamp": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000"
+  }
+}
