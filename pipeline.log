@@ -640,3 +640,492 @@
 2026-04-12 18:51:39,707 - INFO - Generated thumbnail for data\raw\images\OL99541W_The Enchanted Castle.jpg -> data\processed\thumbnails\OL99541W_The Enchanted Castle_thumb.jpg\OL99541W_The Enchanted Castle_thumb.jpg
 2026-04-12 18:51:39,709 - ERROR - Failed: OL99541W_The Enchanted Castle.jpg - name 'Path' is not defined
 2026-04-12 18:51:39,710 - INFO - Batch complete. Success: 0, Errors: 10
+2026-04-14 15:21:01,455 - INFO - Batch processing 10 images from data\raw\images
+2026-04-14 15:21:01,509 - INFO - Inspected image: OL12409294W_Core Python programming.jpg
+2026-04-14 15:21:01,510 - ERROR - Error in proportional resize data\raw\images\OL12409294W_Core Python programming.jpg: [WinError 183] Cannot create a file when that file already exists: 'data\\processed\\resized\\OL12409294W_Core Python programming_resized.jpg'
+2026-04-14 15:21:01,510 - ERROR - Error generating thumbnail data\raw\images\OL12409294W_Core Python programming.jpg: [WinError 183] Cannot create a file when that file already exists: 'data\\processed\\thumbnails\\OL12409294W_Core Python programming_thumb.jpg'
+2026-04-14 15:21:01,518 - ERROR - Failed: OL12409294W_Core Python programming.jpg - name 'Path' is not defined
+2026-04-14 15:21:01,520 - INFO - Inspected image: OL1455042W_Heidi.jpg
+2026-04-14 15:21:01,521 - ERROR - Error in proportional resize data\raw\images\OL1455042W_Heidi.jpg: [WinError 183] Cannot create a file when that file already exists: 'data\\processed\\resized\\OL1455042W_Heidi_resized.jpg'
+2026-04-14 15:21:01,522 - ERROR - Error generating thumbnail data\raw\images\OL1455042W_Heidi.jpg: [WinError 183] Cannot create a file when that file already exists: 'data\\processed\\thumbnails\\OL1455042W_Heidi_thumb.jpg'
+2026-04-14 15:21:01,523 - ERROR - Failed: OL1455042W_Heidi.jpg - name 'Path' is not defined
+2026-04-14 15:21:01,524 - INFO - Inspected image: OL1960472W_The Science Fiction Hall of Fa.jpg
+2026-04-14 15:21:01,535 - INFO - Proportionally resized data\raw\images\OL1960472W_The Science Fiction Hall of Fa.jpg to 500x744
+2026-04-14 15:21:01,540 - INFO - Generated thumbnail for data\raw\images\OL1960472W_The Science Fiction Hall of Fa.jpg -> data\processed\thumbnails\OL1960472W_The Science Fiction Hall of Fa_thumb.jpg\OL1960472W_The Science Fiction Hall of Fa_thumb.jpg
+2026-04-14 15:21:01,542 - ERROR - Failed: OL1960472W_The Science Fiction Hall of Fa.jpg - name 'Path' is not defined
+2026-04-14 15:21:01,543 - INFO - Inspected image: OL2775807W_Pollyanna.jpg
+2026-04-14 15:21:01,553 - INFO - Proportionally resized data\raw\images\OL2775807W_Pollyanna.jpg to 500x822
+2026-04-14 15:21:01,557 - INFO - Generated thumbnail for data\raw\images\OL2775807W_Pollyanna.jpg -> data\processed\thumbnails\OL2775807W_Pollyanna_thumb.jpg\OL2775807W_Pollyanna_thumb.jpg
+2026-04-14 15:21:01,558 - ERROR - Failed: OL2775807W_Pollyanna.jpg - name 'Path' is not defined
+2026-04-14 15:21:01,560 - INFO - Inspected image: OL30906747W_Core Python Programming.jpg
+2026-04-14 15:21:01,568 - INFO - Proportionally resized data\raw\images\OL30906747W_Core Python Programming.jpg to 500x657
+2026-04-14 15:21:01,574 - INFO - Generated thumbnail for data\raw\images\OL30906747W_Core Python Programming.jpg -> data\processed\thumbnails\OL30906747W_Core Python Programming_thumb.jpg\OL30906747W_Core Python Programming_thumb.jpg
+2026-04-14 15:21:01,576 - ERROR - Failed: OL30906747W_Core Python Programming.jpg - name 'Path' is not defined
+2026-04-14 15:21:01,578 - INFO - Inspected image: OL39360W_Orlando.jpg
+2026-04-14 15:21:01,586 - INFO - Proportionally resized data\raw\images\OL39360W_Orlando.jpg to 500x760
+2026-04-14 15:21:01,590 - INFO - Generated thumbnail for data\raw\images\OL39360W_Orlando.jpg -> data\processed\thumbnails\OL39360W_Orlando_thumb.jpg\OL39360W_Orlando_thumb.jpg
+2026-04-14 15:21:01,592 - ERROR - Failed: OL39360W_Orlando.jpg - name 'Path' is not defined
+2026-04-14 15:21:01,595 - INFO - Inspected image: OL46125W_Foundation.jpg
+2026-04-14 15:21:01,607 - INFO - Proportionally resized data\raw\images\OL46125W_Foundation.jpg to 500x814
+2026-04-14 15:21:01,612 - INFO - Generated thumbnail for data\raw\images\OL46125W_Foundation.jpg -> data\processed\thumbnails\OL46125W_Foundation_thumb.jpg\OL46125W_Foundation_thumb.jpg
+2026-04-14 15:21:01,614 - ERROR - Failed: OL46125W_Foundation.jpg - name 'Path' is not defined
+2026-04-14 15:21:01,615 - INFO - Inspected image: OL51148W_Babbitt.jpg
+2026-04-14 15:21:01,627 - INFO - Proportionally resized data\raw\images\OL51148W_Babbitt.jpg to 500x847
+2026-04-14 15:21:01,631 - INFO - Generated thumbnail for data\raw\images\OL51148W_Babbitt.jpg -> data\processed\thumbnails\OL51148W_Babbitt_thumb.jpg\OL51148W_Babbitt_thumb.jpg
+2026-04-14 15:21:01,635 - ERROR - Failed: OL51148W_Babbitt.jpg - name 'Path' is not defined
+2026-04-14 15:21:01,637 - INFO - Inspected image: OL59688W_Stranger in a Strange Land.jpg
+2026-04-14 15:21:01,649 - INFO - Proportionally resized data\raw\images\OL59688W_Stranger in a Strange Land.jpg to 500x830
+2026-04-14 15:21:01,654 - INFO - Generated thumbnail for data\raw\images\OL59688W_Stranger in a Strange Land.jpg -> data\processed\thumbnails\OL59688W_Stranger in a Strange Land_thumb.jpg\OL59688W_Stranger in a Strange Land_thumb.jpg
+2026-04-14 15:21:01,656 - ERROR - Failed: OL59688W_Stranger in a Strange Land.jpg - name 'Path' is not defined
+2026-04-14 15:21:01,657 - INFO - Inspected image: OL99541W_The Enchanted Castle.jpg
+2026-04-14 15:21:01,669 - INFO - Proportionally resized data\raw\images\OL99541W_The Enchanted Castle.jpg to 500x730
+2026-04-14 15:21:01,675 - INFO - Generated thumbnail for data\raw\images\OL99541W_The Enchanted Castle.jpg -> data\processed\thumbnails\OL99541W_The Enchanted Castle_thumb.jpg\OL99541W_The Enchanted Castle_thumb.jpg
+2026-04-14 15:21:01,677 - ERROR - Failed: OL99541W_The Enchanted Castle.jpg - name 'Path' is not defined
+2026-04-14 15:21:01,677 - INFO - Batch complete. Success: 0, Errors: 10
+2026-04-14 15:24:09,755 - INFO - Inspected image: OL1455042W_Heidi.jpg
+2026-04-14 15:25:36,782 - INFO - Inspected image: OL1455042W_Heidi.jpg
+2026-04-15 11:08:31,074 - INFO - Inspected image: OL1455042W_Heidi.jpg
+2026-04-15 11:10:08,120 - INFO - Inspected image: OL1455042W_Heidi.jpg
+2026-04-15 11:10:08,146 - INFO - Proportionally resized data/raw/images\OL1455042W_Heidi.jpg to 400x593
+2026-04-15 11:10:08,153 - INFO - Resized data/raw/images\OL1455042W_Heidi.jpg to 300x400 -> data/processed/resized\OL1455042W_Heidi_resized.jpg
+2026-04-15 11:10:08,158 - INFO - Generated thumbnail for data/raw/images\OL1455042W_Heidi.jpg -> data/processed/thumbnails\OL1455042W_Heidi_thumb.jpg
+2026-04-15 11:10:08,163 - INFO - Generated cover thumbnail for data/raw/images\OL1455042W_Heidi.jpg
+2026-04-15 11:10:08,168 - INFO - Cropped data/raw/images\OL1455042W_Heidi.jpg to box (0, 0, 320, 237)
+2026-04-15 11:10:08,172 - INFO - Cropped data/raw/images\OL1455042W_Heidi.jpg to box (0, 77, 320, 397)
+2026-04-15 11:10:08,301 - INFO - Converted data/raw/images\OL1455042W_Heidi.jpg to WEBP -> data/processed/webp\OL1455042W_Heidi.webp
+2026-04-15 11:10:08,377 - INFO - Converted data/raw/images\OL1455042W_Heidi.jpg to PNG -> data/processed/webp\OL1455042W_Heidi.png
+2026-04-15 11:10:08,386 - INFO - Applied blur filter to data/raw/images\OL1455042W_Heidi.jpg
+2026-04-15 11:10:08,394 - INFO - Applied sharpen filter to data/raw/images\OL1455042W_Heidi.jpg
+2026-04-15 11:10:08,402 - INFO - Adjusted brightness of data/raw/images\OL1455042W_Heidi.jpg by factor 1.3
+2026-04-15 11:10:08,411 - INFO - Adjusted contrast of data/raw/images\OL1455042W_Heidi.jpg by factor 1.4
+2026-04-15 11:10:19,746 - INFO - Batch processing 10 images from data\raw\images
+2026-04-15 11:10:19,801 - INFO - Inspected image: OL12409294W_Core Python programming.jpg
+2026-04-15 11:10:19,802 - ERROR - Error in proportional resize data\raw\images\OL12409294W_Core Python programming.jpg: [WinError 183] Cannot create a file when that file already exists: 'data\\processed\\resized\\OL12409294W_Core Python programming_resized.jpg'
+2026-04-15 11:10:19,803 - ERROR - Error generating thumbnail data\raw\images\OL12409294W_Core Python programming.jpg: [WinError 183] Cannot create a file when that file already exists: 'data\\processed\\thumbnails\\OL12409294W_Core Python programming_thumb.jpg'
+2026-04-15 11:10:19,805 - ERROR - Failed: OL12409294W_Core Python programming.jpg - name 'Path' is not defined
+2026-04-15 11:10:19,805 - INFO - Inspected image: OL1455042W_Heidi.jpg
+2026-04-15 11:10:19,805 - ERROR - Error in proportional resize data\raw\images\OL1455042W_Heidi.jpg: [WinError 183] Cannot create a file when that file already exists: 'data\\processed\\resized\\OL1455042W_Heidi_resized.jpg'
+2026-04-15 11:10:19,806 - ERROR - Error generating thumbnail data\raw\images\OL1455042W_Heidi.jpg: [WinError 183] Cannot create a file when that file already exists: 'data\\processed\\thumbnails\\OL1455042W_Heidi_thumb.jpg'
+2026-04-15 11:10:19,807 - ERROR - Failed: OL1455042W_Heidi.jpg - name 'Path' is not defined
+2026-04-15 11:10:19,809 - INFO - Inspected image: OL1960472W_The Science Fiction Hall of Fa.jpg
+2026-04-15 11:10:19,822 - INFO - Proportionally resized data\raw\images\OL1960472W_The Science Fiction Hall of Fa.jpg to 500x744
+2026-04-15 11:10:19,826 - INFO - Generated thumbnail for data\raw\images\OL1960472W_The Science Fiction Hall of Fa.jpg -> data\processed\thumbnails\OL1960472W_The Science Fiction Hall of Fa_thumb.jpg\OL1960472W_The Science Fiction Hall of Fa_thumb.jpg
+2026-04-15 11:10:19,829 - ERROR - Failed: OL1960472W_The Science Fiction Hall of Fa.jpg - name 'Path' is not defined
+2026-04-15 11:10:19,830 - INFO - Inspected image: OL2775807W_Pollyanna.jpg
+2026-04-15 11:10:19,840 - INFO - Proportionally resized data\raw\images\OL2775807W_Pollyanna.jpg to 500x822
+2026-04-15 11:10:19,845 - INFO - Generated thumbnail for data\raw\images\OL2775807W_Pollyanna.jpg -> data\processed\thumbnails\OL2775807W_Pollyanna_thumb.jpg\OL2775807W_Pollyanna_thumb.jpg
+2026-04-15 11:10:19,846 - ERROR - Failed: OL2775807W_Pollyanna.jpg - name 'Path' is not defined
+2026-04-15 11:10:19,848 - INFO - Inspected image: OL30906747W_Core Python Programming.jpg
+2026-04-15 11:10:19,863 - INFO - Proportionally resized data\raw\images\OL30906747W_Core Python Programming.jpg to 500x657
+2026-04-15 11:10:19,867 - INFO - Generated thumbnail for data\raw\images\OL30906747W_Core Python Programming.jpg -> data\processed\thumbnails\OL30906747W_Core Python Programming_thumb.jpg\OL30906747W_Core Python Programming_thumb.jpg
+2026-04-15 11:10:19,869 - ERROR - Failed: OL30906747W_Core Python Programming.jpg - name 'Path' is not defined
+2026-04-15 11:10:19,870 - INFO - Inspected image: OL39360W_Orlando.jpg
+2026-04-15 11:10:19,879 - INFO - Proportionally resized data\raw\images\OL39360W_Orlando.jpg to 500x760
+2026-04-15 11:10:19,882 - INFO - Generated thumbnail for data\raw\images\OL39360W_Orlando.jpg -> data\processed\thumbnails\OL39360W_Orlando_thumb.jpg\OL39360W_Orlando_thumb.jpg
+2026-04-15 11:10:19,884 - ERROR - Failed: OL39360W_Orlando.jpg - name 'Path' is not defined
+2026-04-15 11:10:19,886 - INFO - Inspected image: OL46125W_Foundation.jpg
+2026-04-15 11:10:19,898 - INFO - Proportionally resized data\raw\images\OL46125W_Foundation.jpg to 500x814
+2026-04-15 11:10:19,904 - INFO - Generated thumbnail for data\raw\images\OL46125W_Foundation.jpg -> data\processed\thumbnails\OL46125W_Foundation_thumb.jpg\OL46125W_Foundation_thumb.jpg
+2026-04-15 11:10:19,905 - ERROR - Failed: OL46125W_Foundation.jpg - name 'Path' is not defined
+2026-04-15 11:10:19,906 - INFO - Inspected image: OL51148W_Babbitt.jpg
+2026-04-15 11:10:19,918 - INFO - Proportionally resized data\raw\images\OL51148W_Babbitt.jpg to 500x847
+2026-04-15 11:10:19,922 - INFO - Generated thumbnail for data\raw\images\OL51148W_Babbitt.jpg -> data\processed\thumbnails\OL51148W_Babbitt_thumb.jpg\OL51148W_Babbitt_thumb.jpg
+2026-04-15 11:10:19,924 - ERROR - Failed: OL51148W_Babbitt.jpg - name 'Path' is not defined
+2026-04-15 11:10:19,925 - INFO - Inspected image: OL59688W_Stranger in a Strange Land.jpg
+2026-04-15 11:10:19,935 - INFO - Proportionally resized data\raw\images\OL59688W_Stranger in a Strange Land.jpg to 500x830
+2026-04-15 11:10:19,940 - INFO - Generated thumbnail for data\raw\images\OL59688W_Stranger in a Strange Land.jpg -> data\processed\thumbnails\OL59688W_Stranger in a Strange Land_thumb.jpg\OL59688W_Stranger in a Strange Land_thumb.jpg
+2026-04-15 11:10:19,943 - ERROR - Failed: OL59688W_Stranger in a Strange Land.jpg - name 'Path' is not defined
+2026-04-15 11:10:19,945 - INFO - Inspected image: OL99541W_The Enchanted Castle.jpg
+2026-04-15 11:10:19,955 - INFO - Proportionally resized data\raw\images\OL99541W_The Enchanted Castle.jpg to 500x730
+2026-04-15 11:10:19,959 - INFO - Generated thumbnail for data\raw\images\OL99541W_The Enchanted Castle.jpg -> data\processed\thumbnails\OL99541W_The Enchanted Castle_thumb.jpg\OL99541W_The Enchanted Castle_thumb.jpg
+2026-04-15 11:10:19,961 - ERROR - Failed: OL99541W_The Enchanted Castle.jpg - name 'Path' is not defined
+2026-04-15 11:10:19,962 - INFO - Batch complete. Success: 0, Errors: 10
+2026-04-15 11:16:08,343 - INFO - Inspected image: OL1455042W_Heidi.jpg
+2026-04-15 11:16:08,353 - INFO - Proportionally resized data/raw/images\OL1455042W_Heidi.jpg to 400x593
+2026-04-15 11:16:08,360 - ERROR - Error resizing image data/raw/images\OL1455042W_Heidi.jpg: name 'output_path_or_dir' is not defined
+2026-04-15 11:16:08,367 - INFO - Generated thumbnail for data/raw/images\OL1455042W_Heidi.jpg -> data/processed/thumbnails\OL1455042W_Heidi_thumb.jpg
+2026-04-15 11:16:08,373 - INFO - Generated cover thumbnail for data/raw/images\OL1455042W_Heidi.jpg
+2026-04-15 11:16:08,378 - INFO - Cropped data/raw/images\OL1455042W_Heidi.jpg to box (0, 0, 320, 237)
+2026-04-15 11:16:08,382 - INFO - Cropped data/raw/images\OL1455042W_Heidi.jpg to box (0, 77, 320, 397)
+2026-04-15 11:16:08,466 - INFO - Converted data/raw/images\OL1455042W_Heidi.jpg to WEBP -> data/processed/webp\OL1455042W_Heidi.webp
+2026-04-15 11:16:08,535 - INFO - Converted data/raw/images\OL1455042W_Heidi.jpg to PNG -> data/processed/webp\OL1455042W_Heidi.png
+2026-04-15 11:16:08,543 - INFO - Applied blur filter to data/raw/images\OL1455042W_Heidi.jpg
+2026-04-15 11:16:08,553 - INFO - Applied sharpen filter to data/raw/images\OL1455042W_Heidi.jpg
+2026-04-15 11:16:08,560 - INFO - Adjusted brightness of data/raw/images\OL1455042W_Heidi.jpg by factor 1.3
+2026-04-15 11:16:08,566 - INFO - Adjusted contrast of data/raw/images\OL1455042W_Heidi.jpg by factor 1.4
+2026-04-15 11:19:18,647 - INFO - Batch processing 10 images from data\raw\images
+2026-04-15 11:19:18,666 - INFO - Inspected image: OL12409294W_Core Python programming.jpg
+2026-04-15 11:19:18,666 - ERROR - Error in proportional resize data\raw\images\OL12409294W_Core Python programming.jpg: [WinError 183] Cannot create a file when that file already exists: 'data\\processed\\resized\\OL12409294W_Core Python programming_resized.jpg'
+2026-04-15 11:19:18,666 - ERROR - Error generating thumbnail data\raw\images\OL12409294W_Core Python programming.jpg: [WinError 183] Cannot create a file when that file already exists: 'data\\processed\\thumbnails\\OL12409294W_Core Python programming_thumb.jpg'
+2026-04-15 11:19:18,741 - ERROR - Failed: OL12409294W_Core Python programming.jpg - name 'logger' is not defined
+2026-04-15 11:19:18,741 - INFO - Inspected image: OL1455042W_Heidi.jpg
+2026-04-15 11:19:18,742 - ERROR - Error in proportional resize data\raw\images\OL1455042W_Heidi.jpg: [WinError 183] Cannot create a file when that file already exists: 'data\\processed\\resized\\OL1455042W_Heidi_resized.jpg'
+2026-04-15 11:19:18,742 - ERROR - Error generating thumbnail data\raw\images\OL1455042W_Heidi.jpg: [WinError 183] Cannot create a file when that file already exists: 'data\\processed\\thumbnails\\OL1455042W_Heidi_thumb.jpg'
+2026-04-15 11:19:18,777 - ERROR - Failed: OL1455042W_Heidi.jpg - name 'logger' is not defined
+2026-04-15 11:19:18,778 - INFO - Inspected image: OL1960472W_The Science Fiction Hall of Fa.jpg
+2026-04-15 11:19:18,788 - INFO - Proportionally resized data\raw\images\OL1960472W_The Science Fiction Hall of Fa.jpg to 500x744
+2026-04-15 11:19:18,792 - INFO - Generated thumbnail for data\raw\images\OL1960472W_The Science Fiction Hall of Fa.jpg -> data\processed\thumbnails\OL1960472W_The Science Fiction Hall of Fa_thumb.jpg\OL1960472W_The Science Fiction Hall of Fa_thumb.jpg
+2026-04-15 11:19:18,839 - ERROR - Failed: OL1960472W_The Science Fiction Hall of Fa.jpg - name 'logger' is not defined
+2026-04-15 11:19:18,839 - INFO - Inspected image: OL2775807W_Pollyanna.jpg
+2026-04-15 11:19:18,851 - INFO - Proportionally resized data\raw\images\OL2775807W_Pollyanna.jpg to 500x822
+2026-04-15 11:19:18,855 - INFO - Generated thumbnail for data\raw\images\OL2775807W_Pollyanna.jpg -> data\processed\thumbnails\OL2775807W_Pollyanna_thumb.jpg\OL2775807W_Pollyanna_thumb.jpg
+2026-04-15 11:19:18,897 - ERROR - Failed: OL2775807W_Pollyanna.jpg - name 'logger' is not defined
+2026-04-15 11:19:18,898 - INFO - Inspected image: OL30906747W_Core Python Programming.jpg
+2026-04-15 11:19:18,907 - INFO - Proportionally resized data\raw\images\OL30906747W_Core Python Programming.jpg to 500x657
+2026-04-15 11:19:18,915 - INFO - Generated thumbnail for data\raw\images\OL30906747W_Core Python Programming.jpg -> data\processed\thumbnails\OL30906747W_Core Python Programming_thumb.jpg\OL30906747W_Core Python Programming_thumb.jpg
+2026-04-15 11:19:18,963 - ERROR - Failed: OL30906747W_Core Python Programming.jpg - name 'logger' is not defined
+2026-04-15 11:19:18,964 - INFO - Inspected image: OL39360W_Orlando.jpg
+2026-04-15 11:19:18,974 - INFO - Proportionally resized data\raw\images\OL39360W_Orlando.jpg to 500x760
+2026-04-15 11:19:18,978 - INFO - Generated thumbnail for data\raw\images\OL39360W_Orlando.jpg -> data\processed\thumbnails\OL39360W_Orlando_thumb.jpg\OL39360W_Orlando_thumb.jpg
+2026-04-15 11:19:19,002 - ERROR - Failed: OL39360W_Orlando.jpg - name 'logger' is not defined
+2026-04-15 11:19:19,004 - INFO - Inspected image: OL46125W_Foundation.jpg
+2026-04-15 11:19:19,014 - INFO - Proportionally resized data\raw\images\OL46125W_Foundation.jpg to 500x814
+2026-04-15 11:19:19,020 - INFO - Generated thumbnail for data\raw\images\OL46125W_Foundation.jpg -> data\processed\thumbnails\OL46125W_Foundation_thumb.jpg\OL46125W_Foundation_thumb.jpg
+2026-04-15 11:19:19,057 - ERROR - Failed: OL46125W_Foundation.jpg - name 'logger' is not defined
+2026-04-15 11:19:19,057 - INFO - Inspected image: OL51148W_Babbitt.jpg
+2026-04-15 11:19:19,070 - INFO - Proportionally resized data\raw\images\OL51148W_Babbitt.jpg to 500x847
+2026-04-15 11:19:19,074 - INFO - Generated thumbnail for data\raw\images\OL51148W_Babbitt.jpg -> data\processed\thumbnails\OL51148W_Babbitt_thumb.jpg\OL51148W_Babbitt_thumb.jpg
+2026-04-15 11:19:19,119 - ERROR - Failed: OL51148W_Babbitt.jpg - name 'logger' is not defined
+2026-04-15 11:19:19,120 - INFO - Inspected image: OL59688W_Stranger in a Strange Land.jpg
+2026-04-15 11:19:19,134 - INFO - Proportionally resized data\raw\images\OL59688W_Stranger in a Strange Land.jpg to 500x830
+2026-04-15 11:19:19,139 - INFO - Generated thumbnail for data\raw\images\OL59688W_Stranger in a Strange Land.jpg -> data\processed\thumbnails\OL59688W_Stranger in a Strange Land_thumb.jpg\OL59688W_Stranger in a Strange Land_thumb.jpg
+2026-04-15 11:19:19,177 - ERROR - Failed: OL59688W_Stranger in a Strange Land.jpg - name 'logger' is not defined
+2026-04-15 11:19:19,177 - INFO - Inspected image: OL99541W_The Enchanted Castle.jpg
+2026-04-15 11:19:19,186 - INFO - Proportionally resized data\raw\images\OL99541W_The Enchanted Castle.jpg to 500x730
+2026-04-15 11:19:19,193 - INFO - Generated thumbnail for data\raw\images\OL99541W_The Enchanted Castle.jpg -> data\processed\thumbnails\OL99541W_The Enchanted Castle_thumb.jpg\OL99541W_The Enchanted Castle_thumb.jpg
+2026-04-15 11:19:19,238 - ERROR - Failed: OL99541W_The Enchanted Castle.jpg - name 'logger' is not defined
+2026-04-15 11:19:19,239 - INFO - Batch complete. Success: 0, Errors: 10
+2026-04-15 11:20:39,479 - INFO - Batch processing 10 images from data\raw\images
+2026-04-15 11:20:39,500 - INFO - Inspected image: OL12409294W_Core Python programming.jpg
+2026-04-15 11:20:39,500 - ERROR - Error in proportional resize data\raw\images\OL12409294W_Core Python programming.jpg: [WinError 183] Cannot create a file when that file already exists: 'data\\processed\\resized\\OL12409294W_Core Python programming_resized.jpg'
+2026-04-15 11:20:39,501 - ERROR - Error generating thumbnail data\raw\images\OL12409294W_Core Python programming.jpg: [WinError 183] Cannot create a file when that file already exists: 'data\\processed\\thumbnails\\OL12409294W_Core Python programming_thumb.jpg'
+2026-04-15 11:20:39,573 - INFO - WebP: 18KB -> 6KB (62.9% saving)
+2026-04-15 11:20:39,573 - WARNING - No EXIF data found in data\raw\images\OL12409294W_Core Python programming.jpg
+2026-04-15 11:20:39,573 - INFO - Inspected image: OL1455042W_Heidi.jpg
+2026-04-15 11:20:39,574 - ERROR - Error in proportional resize data\raw\images\OL1455042W_Heidi.jpg: [WinError 183] Cannot create a file when that file already exists: 'data\\processed\\resized\\OL1455042W_Heidi_resized.jpg'
+2026-04-15 11:20:39,574 - ERROR - Error generating thumbnail data\raw\images\OL1455042W_Heidi.jpg: [WinError 183] Cannot create a file when that file already exists: 'data\\processed\\thumbnails\\OL1455042W_Heidi_thumb.jpg'
+2026-04-15 11:20:39,606 - INFO - WebP: 25KB -> 22KB (11.1% saving)
+2026-04-15 11:20:39,606 - WARNING - No EXIF data found in data\raw\images\OL1455042W_Heidi.jpg
+2026-04-15 11:20:39,608 - INFO - Inspected image: OL1960472W_The Science Fiction Hall of Fa.jpg
+2026-04-15 11:20:39,621 - INFO - Proportionally resized data\raw\images\OL1960472W_The Science Fiction Hall of Fa.jpg to 500x744
+2026-04-15 11:20:39,626 - INFO - Generated thumbnail for data\raw\images\OL1960472W_The Science Fiction Hall of Fa.jpg -> data\processed\thumbnails\OL1960472W_The Science Fiction Hall of Fa_thumb.jpg\OL1960472W_The Science Fiction Hall of Fa_thumb.jpg
+2026-04-15 11:20:39,668 - INFO - WebP: 35KB -> 35KB (0.7% saving)
+2026-04-15 11:20:39,668 - WARNING - No EXIF data found in data\raw\images\OL1960472W_The Science Fiction Hall of Fa.jpg
+2026-04-15 11:20:39,669 - INFO - Inspected image: OL2775807W_Pollyanna.jpg
+2026-04-15 11:20:39,680 - INFO - Proportionally resized data\raw\images\OL2775807W_Pollyanna.jpg to 500x822
+2026-04-15 11:20:39,683 - INFO - Generated thumbnail for data\raw\images\OL2775807W_Pollyanna.jpg -> data\processed\thumbnails\OL2775807W_Pollyanna_thumb.jpg\OL2775807W_Pollyanna_thumb.jpg
+2026-04-15 11:20:39,724 - INFO - WebP: 29KB -> 30KB (-2.3% saving)
+2026-04-15 11:20:39,725 - WARNING - No EXIF data found in data\raw\images\OL2775807W_Pollyanna.jpg
+2026-04-15 11:20:39,726 - INFO - Inspected image: OL30906747W_Core Python Programming.jpg
+2026-04-15 11:20:39,739 - INFO - Proportionally resized data\raw\images\OL30906747W_Core Python Programming.jpg to 500x657
+2026-04-15 11:20:39,745 - INFO - Generated thumbnail for data\raw\images\OL30906747W_Core Python Programming.jpg -> data\processed\thumbnails\OL30906747W_Core Python Programming_thumb.jpg\OL30906747W_Core Python Programming_thumb.jpg
+2026-04-15 11:20:39,790 - INFO - WebP: 61KB -> 40KB (34.2% saving)
+2026-04-15 11:20:39,790 - WARNING - No EXIF data found in data\raw\images\OL30906747W_Core Python Programming.jpg
+2026-04-15 11:20:39,791 - INFO - Inspected image: OL39360W_Orlando.jpg
+2026-04-15 11:20:39,800 - INFO - Proportionally resized data\raw\images\OL39360W_Orlando.jpg to 500x760
+2026-04-15 11:20:39,803 - INFO - Generated thumbnail for data\raw\images\OL39360W_Orlando.jpg -> data\processed\thumbnails\OL39360W_Orlando_thumb.jpg\OL39360W_Orlando_thumb.jpg
+2026-04-15 11:20:39,825 - INFO - WebP: 17KB -> 14KB (16.6% saving)
+2026-04-15 11:20:39,826 - WARNING - No EXIF data found in data\raw\images\OL39360W_Orlando.jpg
+2026-04-15 11:20:39,826 - INFO - Inspected image: OL46125W_Foundation.jpg
+2026-04-15 11:20:39,838 - INFO - Proportionally resized data\raw\images\OL46125W_Foundation.jpg to 500x814
+2026-04-15 11:20:39,842 - INFO - Generated thumbnail for data\raw\images\OL46125W_Foundation.jpg -> data\processed\thumbnails\OL46125W_Foundation_thumb.jpg\OL46125W_Foundation_thumb.jpg
+2026-04-15 11:20:39,877 - INFO - WebP: 42KB -> 24KB (41.3% saving)
+2026-04-15 11:20:39,878 - WARNING - No EXIF data found in data\raw\images\OL46125W_Foundation.jpg
+2026-04-15 11:20:39,878 - INFO - Inspected image: OL51148W_Babbitt.jpg
+2026-04-15 11:20:39,888 - INFO - Proportionally resized data\raw\images\OL51148W_Babbitt.jpg to 500x847
+2026-04-15 11:20:39,892 - INFO - Generated thumbnail for data\raw\images\OL51148W_Babbitt.jpg -> data\processed\thumbnails\OL51148W_Babbitt_thumb.jpg\OL51148W_Babbitt_thumb.jpg
+2026-04-15 11:20:39,934 - INFO - WebP: 41KB -> 46KB (-12.2% saving)
+2026-04-15 11:20:39,934 - WARNING - No EXIF data found in data\raw\images\OL51148W_Babbitt.jpg
+2026-04-15 11:20:39,936 - INFO - Inspected image: OL59688W_Stranger in a Strange Land.jpg
+2026-04-15 11:20:39,951 - INFO - Proportionally resized data\raw\images\OL59688W_Stranger in a Strange Land.jpg to 500x830
+2026-04-15 11:20:39,955 - INFO - Generated thumbnail for data\raw\images\OL59688W_Stranger in a Strange Land.jpg -> data\processed\thumbnails\OL59688W_Stranger in a Strange Land_thumb.jpg\OL59688W_Stranger in a Strange Land_thumb.jpg
+2026-04-15 11:20:39,990 - INFO - WebP: 49KB -> 30KB (38.7% saving)
+2026-04-15 11:20:39,991 - WARNING - No EXIF data found in data\raw\images\OL59688W_Stranger in a Strange Land.jpg
+2026-04-15 11:20:39,991 - INFO - Inspected image: OL99541W_The Enchanted Castle.jpg
+2026-04-15 11:20:40,001 - INFO - Proportionally resized data\raw\images\OL99541W_The Enchanted Castle.jpg to 500x730
+2026-04-15 11:20:40,005 - INFO - Generated thumbnail for data\raw\images\OL99541W_The Enchanted Castle.jpg -> data\processed\thumbnails\OL99541W_The Enchanted Castle_thumb.jpg\OL99541W_The Enchanted Castle_thumb.jpg
+2026-04-15 11:20:40,059 - INFO - WebP: 42KB -> 46KB (-9.9% saving)
+2026-04-15 11:20:40,059 - WARNING - No EXIF data found in data\raw\images\OL99541W_The Enchanted Castle.jpg
+2026-04-15 11:20:40,149 - INFO - Please visit this URL to authorize this application: https://accounts.google.com/o/oauth2/auth?response_type=code&client_id=697042705213-i6e3mpq53kcnidro3eaa0r1n7cph3q3s.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A52590%2F&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fdrive.file&state=o7MW1dtr7ldSHJCQ6ozo4jXgA4JxCq&code_challenge=Fvno6MyMZ0KdXTO6YcIA7Vt6_OqELvwCGAbKld0qM4s&code_challenge_method=S256&access_type=offline
+2026-04-15 11:31:05,928 - INFO - Batch processing 10 images from data\raw\images
+2026-04-15 11:31:05,947 - INFO - Inspected image: OL12409294W_Core Python programming.jpg
+2026-04-15 11:31:05,948 - ERROR - Error in proportional resize data\raw\images\OL12409294W_Core Python programming.jpg: [WinError 183] Cannot create a file when that file already exists: 'data\\processed\\resized\\OL12409294W_Core Python programming_resized.jpg'
+2026-04-15 11:31:05,948 - ERROR - Error generating thumbnail data\raw\images\OL12409294W_Core Python programming.jpg: [WinError 183] Cannot create a file when that file already exists: 'data\\processed\\thumbnails\\OL12409294W_Core Python programming_thumb.jpg'
+2026-04-15 11:31:06,024 - INFO - WebP: 18KB -> 6KB (62.9% saving)
+2026-04-15 11:31:06,025 - WARNING - No EXIF data found in data\raw\images\OL12409294W_Core Python programming.jpg
+2026-04-15 11:31:06,025 - INFO - Inspected image: OL1455042W_Heidi.jpg
+2026-04-15 11:31:06,025 - ERROR - Error in proportional resize data\raw\images\OL1455042W_Heidi.jpg: [WinError 183] Cannot create a file when that file already exists: 'data\\processed\\resized\\OL1455042W_Heidi_resized.jpg'
+2026-04-15 11:31:06,026 - ERROR - Error generating thumbnail data\raw\images\OL1455042W_Heidi.jpg: [WinError 183] Cannot create a file when that file already exists: 'data\\processed\\thumbnails\\OL1455042W_Heidi_thumb.jpg'
+2026-04-15 11:31:06,060 - INFO - WebP: 25KB -> 22KB (11.1% saving)
+2026-04-15 11:31:06,060 - WARNING - No EXIF data found in data\raw\images\OL1455042W_Heidi.jpg
+2026-04-15 11:31:06,061 - INFO - Inspected image: OL1960472W_The Science Fiction Hall of Fa.jpg
+2026-04-15 11:31:06,072 - INFO - Proportionally resized data\raw\images\OL1960472W_The Science Fiction Hall of Fa.jpg to 500x744
+2026-04-15 11:31:06,080 - INFO - Generated thumbnail for data\raw\images\OL1960472W_The Science Fiction Hall of Fa.jpg -> data\processed\thumbnails\OL1960472W_The Science Fiction Hall of Fa_thumb.jpg\OL1960472W_The Science Fiction Hall of Fa_thumb.jpg
+2026-04-15 11:31:06,127 - INFO - WebP: 35KB -> 35KB (0.7% saving)
+2026-04-15 11:31:06,128 - WARNING - No EXIF data found in data\raw\images\OL1960472W_The Science Fiction Hall of Fa.jpg
+2026-04-15 11:31:06,128 - INFO - Inspected image: OL2775807W_Pollyanna.jpg
+2026-04-15 11:31:06,138 - INFO - Proportionally resized data\raw\images\OL2775807W_Pollyanna.jpg to 500x822
+2026-04-15 11:31:06,143 - INFO - Generated thumbnail for data\raw\images\OL2775807W_Pollyanna.jpg -> data\processed\thumbnails\OL2775807W_Pollyanna_thumb.jpg\OL2775807W_Pollyanna_thumb.jpg
+2026-04-15 11:31:06,185 - INFO - WebP: 29KB -> 30KB (-2.3% saving)
+2026-04-15 11:31:06,185 - WARNING - No EXIF data found in data\raw\images\OL2775807W_Pollyanna.jpg
+2026-04-15 11:31:06,186 - INFO - Inspected image: OL30906747W_Core Python Programming.jpg
+2026-04-15 11:31:06,201 - INFO - Proportionally resized data\raw\images\OL30906747W_Core Python Programming.jpg to 500x657
+2026-04-15 11:31:06,208 - INFO - Generated thumbnail for data\raw\images\OL30906747W_Core Python Programming.jpg -> data\processed\thumbnails\OL30906747W_Core Python Programming_thumb.jpg\OL30906747W_Core Python Programming_thumb.jpg
+2026-04-15 11:31:06,252 - INFO - WebP: 61KB -> 40KB (34.2% saving)
+2026-04-15 11:31:06,253 - WARNING - No EXIF data found in data\raw\images\OL30906747W_Core Python Programming.jpg
+2026-04-15 11:31:06,253 - INFO - Inspected image: OL39360W_Orlando.jpg
+2026-04-15 11:31:06,264 - INFO - Proportionally resized data\raw\images\OL39360W_Orlando.jpg to 500x760
+2026-04-15 11:31:06,270 - INFO - Generated thumbnail for data\raw\images\OL39360W_Orlando.jpg -> data\processed\thumbnails\OL39360W_Orlando_thumb.jpg\OL39360W_Orlando_thumb.jpg
+2026-04-15 11:31:06,295 - INFO - WebP: 17KB -> 14KB (16.6% saving)
+2026-04-15 11:31:06,296 - WARNING - No EXIF data found in data\raw\images\OL39360W_Orlando.jpg
+2026-04-15 11:31:06,297 - INFO - Inspected image: OL46125W_Foundation.jpg
+2026-04-15 11:31:06,310 - INFO - Proportionally resized data\raw\images\OL46125W_Foundation.jpg to 500x814
+2026-04-15 11:31:06,315 - INFO - Generated thumbnail for data\raw\images\OL46125W_Foundation.jpg -> data\processed\thumbnails\OL46125W_Foundation_thumb.jpg\OL46125W_Foundation_thumb.jpg
+2026-04-15 11:31:06,364 - INFO - WebP: 42KB -> 24KB (41.3% saving)
+2026-04-15 11:31:06,365 - WARNING - No EXIF data found in data\raw\images\OL46125W_Foundation.jpg
+2026-04-15 11:31:06,365 - INFO - Inspected image: OL51148W_Babbitt.jpg
+2026-04-15 11:31:06,379 - INFO - Proportionally resized data\raw\images\OL51148W_Babbitt.jpg to 500x847
+2026-04-15 11:31:06,383 - INFO - Generated thumbnail for data\raw\images\OL51148W_Babbitt.jpg -> data\processed\thumbnails\OL51148W_Babbitt_thumb.jpg\OL51148W_Babbitt_thumb.jpg
+2026-04-15 11:31:06,430 - INFO - WebP: 41KB -> 46KB (-12.2% saving)
+2026-04-15 11:31:06,430 - WARNING - No EXIF data found in data\raw\images\OL51148W_Babbitt.jpg
+2026-04-15 11:31:06,431 - INFO - Inspected image: OL59688W_Stranger in a Strange Land.jpg
+2026-04-15 11:31:06,442 - INFO - Proportionally resized data\raw\images\OL59688W_Stranger in a Strange Land.jpg to 500x830
+2026-04-15 11:31:06,447 - INFO - Generated thumbnail for data\raw\images\OL59688W_Stranger in a Strange Land.jpg -> data\processed\thumbnails\OL59688W_Stranger in a Strange Land_thumb.jpg\OL59688W_Stranger in a Strange Land_thumb.jpg
+2026-04-15 11:31:06,499 - INFO - WebP: 49KB -> 30KB (38.7% saving)
+2026-04-15 11:31:06,499 - WARNING - No EXIF data found in data\raw\images\OL59688W_Stranger in a Strange Land.jpg
+2026-04-15 11:31:06,500 - INFO - Inspected image: OL99541W_The Enchanted Castle.jpg
+2026-04-15 11:31:06,511 - INFO - Proportionally resized data\raw\images\OL99541W_The Enchanted Castle.jpg to 500x730
+2026-04-15 11:31:06,517 - INFO - Generated thumbnail for data\raw\images\OL99541W_The Enchanted Castle.jpg -> data\processed\thumbnails\OL99541W_The Enchanted Castle_thumb.jpg\OL99541W_The Enchanted Castle_thumb.jpg
+2026-04-15 11:31:06,580 - INFO - WebP: 42KB -> 46KB (-9.9% saving)
+2026-04-15 11:31:06,581 - WARNING - No EXIF data found in data\raw\images\OL99541W_The Enchanted Castle.jpg
+2026-04-15 11:31:06,671 - INFO - Please visit this URL to authorize this application: https://accounts.google.com/o/oauth2/auth?response_type=code&client_id=697042705213-i6e3mpq53kcnidro3eaa0r1n7cph3q3s.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A59904%2F&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fdrive.file&state=t14Ywd7P80PY9Xw8JfDmFcedvbF0Uk&code_challenge=PtuS3ZvJidbsLhmFasHepeb-j_0DChrlMWhGVfAulRo&code_challenge_method=S256&access_type=offline
+2026-04-15 11:52:58,431 - INFO - Batch processing 10 images from data\raw\images
+2026-04-15 11:52:58,458 - INFO - Inspected image: OL12409294W_Core Python programming.jpg
+2026-04-15 11:52:58,458 - ERROR - Error in proportional resize data\raw\images\OL12409294W_Core Python programming.jpg: [WinError 183] Cannot create a file when that file already exists: 'data\\processed\\resized\\OL12409294W_Core Python programming_resized.jpg'
+2026-04-15 11:52:58,459 - ERROR - Error generating thumbnail data\raw\images\OL12409294W_Core Python programming.jpg: [WinError 183] Cannot create a file when that file already exists: 'data\\processed\\thumbnails\\OL12409294W_Core Python programming_thumb.jpg'
+2026-04-15 11:52:58,557 - INFO - WebP: 18KB -> 6KB (62.9% saving)
+2026-04-15 11:52:58,558 - WARNING - No EXIF data found in data\raw\images\OL12409294W_Core Python programming.jpg
+2026-04-15 11:52:58,559 - INFO - Inspected image: OL1455042W_Heidi.jpg
+2026-04-15 11:52:58,560 - ERROR - Error in proportional resize data\raw\images\OL1455042W_Heidi.jpg: [WinError 183] Cannot create a file when that file already exists: 'data\\processed\\resized\\OL1455042W_Heidi_resized.jpg'
+2026-04-15 11:52:58,560 - ERROR - Error generating thumbnail data\raw\images\OL1455042W_Heidi.jpg: [WinError 183] Cannot create a file when that file already exists: 'data\\processed\\thumbnails\\OL1455042W_Heidi_thumb.jpg'
+2026-04-15 11:52:58,598 - INFO - WebP: 25KB -> 22KB (11.1% saving)
+2026-04-15 11:52:58,599 - WARNING - No EXIF data found in data\raw\images\OL1455042W_Heidi.jpg
+2026-04-15 11:52:58,600 - INFO - Inspected image: OL1960472W_The Science Fiction Hall of Fa.jpg
+2026-04-15 11:52:58,613 - INFO - Proportionally resized data\raw\images\OL1960472W_The Science Fiction Hall of Fa.jpg to 500x744
+2026-04-15 11:52:58,618 - INFO - Generated thumbnail for data\raw\images\OL1960472W_The Science Fiction Hall of Fa.jpg -> data\processed\thumbnails\OL1960472W_The Science Fiction Hall of Fa_thumb.jpg\OL1960472W_The Science Fiction Hall of Fa_thumb.jpg
+2026-04-15 11:52:58,671 - INFO - WebP: 35KB -> 35KB (0.7% saving)
+2026-04-15 11:52:58,672 - WARNING - No EXIF data found in data\raw\images\OL1960472W_The Science Fiction Hall of Fa.jpg
+2026-04-15 11:52:58,673 - INFO - Inspected image: OL2775807W_Pollyanna.jpg
+2026-04-15 11:52:58,685 - INFO - Proportionally resized data\raw\images\OL2775807W_Pollyanna.jpg to 500x822
+2026-04-15 11:52:58,689 - INFO - Generated thumbnail for data\raw\images\OL2775807W_Pollyanna.jpg -> data\processed\thumbnails\OL2775807W_Pollyanna_thumb.jpg\OL2775807W_Pollyanna_thumb.jpg
+2026-04-15 11:52:58,733 - INFO - WebP: 29KB -> 30KB (-2.3% saving)
+2026-04-15 11:52:58,733 - WARNING - No EXIF data found in data\raw\images\OL2775807W_Pollyanna.jpg
+2026-04-15 11:52:58,735 - INFO - Inspected image: OL30906747W_Core Python Programming.jpg
+2026-04-15 11:52:58,747 - INFO - Proportionally resized data\raw\images\OL30906747W_Core Python Programming.jpg to 500x657
+2026-04-15 11:52:58,752 - INFO - Generated thumbnail for data\raw\images\OL30906747W_Core Python Programming.jpg -> data\processed\thumbnails\OL30906747W_Core Python Programming_thumb.jpg\OL30906747W_Core Python Programming_thumb.jpg
+2026-04-15 11:52:58,802 - INFO - WebP: 61KB -> 40KB (34.2% saving)
+2026-04-15 11:52:58,802 - WARNING - No EXIF data found in data\raw\images\OL30906747W_Core Python Programming.jpg
+2026-04-15 11:52:58,804 - INFO - Inspected image: OL39360W_Orlando.jpg
+2026-04-15 11:52:58,817 - INFO - Proportionally resized data\raw\images\OL39360W_Orlando.jpg to 500x760
+2026-04-15 11:52:58,823 - INFO - Generated thumbnail for data\raw\images\OL39360W_Orlando.jpg -> data\processed\thumbnails\OL39360W_Orlando_thumb.jpg\OL39360W_Orlando_thumb.jpg
+2026-04-15 11:52:58,850 - INFO - WebP: 17KB -> 14KB (16.6% saving)
+2026-04-15 11:52:58,851 - WARNING - No EXIF data found in data\raw\images\OL39360W_Orlando.jpg
+2026-04-15 11:52:58,852 - INFO - Inspected image: OL46125W_Foundation.jpg
+2026-04-15 11:52:58,864 - INFO - Proportionally resized data\raw\images\OL46125W_Foundation.jpg to 500x814
+2026-04-15 11:52:58,869 - INFO - Generated thumbnail for data\raw\images\OL46125W_Foundation.jpg -> data\processed\thumbnails\OL46125W_Foundation_thumb.jpg\OL46125W_Foundation_thumb.jpg
+2026-04-15 11:52:58,909 - INFO - WebP: 42KB -> 24KB (41.3% saving)
+2026-04-15 11:52:58,909 - WARNING - No EXIF data found in data\raw\images\OL46125W_Foundation.jpg
+2026-04-15 11:52:58,911 - INFO - Inspected image: OL51148W_Babbitt.jpg
+2026-04-15 11:52:58,923 - INFO - Proportionally resized data\raw\images\OL51148W_Babbitt.jpg to 500x847
+2026-04-15 11:52:58,928 - INFO - Generated thumbnail for data\raw\images\OL51148W_Babbitt.jpg -> data\processed\thumbnails\OL51148W_Babbitt_thumb.jpg\OL51148W_Babbitt_thumb.jpg
+2026-04-15 11:52:58,981 - INFO - WebP: 41KB -> 46KB (-12.2% saving)
+2026-04-15 11:52:58,981 - WARNING - No EXIF data found in data\raw\images\OL51148W_Babbitt.jpg
+2026-04-15 11:52:58,982 - INFO - Inspected image: OL59688W_Stranger in a Strange Land.jpg
+2026-04-15 11:52:58,998 - INFO - Proportionally resized data\raw\images\OL59688W_Stranger in a Strange Land.jpg to 500x830
+2026-04-15 11:52:59,003 - INFO - Generated thumbnail for data\raw\images\OL59688W_Stranger in a Strange Land.jpg -> data\processed\thumbnails\OL59688W_Stranger in a Strange Land_thumb.jpg\OL59688W_Stranger in a Strange Land_thumb.jpg
+2026-04-15 11:52:59,044 - INFO - WebP: 49KB -> 30KB (38.7% saving)
+2026-04-15 11:52:59,045 - WARNING - No EXIF data found in data\raw\images\OL59688W_Stranger in a Strange Land.jpg
+2026-04-15 11:52:59,046 - INFO - Inspected image: OL99541W_The Enchanted Castle.jpg
+2026-04-15 11:52:59,058 - INFO - Proportionally resized data\raw\images\OL99541W_The Enchanted Castle.jpg to 500x730
+2026-04-15 11:52:59,064 - INFO - Generated thumbnail for data\raw\images\OL99541W_The Enchanted Castle.jpg -> data\processed\thumbnails\OL99541W_The Enchanted Castle_thumb.jpg\OL99541W_The Enchanted Castle_thumb.jpg
+2026-04-15 11:52:59,116 - INFO - WebP: 42KB -> 46KB (-9.9% saving)
+2026-04-15 11:52:59,116 - WARNING - No EXIF data found in data\raw\images\OL99541W_The Enchanted Castle.jpg
+2026-04-15 11:52:59,214 - INFO - Please visit this URL to authorize this application: https://accounts.google.com/o/oauth2/auth?response_type=code&client_id=697042705213-i6e3mpq53kcnidro3eaa0r1n7cph3q3s.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A64910%2F&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fdrive.file&state=Oyg0iUzQT4MAr83L4jjDHr3q6uKQfn&code_challenge=MASS90fgCtfu3-SuPgNP23EHkMZEJfhVSJq3gXxgwyI&code_challenge_method=S256&access_type=offline
+2026-04-15 12:02:34,617 - INFO - Batch processing 10 images from data\raw\images
+2026-04-15 12:02:34,633 - INFO - Inspected image: OL12409294W_Core Python programming.jpg
+2026-04-15 12:02:34,634 - ERROR - Error in proportional resize data\raw\images\OL12409294W_Core Python programming.jpg: [WinError 183] Cannot create a file when that file already exists: 'data\\processed\\resized\\OL12409294W_Core Python programming_resized.jpg'
+2026-04-15 12:02:34,634 - ERROR - Error generating thumbnail data\raw\images\OL12409294W_Core Python programming.jpg: [WinError 183] Cannot create a file when that file already exists: 'data\\processed\\thumbnails\\OL12409294W_Core Python programming_thumb.jpg'
+2026-04-15 12:02:34,703 - INFO - WebP: 18KB -> 6KB (62.9% saving)
+2026-04-15 12:02:34,704 - WARNING - No EXIF data found in data\raw\images\OL12409294W_Core Python programming.jpg
+2026-04-15 12:02:34,705 - INFO - Inspected image: OL1455042W_Heidi.jpg
+2026-04-15 12:02:34,705 - ERROR - Error in proportional resize data\raw\images\OL1455042W_Heidi.jpg: [WinError 183] Cannot create a file when that file already exists: 'data\\processed\\resized\\OL1455042W_Heidi_resized.jpg'
+2026-04-15 12:02:34,705 - ERROR - Error generating thumbnail data\raw\images\OL1455042W_Heidi.jpg: [WinError 183] Cannot create a file when that file already exists: 'data\\processed\\thumbnails\\OL1455042W_Heidi_thumb.jpg'
+2026-04-15 12:02:34,749 - INFO - WebP: 25KB -> 22KB (11.1% saving)
+2026-04-15 12:02:34,750 - WARNING - No EXIF data found in data\raw\images\OL1455042W_Heidi.jpg
+2026-04-15 12:02:34,751 - INFO - Inspected image: OL1960472W_The Science Fiction Hall of Fa.jpg
+2026-04-15 12:02:34,761 - INFO - Proportionally resized data\raw\images\OL1960472W_The Science Fiction Hall of Fa.jpg to 500x744
+2026-04-15 12:02:34,767 - INFO - Generated thumbnail for data\raw\images\OL1960472W_The Science Fiction Hall of Fa.jpg -> data\processed\thumbnails\OL1960472W_The Science Fiction Hall of Fa_thumb.jpg\OL1960472W_The Science Fiction Hall of Fa_thumb.jpg
+2026-04-15 12:02:34,818 - INFO - WebP: 35KB -> 35KB (0.7% saving)
+2026-04-15 12:02:34,818 - WARNING - No EXIF data found in data\raw\images\OL1960472W_The Science Fiction Hall of Fa.jpg
+2026-04-15 12:02:34,819 - INFO - Inspected image: OL2775807W_Pollyanna.jpg
+2026-04-15 12:02:34,830 - INFO - Proportionally resized data\raw\images\OL2775807W_Pollyanna.jpg to 500x822
+2026-04-15 12:02:34,834 - INFO - Generated thumbnail for data\raw\images\OL2775807W_Pollyanna.jpg -> data\processed\thumbnails\OL2775807W_Pollyanna_thumb.jpg\OL2775807W_Pollyanna_thumb.jpg
+2026-04-15 12:02:34,875 - INFO - WebP: 29KB -> 30KB (-2.3% saving)
+2026-04-15 12:02:34,875 - WARNING - No EXIF data found in data\raw\images\OL2775807W_Pollyanna.jpg
+2026-04-15 12:02:34,876 - INFO - Inspected image: OL30906747W_Core Python Programming.jpg
+2026-04-15 12:02:34,884 - INFO - Proportionally resized data\raw\images\OL30906747W_Core Python Programming.jpg to 500x657
+2026-04-15 12:02:34,891 - INFO - Generated thumbnail for data\raw\images\OL30906747W_Core Python Programming.jpg -> data\processed\thumbnails\OL30906747W_Core Python Programming_thumb.jpg\OL30906747W_Core Python Programming_thumb.jpg
+2026-04-15 12:02:34,946 - INFO - WebP: 61KB -> 40KB (34.2% saving)
+2026-04-15 12:02:34,946 - WARNING - No EXIF data found in data\raw\images\OL30906747W_Core Python Programming.jpg
+2026-04-15 12:02:34,947 - INFO - Inspected image: OL39360W_Orlando.jpg
+2026-04-15 12:02:34,958 - INFO - Proportionally resized data\raw\images\OL39360W_Orlando.jpg to 500x760
+2026-04-15 12:02:34,961 - INFO - Generated thumbnail for data\raw\images\OL39360W_Orlando.jpg -> data\processed\thumbnails\OL39360W_Orlando_thumb.jpg\OL39360W_Orlando_thumb.jpg
+2026-04-15 12:02:34,986 - INFO - WebP: 17KB -> 14KB (16.6% saving)
+2026-04-15 12:02:34,987 - WARNING - No EXIF data found in data\raw\images\OL39360W_Orlando.jpg
+2026-04-15 12:02:34,988 - INFO - Inspected image: OL46125W_Foundation.jpg
+2026-04-15 12:02:34,998 - INFO - Proportionally resized data\raw\images\OL46125W_Foundation.jpg to 500x814
+2026-04-15 12:02:35,005 - INFO - Generated thumbnail for data\raw\images\OL46125W_Foundation.jpg -> data\processed\thumbnails\OL46125W_Foundation_thumb.jpg\OL46125W_Foundation_thumb.jpg
+2026-04-15 12:02:35,048 - INFO - WebP: 42KB -> 24KB (41.3% saving)
+2026-04-15 12:02:35,049 - WARNING - No EXIF data found in data\raw\images\OL46125W_Foundation.jpg
+2026-04-15 12:02:35,049 - INFO - Inspected image: OL51148W_Babbitt.jpg
+2026-04-15 12:02:35,060 - INFO - Proportionally resized data\raw\images\OL51148W_Babbitt.jpg to 500x847
+2026-04-15 12:02:35,065 - INFO - Generated thumbnail for data\raw\images\OL51148W_Babbitt.jpg -> data\processed\thumbnails\OL51148W_Babbitt_thumb.jpg\OL51148W_Babbitt_thumb.jpg
+2026-04-15 12:02:35,113 - INFO - WebP: 41KB -> 46KB (-12.2% saving)
+2026-04-15 12:02:35,113 - WARNING - No EXIF data found in data\raw\images\OL51148W_Babbitt.jpg
+2026-04-15 12:02:35,114 - INFO - Inspected image: OL59688W_Stranger in a Strange Land.jpg
+2026-04-15 12:02:35,126 - INFO - Proportionally resized data\raw\images\OL59688W_Stranger in a Strange Land.jpg to 500x830
+2026-04-15 12:02:35,134 - INFO - Generated thumbnail for data\raw\images\OL59688W_Stranger in a Strange Land.jpg -> data\processed\thumbnails\OL59688W_Stranger in a Strange Land_thumb.jpg\OL59688W_Stranger in a Strange Land_thumb.jpg
+2026-04-15 12:02:35,185 - INFO - WebP: 49KB -> 30KB (38.7% saving)
+2026-04-15 12:02:35,186 - WARNING - No EXIF data found in data\raw\images\OL59688W_Stranger in a Strange Land.jpg
+2026-04-15 12:02:35,187 - INFO - Inspected image: OL99541W_The Enchanted Castle.jpg
+2026-04-15 12:02:35,206 - INFO - Proportionally resized data\raw\images\OL99541W_The Enchanted Castle.jpg to 500x730
+2026-04-15 12:02:35,211 - INFO - Generated thumbnail for data\raw\images\OL99541W_The Enchanted Castle.jpg -> data\processed\thumbnails\OL99541W_The Enchanted Castle_thumb.jpg\OL99541W_The Enchanted Castle_thumb.jpg
+2026-04-15 12:02:35,268 - INFO - WebP: 42KB -> 46KB (-9.9% saving)
+2026-04-15 12:02:35,268 - WARNING - No EXIF data found in data\raw\images\OL99541W_The Enchanted Castle.jpg
+2026-04-15 12:02:35,370 - INFO - Please visit this URL to authorize this application: https://accounts.google.com/o/oauth2/auth?response_type=code&client_id=697042705213-i6e3mpq53kcnidro3eaa0r1n7cph3q3s.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A52586%2F&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fdrive.file&state=7bzOSz2vuZv9PQbA9v4qdt7ri1rGrL&code_challenge=35nbUxq41-7laEos5D5c1tsLc6LEZqGV8xiDBTaYht4&code_challenge_method=S256&access_type=offline
+2026-04-15 12:07:39,996 - INFO - Batch processing 10 images from data\raw\images
+2026-04-15 12:07:40,027 - INFO - Inspected image: OL12409294W_Core Python programming.jpg
+2026-04-15 12:07:40,027 - ERROR - Error in proportional resize data\raw\images\OL12409294W_Core Python programming.jpg: [WinError 183] Cannot create a file when that file already exists: 'data\\processed\\resized\\OL12409294W_Core Python programming_resized.jpg'
+2026-04-15 12:07:40,028 - ERROR - Error generating thumbnail data\raw\images\OL12409294W_Core Python programming.jpg: [WinError 183] Cannot create a file when that file already exists: 'data\\processed\\thumbnails\\OL12409294W_Core Python programming_thumb.jpg'
+2026-04-15 12:07:40,111 - INFO - WebP: 18KB -> 6KB (62.9% saving)
+2026-04-15 12:07:40,112 - WARNING - No EXIF data found in data\raw\images\OL12409294W_Core Python programming.jpg
+2026-04-15 12:07:40,112 - INFO - Inspected image: OL1455042W_Heidi.jpg
+2026-04-15 12:07:40,112 - ERROR - Error in proportional resize data\raw\images\OL1455042W_Heidi.jpg: [WinError 183] Cannot create a file when that file already exists: 'data\\processed\\resized\\OL1455042W_Heidi_resized.jpg'
+2026-04-15 12:07:40,113 - ERROR - Error generating thumbnail data\raw\images\OL1455042W_Heidi.jpg: [WinError 183] Cannot create a file when that file already exists: 'data\\processed\\thumbnails\\OL1455042W_Heidi_thumb.jpg'
+2026-04-15 12:07:40,149 - INFO - WebP: 25KB -> 22KB (11.1% saving)
+2026-04-15 12:07:40,150 - WARNING - No EXIF data found in data\raw\images\OL1455042W_Heidi.jpg
+2026-04-15 12:07:40,152 - INFO - Inspected image: OL1960472W_The Science Fiction Hall of Fa.jpg
+2026-04-15 12:07:40,162 - INFO - Proportionally resized data\raw\images\OL1960472W_The Science Fiction Hall of Fa.jpg to 500x744
+2026-04-15 12:07:40,169 - INFO - Generated thumbnail for data\raw\images\OL1960472W_The Science Fiction Hall of Fa.jpg -> data\processed\thumbnails\OL1960472W_The Science Fiction Hall of Fa_thumb.jpg\OL1960472W_The Science Fiction Hall of Fa_thumb.jpg
+2026-04-15 12:07:40,222 - INFO - WebP: 35KB -> 35KB (0.7% saving)
+2026-04-15 12:07:40,223 - WARNING - No EXIF data found in data\raw\images\OL1960472W_The Science Fiction Hall of Fa.jpg
+2026-04-15 12:07:40,224 - INFO - Inspected image: OL2775807W_Pollyanna.jpg
+2026-04-15 12:07:40,234 - INFO - Proportionally resized data\raw\images\OL2775807W_Pollyanna.jpg to 500x822
+2026-04-15 12:07:40,239 - INFO - Generated thumbnail for data\raw\images\OL2775807W_Pollyanna.jpg -> data\processed\thumbnails\OL2775807W_Pollyanna_thumb.jpg\OL2775807W_Pollyanna_thumb.jpg
+2026-04-15 12:07:40,278 - INFO - WebP: 29KB -> 30KB (-2.3% saving)
+2026-04-15 12:07:40,279 - WARNING - No EXIF data found in data\raw\images\OL2775807W_Pollyanna.jpg
+2026-04-15 12:07:40,280 - INFO - Inspected image: OL30906747W_Core Python Programming.jpg
+2026-04-15 12:07:40,291 - INFO - Proportionally resized data\raw\images\OL30906747W_Core Python Programming.jpg to 500x657
+2026-04-15 12:07:40,299 - INFO - Generated thumbnail for data\raw\images\OL30906747W_Core Python Programming.jpg -> data\processed\thumbnails\OL30906747W_Core Python Programming_thumb.jpg\OL30906747W_Core Python Programming_thumb.jpg
+2026-04-15 12:07:40,346 - INFO - WebP: 61KB -> 40KB (34.2% saving)
+2026-04-15 12:07:40,346 - WARNING - No EXIF data found in data\raw\images\OL30906747W_Core Python Programming.jpg
+2026-04-15 12:07:40,347 - INFO - Inspected image: OL39360W_Orlando.jpg
+2026-04-15 12:07:40,358 - INFO - Proportionally resized data\raw\images\OL39360W_Orlando.jpg to 500x760
+2026-04-15 12:07:40,362 - INFO - Generated thumbnail for data\raw\images\OL39360W_Orlando.jpg -> data\processed\thumbnails\OL39360W_Orlando_thumb.jpg\OL39360W_Orlando_thumb.jpg
+2026-04-15 12:07:40,392 - INFO - WebP: 17KB -> 14KB (16.6% saving)
+2026-04-15 12:07:40,392 - WARNING - No EXIF data found in data\raw\images\OL39360W_Orlando.jpg
+2026-04-15 12:07:40,393 - INFO - Inspected image: OL46125W_Foundation.jpg
+2026-04-15 12:07:40,408 - INFO - Proportionally resized data\raw\images\OL46125W_Foundation.jpg to 500x814
+2026-04-15 12:07:40,416 - INFO - Generated thumbnail for data\raw\images\OL46125W_Foundation.jpg -> data\processed\thumbnails\OL46125W_Foundation_thumb.jpg\OL46125W_Foundation_thumb.jpg
+2026-04-15 12:07:40,481 - INFO - WebP: 42KB -> 24KB (41.3% saving)
+2026-04-15 12:07:40,481 - WARNING - No EXIF data found in data\raw\images\OL46125W_Foundation.jpg
+2026-04-15 12:07:40,482 - INFO - Inspected image: OL51148W_Babbitt.jpg
+2026-04-15 12:07:40,493 - INFO - Proportionally resized data\raw\images\OL51148W_Babbitt.jpg to 500x847
+2026-04-15 12:07:40,498 - INFO - Generated thumbnail for data\raw\images\OL51148W_Babbitt.jpg -> data\processed\thumbnails\OL51148W_Babbitt_thumb.jpg\OL51148W_Babbitt_thumb.jpg
+2026-04-15 12:07:40,569 - INFO - WebP: 41KB -> 46KB (-12.2% saving)
+2026-04-15 12:07:40,570 - WARNING - No EXIF data found in data\raw\images\OL51148W_Babbitt.jpg
+2026-04-15 12:07:40,572 - INFO - Inspected image: OL59688W_Stranger in a Strange Land.jpg
+2026-04-15 12:07:40,598 - INFO - Proportionally resized data\raw\images\OL59688W_Stranger in a Strange Land.jpg to 500x830
+2026-04-15 12:07:40,605 - INFO - Generated thumbnail for data\raw\images\OL59688W_Stranger in a Strange Land.jpg -> data\processed\thumbnails\OL59688W_Stranger in a Strange Land_thumb.jpg\OL59688W_Stranger in a Strange Land_thumb.jpg
+2026-04-15 12:07:40,650 - INFO - WebP: 49KB -> 30KB (38.7% saving)
+2026-04-15 12:07:40,651 - WARNING - No EXIF data found in data\raw\images\OL59688W_Stranger in a Strange Land.jpg
+2026-04-15 12:07:40,652 - INFO - Inspected image: OL99541W_The Enchanted Castle.jpg
+2026-04-15 12:07:40,667 - INFO - Proportionally resized data\raw\images\OL99541W_The Enchanted Castle.jpg to 500x730
+2026-04-15 12:07:40,672 - INFO - Generated thumbnail for data\raw\images\OL99541W_The Enchanted Castle.jpg -> data\processed\thumbnails\OL99541W_The Enchanted Castle_thumb.jpg\OL99541W_The Enchanted Castle_thumb.jpg
+2026-04-15 12:07:40,754 - INFO - WebP: 42KB -> 46KB (-9.9% saving)
+2026-04-15 12:07:40,755 - WARNING - No EXIF data found in data\raw\images\OL99541W_The Enchanted Castle.jpg
+2026-04-15 12:07:40,872 - INFO - Please visit this URL to authorize this application: https://accounts.google.com/o/oauth2/auth?response_type=code&client_id=697042705213-i6e3mpq53kcnidro3eaa0r1n7cph3q3s.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A62515%2F&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fdrive.file&state=iHAvChw4IRE3iAUYuwoh9jX1B5lej4&code_challenge=cuZprju4g9i53zW25QkpmE5nYAC0t_76W7hPZZDIRTk&code_challenge_method=S256&access_type=offline
+2026-04-15 12:16:57,163 - WARNING - python-dotenv could not parse statement starting at line 4
+2026-04-15 12:16:57,166 - INFO - Batch processing 10 images from data\raw\images
+2026-04-15 12:16:57,197 - INFO - Inspected image: OL12409294W_Core Python programming.jpg
+2026-04-15 12:16:57,198 - ERROR - Error in proportional resize data\raw\images\OL12409294W_Core Python programming.jpg: [WinError 183] Cannot create a file when that file already exists: 'data\\processed\\resized\\OL12409294W_Core Python programming_resized.jpg'
+2026-04-15 12:16:57,198 - ERROR - Error generating thumbnail data\raw\images\OL12409294W_Core Python programming.jpg: [WinError 183] Cannot create a file when that file already exists: 'data\\processed\\thumbnails\\OL12409294W_Core Python programming_thumb.jpg'
+2026-04-15 12:16:57,287 - INFO - WebP: 18KB -> 6KB (62.9% saving)
+2026-04-15 12:16:57,288 - WARNING - No EXIF data found in data\raw\images\OL12409294W_Core Python programming.jpg
+2026-04-15 12:16:57,289 - INFO - Inspected image: OL1455042W_Heidi.jpg
+2026-04-15 12:16:57,290 - ERROR - Error in proportional resize data\raw\images\OL1455042W_Heidi.jpg: [WinError 183] Cannot create a file when that file already exists: 'data\\processed\\resized\\OL1455042W_Heidi_resized.jpg'
+2026-04-15 12:16:57,290 - ERROR - Error generating thumbnail data\raw\images\OL1455042W_Heidi.jpg: [WinError 183] Cannot create a file when that file already exists: 'data\\processed\\thumbnails\\OL1455042W_Heidi_thumb.jpg'
+2026-04-15 12:16:57,359 - INFO - WebP: 25KB -> 22KB (11.1% saving)
+2026-04-15 12:16:57,360 - WARNING - No EXIF data found in data\raw\images\OL1455042W_Heidi.jpg
+2026-04-15 12:16:57,361 - INFO - Inspected image: OL1960472W_The Science Fiction Hall of Fa.jpg
+2026-04-15 12:16:57,377 - INFO - Proportionally resized data\raw\images\OL1960472W_The Science Fiction Hall of Fa.jpg to 500x744
+2026-04-15 12:16:57,383 - INFO - Generated thumbnail for data\raw\images\OL1960472W_The Science Fiction Hall of Fa.jpg -> data\processed\thumbnails\OL1960472W_The Science Fiction Hall of Fa_thumb.jpg\OL1960472W_The Science Fiction Hall of Fa_thumb.jpg
+2026-04-15 12:16:57,447 - INFO - WebP: 35KB -> 35KB (0.7% saving)
+2026-04-15 12:16:57,448 - WARNING - No EXIF data found in data\raw\images\OL1960472W_The Science Fiction Hall of Fa.jpg
+2026-04-15 12:16:57,449 - INFO - Inspected image: OL2775807W_Pollyanna.jpg
+2026-04-15 12:16:57,459 - INFO - Proportionally resized data\raw\images\OL2775807W_Pollyanna.jpg to 500x822
+2026-04-15 12:16:57,466 - INFO - Generated thumbnail for data\raw\images\OL2775807W_Pollyanna.jpg -> data\processed\thumbnails\OL2775807W_Pollyanna_thumb.jpg\OL2775807W_Pollyanna_thumb.jpg
+2026-04-15 12:16:57,541 - INFO - WebP: 29KB -> 30KB (-2.3% saving)
+2026-04-15 12:16:57,542 - WARNING - No EXIF data found in data\raw\images\OL2775807W_Pollyanna.jpg
+2026-04-15 12:16:57,543 - INFO - Inspected image: OL30906747W_Core Python Programming.jpg
+2026-04-15 12:16:57,555 - INFO - Proportionally resized data\raw\images\OL30906747W_Core Python Programming.jpg to 500x657
+2026-04-15 12:16:57,562 - INFO - Generated thumbnail for data\raw\images\OL30906747W_Core Python Programming.jpg -> data\processed\thumbnails\OL30906747W_Core Python Programming_thumb.jpg\OL30906747W_Core Python Programming_thumb.jpg
+2026-04-15 12:16:57,659 - INFO - WebP: 61KB -> 40KB (34.2% saving)
+2026-04-15 12:16:57,660 - WARNING - No EXIF data found in data\raw\images\OL30906747W_Core Python Programming.jpg
+2026-04-15 12:16:57,662 - INFO - Inspected image: OL39360W_Orlando.jpg
+2026-04-15 12:16:57,684 - INFO - Proportionally resized data\raw\images\OL39360W_Orlando.jpg to 500x760
+2026-04-15 12:16:57,694 - INFO - Generated thumbnail for data\raw\images\OL39360W_Orlando.jpg -> data\processed\thumbnails\OL39360W_Orlando_thumb.jpg\OL39360W_Orlando_thumb.jpg
+2026-04-15 12:16:57,750 - INFO - WebP: 17KB -> 14KB (16.6% saving)
+2026-04-15 12:16:57,751 - WARNING - No EXIF data found in data\raw\images\OL39360W_Orlando.jpg
+2026-04-15 12:16:57,752 - INFO - Inspected image: OL46125W_Foundation.jpg
+2026-04-15 12:16:57,776 - INFO - Proportionally resized data\raw\images\OL46125W_Foundation.jpg to 500x814
+2026-04-15 12:16:57,786 - INFO - Generated thumbnail for data\raw\images\OL46125W_Foundation.jpg -> data\processed\thumbnails\OL46125W_Foundation_thumb.jpg\OL46125W_Foundation_thumb.jpg
+2026-04-15 12:16:57,842 - INFO - WebP: 42KB -> 24KB (41.3% saving)
+2026-04-15 12:16:57,842 - WARNING - No EXIF data found in data\raw\images\OL46125W_Foundation.jpg
+2026-04-15 12:16:57,844 - INFO - Inspected image: OL51148W_Babbitt.jpg
+2026-04-15 12:16:57,857 - INFO - Proportionally resized data\raw\images\OL51148W_Babbitt.jpg to 500x847
+2026-04-15 12:16:57,862 - INFO - Generated thumbnail for data\raw\images\OL51148W_Babbitt.jpg -> data\processed\thumbnails\OL51148W_Babbitt_thumb.jpg\OL51148W_Babbitt_thumb.jpg
+2026-04-15 12:16:57,909 - INFO - WebP: 41KB -> 46KB (-12.2% saving)
+2026-04-15 12:16:57,909 - WARNING - No EXIF data found in data\raw\images\OL51148W_Babbitt.jpg
+2026-04-15 12:16:57,910 - INFO - Inspected image: OL59688W_Stranger in a Strange Land.jpg
+2026-04-15 12:16:57,926 - INFO - Proportionally resized data\raw\images\OL59688W_Stranger in a Strange Land.jpg to 500x830
+2026-04-15 12:16:57,932 - INFO - Generated thumbnail for data\raw\images\OL59688W_Stranger in a Strange Land.jpg -> data\processed\thumbnails\OL59688W_Stranger in a Strange Land_thumb.jpg\OL59688W_Stranger in a Strange Land_thumb.jpg
+2026-04-15 12:16:57,995 - INFO - WebP: 49KB -> 30KB (38.7% saving)
+2026-04-15 12:16:57,996 - WARNING - No EXIF data found in data\raw\images\OL59688W_Stranger in a Strange Land.jpg
+2026-04-15 12:16:57,998 - INFO - Inspected image: OL99541W_The Enchanted Castle.jpg
+2026-04-15 12:16:58,022 - INFO - Proportionally resized data\raw\images\OL99541W_The Enchanted Castle.jpg to 500x730
+2026-04-15 12:16:58,031 - INFO - Generated thumbnail for data\raw\images\OL99541W_The Enchanted Castle.jpg -> data\processed\thumbnails\OL99541W_The Enchanted Castle_thumb.jpg\OL99541W_The Enchanted Castle_thumb.jpg
+2026-04-15 12:16:58,100 - INFO - WebP: 42KB -> 46KB (-9.9% saving)
+2026-04-15 12:16:58,100 - WARNING - No EXIF data found in data\raw\images\OL99541W_The Enchanted Castle.jpg
+2026-04-15 12:16:58,204 - INFO - Please visit this URL to authorize this application: https://accounts.google.com/o/oauth2/auth?response_type=code&client_id=697042705213-kgesuj5g9b7u7pkv3vg2mbckraqrrqmu.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A57863%2F&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fdrive.file&state=K8MKRLOXe6ko75bwUOXaISFWipuKPW&code_challenge=FccsnnZfIATcoN8ZEW7XHlmGGNMOo8wZX6aOkQAngyo&code_challenge_method=S256&access_type=offline
+2026-04-15 12:17:09,359 - INFO - "GET /?state=K8MKRLOXe6ko75bwUOXaISFWipuKPW&iss=https://accounts.google.com&code=4/0Aci98E8caEG9_CAduqP8r7iwHev2HyOn4ixCHwckzskqzjK8mjSFB31NzKXRTJ4iCiQsFA&scope=https://www.googleapis.com/auth/drive.file HTTP/1.1" 200 65
+2026-04-15 12:17:10,791 - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-04-15 12:17:14,080 - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-04-15 12:17:17,169 - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-04-15 12:17:20,001 - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-04-15 12:17:22,662 - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-04-20 02:53:48,162 - INFO - Successfully loaded audio: data/raw/audio\harry_potter_audio_wav.wav
+2026-04-20 02:53:49,201 - INFO - Successfully loaded audio: data/raw/audio\harry_potter_audio_mp3.mp3
+2026-04-20 02:53:49,202 - INFO - Inspected audio file properties: data/raw/audio\harry_potter_audio_wav.wav
+2026-04-20 02:53:49,203 - INFO - Inspected audio file properties: data/raw/audio\harry_potter_audio_mp3.mp3
+2026-04-20 02:53:49,204 - INFO - Trimmed audio from 0ms to 10000ms
+2026-04-20 02:54:42,216 - INFO - Successfully loaded audio: data/raw/audio\harry_potter_audio_wav.wav
+2026-04-20 02:54:43,250 - INFO - Successfully loaded audio: data/raw/audio\harry_potter_audio_mp3.mp3
+2026-04-20 02:54:43,251 - INFO - Inspected audio file properties: data/raw/audio\harry_potter_audio_wav.wav
+2026-04-20 02:54:43,252 - INFO - Inspected audio file properties: data/raw/audio\harry_potter_audio_mp3.mp3
+2026-04-20 02:54:43,253 - INFO - Trimmed audio from 0ms to 10000ms
+2026-04-20 02:54:43,488 - INFO - Exported audio to data/processed/audio\trimmed.mp3 in MP3 format
+2026-04-20 02:54:43,490 - INFO - Successfully concatenated audio clips
+2026-04-20 02:54:43,789 - INFO - Exported audio to data/processed/audio\combined.mp3 in MP3 format
+2026-04-20 02:54:43,819 - INFO - Adjusted volume by 5dB and applied fades to audio
+2026-04-20 02:54:44,081 - INFO - Exported audio to data/processed/audio\effects.mp3 in MP3 format

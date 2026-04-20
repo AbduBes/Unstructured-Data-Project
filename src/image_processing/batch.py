@@ -18,7 +18,7 @@ def batch_process_images(input_dir, output_dir, max_width=500, thumb_size=(128, 
     input_dir = Path(input_dir)
     output_dir = Path(output_dir)
     files = [f for f in input_dir.rglob('*') if f.suffix.lower() in SUPPORTED]
-    logger.info(f'Batch processing {len(files)} images from {input_dir}')
+    logging.info(f'Batch processing {len(files)} images from {input_dir}')
 
     results = []
     errors = []
@@ -32,7 +32,7 @@ def batch_process_images(input_dir, output_dir, max_width=500, thumb_size=(128, 
             errors.append({'file': str(img_path), 'error': str(e)})
     upload_batch(results)
 
-    logger.info(f'Batch complete. Success: {len(results)}, Errors: {len(errors)}')
+    logging.info(f'Batch complete. Success: {len(results)}, Errors: {len(errors)}')
     return results, errors
  
 def _process_single(img_path, output_dir, max_width, thumb_size,convert_webp, extract_metadata):
