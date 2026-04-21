@@ -1,6 +1,7 @@
 from PIL import Image, ImageOps, ImageFilter, ImageEnhance
 import os
 import logging
+from pathlib import Path
 
 logging.basicConfig(
     filename="pipeline.log",
@@ -15,7 +16,8 @@ def convert_to_webp(path, output_path, quality=85):
     orig_size = Path(path).stat().st_size
     new_size  = Path(output_path).stat().st_size
     saving_pct = round((1 - new_size / orig_size) * 100, 1)
-    logger.info(f'WebP: {orig_size//1024}KB -> {new_size//1024}KB ({saving_pct}% saving)')
+    
+    logging.info(f'WebP: {orig_size//1024}KB -> {new_size//1024}KB ({saving_pct}% saving)')
     return output_path
 
 
@@ -59,8 +61,13 @@ def resize_image(image_path, width, height, output_dir="data/processed/resized")
         resized = img.resize((width, height), Image.Resampling.LANCZOS)
         
         # Generate output filename
-        base_name = os.path.splitext(os.path.basename(image_path))[0]
-        output_path = os.path.join(output_dir, f"{base_name}_resized.jpg")
+        if output_path_or_dir.lower().endswith(('.jpg', '.jpeg', '.png', '.webp')):
+            output_path = output_path_or_dir
+            Path(output_path).parent.mkdir(parents=True, exist_ok=True)
+        else:
+            os.makedirs(output_path_or_dir, exist_ok=True)
+            base_name = os.path.splitext(os.path.basename(image_path))[0]
+            output_path = os.path.join(output_path_or_dir, f"{base_name}_proportional.jpg")
         
         resized.save(output_path, "JPEG", quality=95)
         logging.info(f"Resized {image_path} to {width}x{height} -> {output_path}")

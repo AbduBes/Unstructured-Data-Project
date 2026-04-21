@@ -33,7 +33,7 @@ def test_single_image(image_path):
     
     # Test 2: Resize
     print("\n2. Testing Resize Functions...")
-    resized = resize_proportional(image_path, target_width=400)
+    resized = resize_proportional(image_path, max_width=400)
     if resized:
         print(f"   ✓ Proportional resize: {resized}")
     
