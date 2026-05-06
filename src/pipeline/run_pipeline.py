@@ -15,10 +15,22 @@ def run_api_pipeline():
     """Fetch books from Open Library API and store in MongoDB."""
     logging.info("=== Starting API Pipeline ===")
 
-    books = fetch_books(query="harry potter", pages=3)
+    # Just 1 page for this test!
+    books = fetch_books(query="dune", pages=1)
 
     for book_page in books:
-        for book in book_page["data"].get("docs", []):
+        docs = book_page["data"].get("docs", [])
+        
+        # --- NEW DEBUGGING BLOCK ---
+        if docs:
+            print("\n" + "="*50)
+            print("RAW DATA RECEIVED FOR THE FIRST BOOK:")
+            print(f"Title: {docs[0].get('title')}")
+            print(f"Raw Ratings Average: {docs[0].get('ratings_average')}")
+            print("="*50 + "\n")
+        # ---------------------------
+        
+        for book in docs:
             parsed = extract_book_fields(book)
             save_to_mongo(parsed, "openlibrary_api")
 
@@ -53,7 +65,7 @@ def run_pipeline():
     logging.info("========== Pipeline Started ==========")
 
     run_api_pipeline()
-    run_document_pipeline()
+    #run_document_pipeline()
 
     logging.info("========== Pipeline Finished ==========")
 

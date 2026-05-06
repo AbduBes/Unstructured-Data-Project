@@ -1,11 +1,12 @@
 import os
 import logging
-from moviepy.editor import VideoFileClip
+from moviepy import VideoFileClip
 
 logging.basicConfig(filename="pipeline.log", level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 
 def extract_keyframes(video_path, output_dir, interval_seconds=10):
     """Extracts a frame every X seconds."""
+    clip = None
     try:
         os.makedirs(output_dir, exist_ok=True)
         clip = VideoFileClip(video_path)
