@@ -3131,3 +3131,32 @@ dtype: int64
 2026-05-06 11:58:06,787 | INFO | Starting regex cleaning...
 2026-05-06 11:58:06,789 | WARNING | Found 2 invalid keys
 2026-05-06 11:58:06,789 | INFO | Cleaned 'overview' column using regex (removed HTML tags)
+2026-05-06 12:01:43,611 | INFO | === Starting Regex Operations ===
+2026-05-06 12:01:43,681 | INFO | Loaded 100 documents from MongoDB
+2026-05-06 12:01:43,683 | INFO | Regex 1: Found titles starting with 'The'
+2026-05-06 12:01:43,684 | INFO | Regex 2: Extracted first word of genres
+2026-05-06 12:01:43,685 | INFO | Regex 3: Replaced non-alphanumeric in overview
+2026-05-06 12:01:43,686 | INFO | Regex 4: Found titles containing 'Dune' (case insensitive)
+2026-05-06 12:01:43,689 | INFO | === Regex Operations Completed ===
+2026-05-06 12:02:12,261 | INFO | === Starting Regex Operations ===
+2026-05-06 12:02:12,274 | INFO | Loaded 100 documents from MongoDB
+2026-05-06 12:02:12,279 | INFO | Regex 1: Found titles starting with 'The'
+2026-05-06 12:02:12,279 | INFO | Regex 2: Extracted first word of genres
+2026-05-06 12:02:12,280 | INFO | Regex 3: Replaced non-alphanumeric in overview
+2026-05-06 12:02:12,281 | INFO | Regex 4: Found titles containing 'Dune' (case insensitive)
+2026-05-06 12:02:12,284 | INFO | === Regex Operations Completed ===
+2026-05-06 12:05:11,671 | INFO | Missing value report generated for 2 columns
+2026-05-06 12:05:16,861 | INFO | Starting string cleaning...
+2026-05-06 12:05:16,862 | INFO | Cleaned 'title' column (stripped and title-cased)
+2026-05-06 12:05:16,862 | INFO | Cleaned 'language' column (stripped and lower-cased)
+2026-05-06 12:05:16,863 | INFO | Cleaned 'genres' column
+2026-05-06 12:05:16,863 | INFO | Starting regex cleaning...
+2026-05-06 12:05:16,864 | WARNING | Found 2 invalid keys
+2026-05-06 12:05:16,865 | INFO | Cleaned 'overview' column using regex (removed HTML tags)
+2026-05-06 12:05:51,743 | INFO | === Starting Regex Operations ===
+2026-05-06 12:05:51,781 | INFO | Loaded 100 documents from MongoDB
+2026-05-06 12:05:51,785 | INFO | Regex 1: Found titles starting with 'The'
+2026-05-06 12:05:51,786 | INFO | Regex 2: Extracted first word of genres
+2026-05-06 12:05:51,786 | INFO | Regex 3: Replaced non-alphanumeric in overview
+2026-05-06 12:05:51,787 | INFO | Regex 4: Found titles containing 'Dune' (case insensitive)
+2026-05-06 12:05:51,790 | INFO | === Regex Operations Completed ===
