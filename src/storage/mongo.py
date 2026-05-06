@@ -1,5 +1,5 @@
 from pymongo import MongoClient
-from datetime import datetime
+from datetime import datetime, timezone
 import logging
 
 client = MongoClient("mongodb://localhost:27017/")
@@ -24,7 +24,7 @@ def save_to_mongo(data, source_url):
                 "content": data["content"],
                 "metadata": {
                     **data["metadata"],
-                    "fetched_at": datetime.utcnow(),  # pipeline insertion time
+                    "fetched_at": datetime.now(timezone.utc),  # pipeline insertion time
                     "version": 1
                 },
                 "source": source_url
@@ -36,12 +36,12 @@ def save_to_mongo(data, source_url):
                 "metadata": {
                     "file_name": None,
                     "document_type": "api",
-                    "extraction_timestamp": datetime.utcnow(),
+                    "extraction_timestamp": datetime.now(timezone.utc),
                     "source": source_url,
                     "extraction_library": None
                 },
                 "source": source_url,
-                "fetched_at": datetime.utcnow(),
+                "fetched_at": datetime.now(timezone.utc),
                 "version": 1
             }
 

@@ -1,25 +1,97 @@
-import csv
-import xml.etree.ElementTree as ET
+import requests
 import os
+import time
+from dotenv import load_dotenv
 import json
 import sys
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', 'src')))
-from storage.mongo import save_to_mongo 
+
+from utils.logger import logging
+
+#load_dotenv()
+
+url = "https://openlibrary.org/search.json"
+
+# Define the exact fields we want to fetch from the API
+#TARGET_FIELDS = "key,edition_key,title,subtitle,author_name,publisher,subject,subject_facet,language,first_publish_year,edition_count,number_of_pages_median,ratings_average,ratings_count,has_fulltext"
 
 def extract_book_fields(book):
-    # author_name is a list in Open Library API (e.g. ["J. K. Rowling"])
-    author = book.get("author_name")
-    if isinstance(author, list):
-        author = ", ".join(author)
-
+    """
+    Safely extract and map specific fields from an Open Library book API record 
+    or a standard dictionary payload.
+    """
     return {
-        "id": book.get("key") or book.get("id"),           # /works/OL82563W
-        "title": book.get("title"),
-        "author": author,
-        "published_year": book.get("first_publish_year")    # mapped from first_publish_year
-                          or book.get("published_year"),
+        # Identifiers
+        "key":                    book.get("key"),           
+        "edition_key":            book.get("edition_key", [None])[0] if isinstance(book.get("edition_key"), list) else book.get("edition_key"),
+
+        # Core text (title/overview/genre equivalents)
+        "title":                  book.get("title"),
+        "subtitle":               book.get("subtitle"),      
+        "author_name":            book.get("author_name", [None])[0] if isinstance(book.get("author_name"), list) else book.get("author_name"),
+        "publisher":              book.get("publisher", [None])[0] if isinstance(book.get("publisher"), list) else book.get("publisher"),
+
+        # Genre/category proxy 
+        "subject":                book.get("subject", [None])[0] if isinstance(book.get("subject"), list) else book.get("subject"),
+        "subject_facet":          book.get("subject_facet", []),  
+
+        # Language 
+        "language":               book.get("language", [None])[0] if isinstance(book.get("language"), list) else book.get("language"),
+
+        # Numeric 
+        "first_publish_year":     book.get("first_publish_year"),
+        "edition_count":          book.get("edition_count"),
+        "number_of_pages_median": book.get("number_of_pages_median"),
+        "ratings_average":        book.get("ratings_average"),    
+        "ratings_count":          book.get("ratings_count"),
+        
+        # Boolean flags
+        "has_fulltext":           book.get("has_fulltext"),
     }
+
+def save_raw_data(data, page_num):
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    folder_path = os.path.join(base_dir, "..", "..", "data", "raw", "api")
+    os.makedirs(folder_path, exist_ok=True)
+
+    filename = f"books_page_{page_num}.json"
+    file_path = os.path.join(folder_path, filename)
+
+    with open(file_path, "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=4, ensure_ascii=False)
+
+    print(f"Raw data saved to {os.path.abspath(file_path)}")
+
+def safe_request(url, params, retries=3):
+    response = None
+
+    for i in range(retries):
+        try:
+            response = requests.get(url, params=params)
+            response.raise_for_status()
+
+            logging.info(f"Successfully fetched data from {url} (Page {params['page']})")
+
+            return response
+
+        except requests.exceptions.RequestException as e:
+            logging.error(f"Error on attempt {i + 1}: {e}")
+
+            if response is not None:
+                logging.error(f"Response: {response.text}")
+
+            time.sleep(2 ** i)
+
+    logging.error(f"Failed after {retries} attempts.")
+    return None
+
+if __name__ == "__main__":
+    books = fetch_books(query="Dune", pages=1)
+
+    for book_page in books:
+        save_raw_data(book_page["data"], book_page["page"])
+
 
 def parse_csv_file(file_path):
     with open(file_path, "r") as f:
@@ -71,8 +143,3 @@ def parse_json_files():
                 book_fields = extract_book_fields(book)
                 print(f"Saving to MongoDB: {book_fields}")
                 save_to_mongo(book_fields, filename)
-
-if __name__ == "__main__":
-    parse_json_files()
-    # parse_csv_file("../../data/raw/csv/sample.csv")
-    # parse_xml_file("../../data/raw/xml/sample.xml")
