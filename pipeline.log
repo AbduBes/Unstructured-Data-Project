@@ -3160,3 +3160,364 @@ dtype: int64
 2026-05-06 12:05:51,786 | INFO | Regex 3: Replaced non-alphanumeric in overview
 2026-05-06 12:05:51,787 | INFO | Regex 4: Found titles containing 'Dune' (case insensitive)
 2026-05-06 12:05:51,790 | INFO | === Regex Operations Completed ===
+2026-05-06 13:32:28,632 - INFO - Connected to MySQL database: books
+2026-05-06 13:32:28,653 - WARNING - Skipped row key=/works/OL5275519W: nan can not be used with MySQL
+2026-05-06 13:32:28,691 - WARNING - Skipped row key=/works/OL848885W: nan can not be used with MySQL
+2026-05-06 13:32:28,693 - WARNING - Skipped row key=/works/OL27776707W: nan can not be used with MySQL
+2026-05-06 13:32:28,697 - WARNING - Skipped row key=/works/OL5526720W: nan can not be used with MySQL
+2026-05-06 13:32:28,701 - WARNING - Skipped row key=/works/OL20835260W: nan can not be used with MySQL
+2026-05-06 13:32:28,702 - WARNING - Skipped row key=/works/OL8383298W: nan can not be used with MySQL
+2026-05-06 13:32:28,709 - WARNING - Skipped row key=/works/OL19222527W: nan can not be used with MySQL
+2026-05-06 13:32:28,710 - WARNING - Skipped row key=/works/OL963544W: nan can not be used with MySQL
+2026-05-06 13:32:28,711 - WARNING - Skipped row key=/works/OL17458770W: nan can not be used with MySQL
+2026-05-06 13:32:28,714 - WARNING - Skipped row key=/works/OL35750767W: nan can not be used with MySQL
+2026-05-06 13:32:28,714 - WARNING - Skipped row key=/works/OL27869171W: nan can not be used with MySQL
+2026-05-06 13:32:28,716 - WARNING - Skipped row key=/works/OL25457324W: nan can not be used with MySQL
+2026-05-06 13:32:28,718 - WARNING - Skipped row key=/works/OL19983288W: nan can not be used with MySQL
+2026-05-06 13:32:28,719 - WARNING - Skipped row key=/works/OL702433W: nan can not be used with MySQL
+2026-05-06 13:32:28,720 - WARNING - Skipped row key=/works/OL11307015W: nan can not be used with MySQL
+2026-05-06 13:32:28,721 - WARNING - Skipped row key=/works/OL1161318W: nan can not be used with MySQL
+2026-05-06 13:32:28,721 - WARNING - Skipped row key=/works/OL527998W: nan can not be used with MySQL
+2026-05-06 13:32:28,722 - WARNING - Skipped row key=/works/OL37578905W: nan can not be used with MySQL
+2026-05-06 13:32:28,722 - WARNING - Skipped row key=/works/OL27969474W: nan can not be used with MySQL
+2026-05-06 13:32:28,725 - WARNING - Skipped row key=/works/OL22063570W: nan can not be used with MySQL
+2026-05-06 13:32:28,726 - WARNING - Skipped row key=/works/OL4279853W: nan can not be used with MySQL
+2026-05-06 13:32:28,728 - WARNING - Skipped row key=/works/OL16071102W: nan can not be used with MySQL
+2026-05-06 13:32:28,729 - WARNING - Skipped row key=/works/OL1192156W: nan can not be used with MySQL
+2026-05-06 13:32:28,730 - WARNING - Skipped row key=/works/OL10603380W: nan can not be used with MySQL
+2026-05-06 13:32:28,734 - WARNING - Skipped row key=/works/OL780224W: nan can not be used with MySQL
+2026-05-06 13:32:28,736 - WARNING - Skipped row key=/works/OL17515422W: nan can not be used with MySQL
+2026-05-06 13:32:28,741 - WARNING - Skipped row key=/works/OL1304829W: nan can not be used with MySQL
+2026-05-06 13:32:28,742 - WARNING - Skipped row key=/works/OL2671690W: nan can not be used with MySQL
+2026-05-06 13:32:28,743 - WARNING - Skipped row key=/works/OL26431102W: nan can not be used with MySQL
+2026-05-06 13:32:28,747 - INFO - Inserted 71 rows, skipped 29 rows into cleaned_books
+2026-05-06 13:32:28,747 - INFO - Finished populating cleaned_books: 71 inserted, 29 skipped
+
+I manually deleted all the records in the SQL database and re-ran the pipeline as can be seen below2026-05-06 13:34:02,268 - INFO - Connected to MySQL database: books
+2026-05-06 13:34:02,293 - WARNING - Skipped row key=/works/OL5275519W: nan can not be used with MySQL
+2026-05-06 13:34:02,301 - WARNING - Skipped row key=/works/OL848885W: nan can not be used with MySQL
+2026-05-06 13:34:02,302 - WARNING - Skipped row key=/works/OL27776707W: nan can not be used with MySQL
+2026-05-06 13:34:02,308 - WARNING - Skipped row key=/works/OL5526720W: nan can not be used with MySQL
+2026-05-06 13:34:02,311 - WARNING - Skipped row key=/works/OL20835260W: nan can not be used with MySQL
+2026-05-06 13:34:02,312 - WARNING - Skipped row key=/works/OL8383298W: nan can not be used with MySQL
+2026-05-06 13:34:02,315 - WARNING - Skipped row key=/works/OL19222527W: nan can not be used with MySQL
+2026-05-06 13:34:02,316 - WARNING - Skipped row key=/works/OL963544W: nan can not be used with MySQL
+2026-05-06 13:34:02,317 - WARNING - Skipped row key=/works/OL17458770W: nan can not be used with MySQL
+2026-05-06 13:34:02,320 - WARNING - Skipped row key=/works/OL35750767W: nan can not be used with MySQL
+2026-05-06 13:34:02,320 - WARNING - Skipped row key=/works/OL27869171W: nan can not be used with MySQL
+2026-05-06 13:34:02,322 - WARNING - Skipped row key=/works/OL25457324W: nan can not be used with MySQL
+2026-05-06 13:34:02,324 - WARNING - Skipped row key=/works/OL19983288W: nan can not be used with MySQL
+2026-05-06 13:34:02,324 - WARNING - Skipped row key=/works/OL702433W: nan can not be used with MySQL
+2026-05-06 13:34:02,325 - WARNING - Skipped row key=/works/OL11307015W: nan can not be used with MySQL
+2026-05-06 13:34:02,326 - WARNING - Skipped row key=/works/OL1161318W: nan can not be used with MySQL
+2026-05-06 13:34:02,326 - WARNING - Skipped row key=/works/OL527998W: nan can not be used with MySQL
+2026-05-06 13:34:02,326 - WARNING - Skipped row key=/works/OL37578905W: nan can not be used with MySQL
+2026-05-06 13:34:02,327 - WARNING - Skipped row key=/works/OL27969474W: nan can not be used with MySQL
+2026-05-06 13:34:02,329 - WARNING - Skipped row key=/works/OL22063570W: nan can not be used with MySQL
+2026-05-06 13:34:02,330 - WARNING - Skipped row key=/works/OL4279853W: nan can not be used with MySQL
+2026-05-06 13:34:02,331 - WARNING - Skipped row key=/works/OL16071102W: nan can not be used with MySQL
+2026-05-06 13:34:02,332 - WARNING - Skipped row key=/works/OL1192156W: nan can not be used with MySQL
+2026-05-06 13:34:02,332 - WARNING - Skipped row key=/works/OL10603380W: nan can not be used with MySQL
+2026-05-06 13:34:02,336 - WARNING - Skipped row key=/works/OL780224W: nan can not be used with MySQL
+2026-05-06 13:34:02,337 - WARNING - Skipped row key=/works/OL17515422W: nan can not be used with MySQL
+2026-05-06 13:34:02,338 - WARNING - Skipped row key=/works/OL1304829W: nan can not be used with MySQL
+2026-05-06 13:34:02,339 - WARNING - Skipped row key=/works/OL2671690W: nan can not be used with MySQL
+2026-05-06 13:34:02,340 - WARNING - Skipped row key=/works/OL26431102W: nan can not be used with MySQL
+2026-05-06 13:34:02,344 - INFO - Inserted 71 rows, skipped 29 rows into cleaned_books
+2026-05-06 13:34:02,344 - INFO - Finished populating cleaned_books: 71 inserted, 29 skipped
+2026-05-07 16:11:44,603 - INFO - === Starting Regex Operations ===
+2026-05-07 16:11:44,658 - INFO - Loaded 100 documents from MongoDB
+2026-05-07 16:11:44,671 - INFO - Regex: Found titles starting with 'The'
+2026-05-07 16:11:44,671 - INFO - Regex: Extracted first word of subject
+2026-05-07 16:11:44,672 - INFO - Regex: Replaced non-alphanumeric in subtitle
+2026-05-07 16:11:44,673 - INFO - Regex: Found titles containing 'Dune' (case insensitive)
+2026-05-07 16:11:44,687 - INFO - === Regex Operations Completed ===
+2026-05-07 22:57:26,168 - INFO - Demonstration - Join Type: inner, Row Count: 1
+2026-05-07 22:57:26,173 - INFO - Demonstration - Join Type: outer, Row Count: 3
+2026-05-07 22:57:26,176 - INFO - Demonstration - Join Type: left, Row Count: 2
+2026-05-07 22:57:26,177 - INFO - Demonstration - Join Type: right, Row Count: 2
+2026-05-07 22:57:26,178 - INFO - Merging MySQL and MongoDB data on 'key' using 'inner' join.
+2026-05-07 22:57:26,179 - INFO - Merge completed. Result shape: (1, 3)
+2026-05-07 22:57:26,188 - INFO - Concatenating 2 DataFrames (reset_index=True).
+2026-05-07 22:57:26,189 - INFO - Concatenation completed. Result shape: (4, 3)
+2026-05-08 10:51:59,858 - INFO - Reshaping DataFrame to long format. id_cols=['key', 'title'], value_cols=['rating', 'ratings_count']
+2026-05-08 10:51:59,879 - INFO - Reshaping DataFrame to wide format. index=['key', 'title'], columns=metric, values=value
+2026-05-08 10:51:59,900 - INFO - Building pivot table. index=author_name, columns=publisher, values=rating, aggfunc=mean
+2026-05-08 10:51:59,923 - INFO - Building crosstab between author_name and genres. normalize=False
+2026-05-08 21:23:27,220 - INFO - Calculating top 5 genres by rating.
+2026-05-08 21:23:27,252 - INFO - Calculating engagement ratio by genre.
+2026-05-08 21:23:27,268 - INFO - Analyzing publishing trends from 2000 to 2024.
+2026-05-08 21:23:27,280 - INFO - Calculating language distribution for top 2 languages.
+2026-05-10 04:28:21,937 - INFO - ========== Pipeline Started ==========
+2026-05-10 04:28:21,937 - INFO - === Starting API Pipeline ===
+2026-05-10 04:28:26,183 - INFO - Successfully fetched data from https://openlibrary.org/search.json (Page 1)
+2026-05-10 04:28:26,281 - INFO - Inserted document with id 69ffed4a8e91c0e886c2062e from source: openlibrary_api
+2026-05-10 04:28:26,283 - INFO - Inserted document with id 69ffed4a8e91c0e886c2062f from source: openlibrary_api
+2026-05-10 04:28:26,284 - INFO - Inserted document with id 69ffed4a8e91c0e886c20630 from source: openlibrary_api
+2026-05-10 04:28:26,286 - INFO - Inserted document with id 69ffed4a8e91c0e886c20631 from source: openlibrary_api
+2026-05-10 04:28:26,286 - INFO - Inserted document with id 69ffed4a8e91c0e886c20632 from source: openlibrary_api
+2026-05-10 04:28:26,287 - INFO - Inserted document with id 69ffed4a8e91c0e886c20633 from source: openlibrary_api
+2026-05-10 04:28:26,288 - INFO - Inserted document with id 69ffed4a8e91c0e886c20634 from source: openlibrary_api
+2026-05-10 04:28:26,290 - INFO - Inserted document with id 69ffed4a8e91c0e886c20635 from source: openlibrary_api
+2026-05-10 04:28:26,290 - INFO - Inserted document with id 69ffed4a8e91c0e886c20636 from source: openlibrary_api
+2026-05-10 04:28:26,291 - INFO - Inserted document with id 69ffed4a8e91c0e886c20637 from source: openlibrary_api
+2026-05-10 04:28:26,292 - INFO - Inserted document with id 69ffed4a8e91c0e886c20638 from source: openlibrary_api
+2026-05-10 04:28:26,293 - INFO - Inserted document with id 69ffed4a8e91c0e886c20639 from source: openlibrary_api
+2026-05-10 04:28:26,295 - INFO - Inserted document with id 69ffed4a8e91c0e886c2063a from source: openlibrary_api
+2026-05-10 04:28:26,296 - INFO - Inserted document with id 69ffed4a8e91c0e886c2063b from source: openlibrary_api
+2026-05-10 04:28:26,297 - INFO - Inserted document with id 69ffed4a8e91c0e886c2063c from source: openlibrary_api
+2026-05-10 04:28:26,298 - INFO - Inserted document with id 69ffed4a8e91c0e886c2063d from source: openlibrary_api
+2026-05-10 04:28:26,299 - INFO - Inserted document with id 69ffed4a8e91c0e886c2063e from source: openlibrary_api
+2026-05-10 04:28:26,299 - INFO - Inserted document with id 69ffed4a8e91c0e886c2063f from source: openlibrary_api
+2026-05-10 04:28:26,300 - INFO - Inserted document with id 69ffed4a8e91c0e886c20640 from source: openlibrary_api
+2026-05-10 04:28:26,301 - INFO - Inserted document with id 69ffed4a8e91c0e886c20641 from source: openlibrary_api
+2026-05-10 04:28:26,302 - INFO - Inserted document with id 69ffed4a8e91c0e886c20642 from source: openlibrary_api
+2026-05-10 04:28:26,303 - INFO - Inserted document with id 69ffed4a8e91c0e886c20643 from source: openlibrary_api
+2026-05-10 04:28:26,304 - INFO - Inserted document with id 69ffed4a8e91c0e886c20644 from source: openlibrary_api
+2026-05-10 04:28:26,304 - INFO - Inserted document with id 69ffed4a8e91c0e886c20645 from source: openlibrary_api
+2026-05-10 04:28:26,305 - INFO - Inserted document with id 69ffed4a8e91c0e886c20646 from source: openlibrary_api
+2026-05-10 04:28:26,306 - INFO - Inserted document with id 69ffed4a8e91c0e886c20647 from source: openlibrary_api
+2026-05-10 04:28:26,307 - INFO - Inserted document with id 69ffed4a8e91c0e886c20648 from source: openlibrary_api
+2026-05-10 04:28:26,307 - INFO - Inserted document with id 69ffed4a8e91c0e886c20649 from source: openlibrary_api
+2026-05-10 04:28:26,308 - INFO - Inserted document with id 69ffed4a8e91c0e886c2064a from source: openlibrary_api
+2026-05-10 04:28:26,309 - INFO - Inserted document with id 69ffed4a8e91c0e886c2064b from source: openlibrary_api
+2026-05-10 04:28:26,309 - INFO - Inserted document with id 69ffed4a8e91c0e886c2064c from source: openlibrary_api
+2026-05-10 04:28:26,310 - INFO - Inserted document with id 69ffed4a8e91c0e886c2064d from source: openlibrary_api
+2026-05-10 04:28:26,311 - INFO - Inserted document with id 69ffed4a8e91c0e886c2064e from source: openlibrary_api
+2026-05-10 04:28:26,311 - INFO - Inserted document with id 69ffed4a8e91c0e886c2064f from source: openlibrary_api
+2026-05-10 04:28:26,313 - INFO - Inserted document with id 69ffed4a8e91c0e886c20650 from source: openlibrary_api
+2026-05-10 04:28:26,314 - INFO - Inserted document with id 69ffed4a8e91c0e886c20651 from source: openlibrary_api
+2026-05-10 04:28:26,315 - INFO - Inserted document with id 69ffed4a8e91c0e886c20652 from source: openlibrary_api
+2026-05-10 04:28:26,316 - INFO - Inserted document with id 69ffed4a8e91c0e886c20653 from source: openlibrary_api
+2026-05-10 04:28:26,316 - INFO - Inserted document with id 69ffed4a8e91c0e886c20654 from source: openlibrary_api
+2026-05-10 04:28:26,317 - INFO - Inserted document with id 69ffed4a8e91c0e886c20655 from source: openlibrary_api
+2026-05-10 04:28:26,317 - INFO - Inserted document with id 69ffed4a8e91c0e886c20656 from source: openlibrary_api
+2026-05-10 04:28:26,318 - INFO - Inserted document with id 69ffed4a8e91c0e886c20657 from source: openlibrary_api
+2026-05-10 04:28:26,319 - INFO - Inserted document with id 69ffed4a8e91c0e886c20658 from source: openlibrary_api
+2026-05-10 04:28:26,319 - INFO - Inserted document with id 69ffed4a8e91c0e886c20659 from source: openlibrary_api
+2026-05-10 04:28:26,320 - INFO - Inserted document with id 69ffed4a8e91c0e886c2065a from source: openlibrary_api
+2026-05-10 04:28:26,321 - INFO - Inserted document with id 69ffed4a8e91c0e886c2065b from source: openlibrary_api
+2026-05-10 04:28:26,321 - INFO - Inserted document with id 69ffed4a8e91c0e886c2065c from source: openlibrary_api
+2026-05-10 04:28:26,322 - INFO - Inserted document with id 69ffed4a8e91c0e886c2065d from source: openlibrary_api
+2026-05-10 04:28:26,323 - INFO - Inserted document with id 69ffed4a8e91c0e886c2065e from source: openlibrary_api
+2026-05-10 04:28:26,324 - INFO - Inserted document with id 69ffed4a8e91c0e886c2065f from source: openlibrary_api
+2026-05-10 04:28:26,324 - INFO - Inserted document with id 69ffed4a8e91c0e886c20660 from source: openlibrary_api
+2026-05-10 04:28:26,325 - INFO - Inserted document with id 69ffed4a8e91c0e886c20661 from source: openlibrary_api
+2026-05-10 04:28:26,325 - INFO - Inserted document with id 69ffed4a8e91c0e886c20662 from source: openlibrary_api
+2026-05-10 04:28:26,327 - INFO - Inserted document with id 69ffed4a8e91c0e886c20663 from source: openlibrary_api
+2026-05-10 04:28:26,327 - INFO - Inserted document with id 69ffed4a8e91c0e886c20664 from source: openlibrary_api
+2026-05-10 04:28:26,328 - INFO - Inserted document with id 69ffed4a8e91c0e886c20665 from source: openlibrary_api
+2026-05-10 04:28:26,329 - INFO - Inserted document with id 69ffed4a8e91c0e886c20666 from source: openlibrary_api
+2026-05-10 04:28:26,331 - INFO - Inserted document with id 69ffed4a8e91c0e886c20667 from source: openlibrary_api
+2026-05-10 04:28:26,331 - INFO - Inserted document with id 69ffed4a8e91c0e886c20668 from source: openlibrary_api
+2026-05-10 04:28:26,332 - INFO - Inserted document with id 69ffed4a8e91c0e886c20669 from source: openlibrary_api
+2026-05-10 04:28:26,333 - INFO - Inserted document with id 69ffed4a8e91c0e886c2066a from source: openlibrary_api
+2026-05-10 04:28:26,333 - INFO - Inserted document with id 69ffed4a8e91c0e886c2066b from source: openlibrary_api
+2026-05-10 04:28:26,334 - INFO - Inserted document with id 69ffed4a8e91c0e886c2066c from source: openlibrary_api
+2026-05-10 04:28:26,334 - INFO - Inserted document with id 69ffed4a8e91c0e886c2066d from source: openlibrary_api
+2026-05-10 04:28:26,335 - INFO - Inserted document with id 69ffed4a8e91c0e886c2066e from source: openlibrary_api
+2026-05-10 04:28:26,336 - INFO - Inserted document with id 69ffed4a8e91c0e886c2066f from source: openlibrary_api
+2026-05-10 04:28:26,336 - INFO - Inserted document with id 69ffed4a8e91c0e886c20670 from source: openlibrary_api
+2026-05-10 04:28:26,337 - INFO - Inserted document with id 69ffed4a8e91c0e886c20671 from source: openlibrary_api
+2026-05-10 04:28:26,337 - INFO - Inserted document with id 69ffed4a8e91c0e886c20672 from source: openlibrary_api
+2026-05-10 04:28:26,338 - INFO - Inserted document with id 69ffed4a8e91c0e886c20673 from source: openlibrary_api
+2026-05-10 04:28:26,339 - INFO - Inserted document with id 69ffed4a8e91c0e886c20674 from source: openlibrary_api
+2026-05-10 04:28:26,340 - INFO - Inserted document with id 69ffed4a8e91c0e886c20675 from source: openlibrary_api
+2026-05-10 04:28:26,341 - INFO - Inserted document with id 69ffed4a8e91c0e886c20676 from source: openlibrary_api
+2026-05-10 04:28:26,341 - INFO - Inserted document with id 69ffed4a8e91c0e886c20677 from source: openlibrary_api
+2026-05-10 04:28:26,342 - INFO - Inserted document with id 69ffed4a8e91c0e886c20678 from source: openlibrary_api
+2026-05-10 04:28:26,342 - INFO - Inserted document with id 69ffed4a8e91c0e886c20679 from source: openlibrary_api
+2026-05-10 04:28:26,343 - INFO - Inserted document with id 69ffed4a8e91c0e886c2067a from source: openlibrary_api
+2026-05-10 04:28:26,343 - INFO - Inserted document with id 69ffed4a8e91c0e886c2067b from source: openlibrary_api
+2026-05-10 04:28:26,344 - INFO - Inserted document with id 69ffed4a8e91c0e886c2067c from source: openlibrary_api
+2026-05-10 04:28:26,345 - INFO - Inserted document with id 69ffed4a8e91c0e886c2067d from source: openlibrary_api
+2026-05-10 04:28:26,345 - INFO - Inserted document with id 69ffed4a8e91c0e886c2067e from source: openlibrary_api
+2026-05-10 04:28:26,347 - INFO - Inserted document with id 69ffed4a8e91c0e886c2067f from source: openlibrary_api
+2026-05-10 04:28:26,347 - INFO - Inserted document with id 69ffed4a8e91c0e886c20680 from source: openlibrary_api
+2026-05-10 04:28:26,348 - INFO - Inserted document with id 69ffed4a8e91c0e886c20681 from source: openlibrary_api
+2026-05-10 04:28:26,349 - INFO - Inserted document with id 69ffed4a8e91c0e886c20682 from source: openlibrary_api
+2026-05-10 04:28:26,349 - INFO - Inserted document with id 69ffed4a8e91c0e886c20683 from source: openlibrary_api
+2026-05-10 04:28:26,350 - INFO - Inserted document with id 69ffed4a8e91c0e886c20684 from source: openlibrary_api
+2026-05-10 04:28:26,350 - INFO - Inserted document with id 69ffed4a8e91c0e886c20685 from source: openlibrary_api
+2026-05-10 04:28:26,351 - INFO - Inserted document with id 69ffed4a8e91c0e886c20686 from source: openlibrary_api
+2026-05-10 04:28:26,352 - INFO - Inserted document with id 69ffed4a8e91c0e886c20687 from source: openlibrary_api
+2026-05-10 04:28:26,352 - INFO - Inserted document with id 69ffed4a8e91c0e886c20688 from source: openlibrary_api
+2026-05-10 04:28:26,353 - INFO - Inserted document with id 69ffed4a8e91c0e886c20689 from source: openlibrary_api
+2026-05-10 04:28:26,354 - INFO - Inserted document with id 69ffed4a8e91c0e886c2068a from source: openlibrary_api
+2026-05-10 04:28:26,355 - INFO - Inserted document with id 69ffed4a8e91c0e886c2068b from source: openlibrary_api
+2026-05-10 04:28:26,355 - INFO - Inserted document with id 69ffed4a8e91c0e886c2068c from source: openlibrary_api
+2026-05-10 04:28:26,356 - INFO - Inserted document with id 69ffed4a8e91c0e886c2068d from source: openlibrary_api
+2026-05-10 04:28:26,356 - INFO - Inserted document with id 69ffed4a8e91c0e886c2068e from source: openlibrary_api
+2026-05-10 04:28:26,357 - INFO - Inserted document with id 69ffed4a8e91c0e886c2068f from source: openlibrary_api
+2026-05-10 04:28:26,357 - INFO - Inserted document with id 69ffed4a8e91c0e886c20690 from source: openlibrary_api
+2026-05-10 04:28:26,358 - INFO - Inserted document with id 69ffed4a8e91c0e886c20691 from source: openlibrary_api
+2026-05-10 04:28:26,358 - INFO - API pipeline completed successfully
+2026-05-10 04:28:26,358 - INFO - === Starting Lab 10 Analytics Pipeline ===
+2026-05-10 04:28:26,365 - INFO - Loaded 100 rows from cleaned data.
+2026-05-10 04:28:26,371 - INFO - MySQL simulated df created. Shape: (71, 7)
+2026-05-10 04:28:26,373 - INFO - MongoDB simulated df created. Shape: (100, 9)
+2026-05-10 04:28:26,381 - INFO - Demonstration - Join Type: inner | Row Count: 71
+2026-05-10 04:28:26,385 - INFO - Demonstration - Join Type: outer | Row Count: 100
+2026-05-10 04:28:26,388 - INFO - Demonstration - Join Type: left  | Row Count: 71
+2026-05-10 04:28:26,391 - INFO - Demonstration - Join Type: right | Row Count: 100
+2026-05-10 04:28:26,393 - INFO - Merging MySQL and MongoDB data on 'key' using 'inner' join.
+2026-05-10 04:28:26,396 - INFO - Merge completed. Result shape: (71, 16)
+2026-05-10 04:28:26,396 - INFO - Merge completed. Shape: (71, 16)
+2026-05-10 04:28:26,397 - INFO - Calculating genre summary.
+2026-05-10 04:28:26,397 - ERROR - Lab 10 pipeline failed: 'genres'
+Traceback (most recent call last):
+  File "C:\Users\Laptop\Desktop\Unstructured Data Project\Unstructured-Data-Project\src\pipeline\run_pipeline.py", line 69, in run_lab10_analytics
+    genre_sum = genre_summary(mysql_df)
+  File "C:\Users\Laptop\Desktop\Unstructured Data Project\Unstructured-Data-Project\src\analytics\aggregator.py", line 21, in genre_summary
+    summary = df.groupby('genres').agg(
+              ~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Laptop\Desktop\Unstructured Data Project\Unstructured-Data-Project\.venv\Lib\site-packages\pandas\util\_decorators.py", line 336, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Laptop\Desktop\Unstructured Data Project\Unstructured-Data-Project\.venv\Lib\site-packages\pandas\core\frame.py", line 10821, in groupby
+    return DataFrameGroupBy(
+        obj=self,
+    ...<6 lines>...
+        dropna=dropna,
+    )
+  File "C:\Users\Laptop\Desktop\Unstructured Data Project\Unstructured-Data-Project\.venv\Lib\site-packages\pandas\core\groupby\groupby.py", line 1095, in __init__
+    grouper, exclusions, obj = get_grouper(
+                               ~~~~~~~~~~~^
+        obj,
+        ^^^^
+    ...<4 lines>...
+        dropna=self.dropna,
+        ^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Laptop\Desktop\Unstructured Data Project\Unstructured-Data-Project\.venv\Lib\site-packages\pandas\core\groupby\grouper.py", line 901, in get_grouper
+    raise KeyError(gpr)
+KeyError: 'genres'
+2026-05-10 04:47:50,311 - INFO - ========== Pipeline Started ==========
+2026-05-10 04:47:50,312 - INFO - === Starting API Pipeline ===
+2026-05-10 04:47:53,245 - INFO - Successfully fetched data from https://openlibrary.org/search.json (Page 1)
+2026-05-10 04:47:53,253 - INFO - Inserted document with id 69fff1d96708be9476e3468a from source: openlibrary_api
+2026-05-10 04:47:53,254 - INFO - Inserted document with id 69fff1d96708be9476e3468b from source: openlibrary_api
+2026-05-10 04:47:53,254 - INFO - Inserted document with id 69fff1d96708be9476e3468c from source: openlibrary_api
+2026-05-10 04:47:53,255 - INFO - Inserted document with id 69fff1d96708be9476e3468d from source: openlibrary_api
+2026-05-10 04:47:53,256 - INFO - Inserted document with id 69fff1d96708be9476e3468e from source: openlibrary_api
+2026-05-10 04:47:53,257 - INFO - Inserted document with id 69fff1d96708be9476e3468f from source: openlibrary_api
+2026-05-10 04:47:53,258 - INFO - Inserted document with id 69fff1d96708be9476e34690 from source: openlibrary_api
+2026-05-10 04:47:53,258 - INFO - Inserted document with id 69fff1d96708be9476e34691 from source: openlibrary_api
+2026-05-10 04:47:53,259 - INFO - Inserted document with id 69fff1d96708be9476e34692 from source: openlibrary_api
+2026-05-10 04:47:53,260 - INFO - Inserted document with id 69fff1d96708be9476e34693 from source: openlibrary_api
+2026-05-10 04:47:53,261 - INFO - Inserted document with id 69fff1d96708be9476e34694 from source: openlibrary_api
+2026-05-10 04:47:53,262 - INFO - Inserted document with id 69fff1d96708be9476e34695 from source: openlibrary_api
+2026-05-10 04:47:53,263 - INFO - Inserted document with id 69fff1d96708be9476e34696 from source: openlibrary_api
+2026-05-10 04:47:53,264 - INFO - Inserted document with id 69fff1d96708be9476e34697 from source: openlibrary_api
+2026-05-10 04:47:53,264 - INFO - Inserted document with id 69fff1d96708be9476e34698 from source: openlibrary_api
+2026-05-10 04:47:53,265 - INFO - Inserted document with id 69fff1d96708be9476e34699 from source: openlibrary_api
+2026-05-10 04:47:53,266 - INFO - Inserted document with id 69fff1d96708be9476e3469a from source: openlibrary_api
+2026-05-10 04:47:53,266 - INFO - Inserted document with id 69fff1d96708be9476e3469b from source: openlibrary_api
+2026-05-10 04:47:53,267 - INFO - Inserted document with id 69fff1d96708be9476e3469c from source: openlibrary_api
+2026-05-10 04:47:53,268 - INFO - Inserted document with id 69fff1d96708be9476e3469d from source: openlibrary_api
+2026-05-10 04:47:53,268 - INFO - Inserted document with id 69fff1d96708be9476e3469e from source: openlibrary_api
+2026-05-10 04:47:53,269 - INFO - Inserted document with id 69fff1d96708be9476e3469f from source: openlibrary_api
+2026-05-10 04:47:53,270 - INFO - Inserted document with id 69fff1d96708be9476e346a0 from source: openlibrary_api
+2026-05-10 04:47:53,271 - INFO - Inserted document with id 69fff1d96708be9476e346a1 from source: openlibrary_api
+2026-05-10 04:47:53,272 - INFO - Inserted document with id 69fff1d96708be9476e346a2 from source: openlibrary_api
+2026-05-10 04:47:53,273 - INFO - Inserted document with id 69fff1d96708be9476e346a3 from source: openlibrary_api
+2026-05-10 04:47:53,274 - INFO - Inserted document with id 69fff1d96708be9476e346a4 from source: openlibrary_api
+2026-05-10 04:47:53,275 - INFO - Inserted document with id 69fff1d96708be9476e346a5 from source: openlibrary_api
+2026-05-10 04:47:53,276 - INFO - Inserted document with id 69fff1d96708be9476e346a6 from source: openlibrary_api
+2026-05-10 04:47:53,276 - INFO - Inserted document with id 69fff1d96708be9476e346a7 from source: openlibrary_api
+2026-05-10 04:47:53,277 - INFO - Inserted document with id 69fff1d96708be9476e346a8 from source: openlibrary_api
+2026-05-10 04:47:53,277 - INFO - Inserted document with id 69fff1d96708be9476e346a9 from source: openlibrary_api
+2026-05-10 04:47:53,278 - INFO - Inserted document with id 69fff1d96708be9476e346aa from source: openlibrary_api
+2026-05-10 04:47:53,279 - INFO - Inserted document with id 69fff1d96708be9476e346ab from source: openlibrary_api
+2026-05-10 04:47:53,280 - INFO - Inserted document with id 69fff1d96708be9476e346ac from source: openlibrary_api
+2026-05-10 04:47:53,280 - INFO - Inserted document with id 69fff1d96708be9476e346ad from source: openlibrary_api
+2026-05-10 04:47:53,281 - INFO - Inserted document with id 69fff1d96708be9476e346ae from source: openlibrary_api
+2026-05-10 04:47:53,282 - INFO - Inserted document with id 69fff1d96708be9476e346af from source: openlibrary_api
+2026-05-10 04:47:53,283 - INFO - Inserted document with id 69fff1d96708be9476e346b0 from source: openlibrary_api
+2026-05-10 04:47:53,283 - INFO - Inserted document with id 69fff1d96708be9476e346b1 from source: openlibrary_api
+2026-05-10 04:47:53,284 - INFO - Inserted document with id 69fff1d96708be9476e346b2 from source: openlibrary_api
+2026-05-10 04:47:53,285 - INFO - Inserted document with id 69fff1d96708be9476e346b3 from source: openlibrary_api
+2026-05-10 04:47:53,286 - INFO - Inserted document with id 69fff1d96708be9476e346b4 from source: openlibrary_api
+2026-05-10 04:47:53,287 - INFO - Inserted document with id 69fff1d96708be9476e346b5 from source: openlibrary_api
+2026-05-10 04:47:53,288 - INFO - Inserted document with id 69fff1d96708be9476e346b6 from source: openlibrary_api
+2026-05-10 04:47:53,289 - INFO - Inserted document with id 69fff1d96708be9476e346b7 from source: openlibrary_api
+2026-05-10 04:47:53,290 - INFO - Inserted document with id 69fff1d96708be9476e346b8 from source: openlibrary_api
+2026-05-10 04:47:53,290 - INFO - Inserted document with id 69fff1d96708be9476e346b9 from source: openlibrary_api
+2026-05-10 04:47:53,291 - INFO - Inserted document with id 69fff1d96708be9476e346ba from source: openlibrary_api
+2026-05-10 04:47:53,292 - INFO - Inserted document with id 69fff1d96708be9476e346bb from source: openlibrary_api
+2026-05-10 04:47:53,292 - INFO - Inserted document with id 69fff1d96708be9476e346bc from source: openlibrary_api
+2026-05-10 04:47:53,293 - INFO - Inserted document with id 69fff1d96708be9476e346bd from source: openlibrary_api
+2026-05-10 04:47:53,294 - INFO - Inserted document with id 69fff1d96708be9476e346be from source: openlibrary_api
+2026-05-10 04:47:53,295 - INFO - Inserted document with id 69fff1d96708be9476e346bf from source: openlibrary_api
+2026-05-10 04:47:53,296 - INFO - Inserted document with id 69fff1d96708be9476e346c0 from source: openlibrary_api
+2026-05-10 04:47:53,296 - INFO - Inserted document with id 69fff1d96708be9476e346c1 from source: openlibrary_api
+2026-05-10 04:47:53,297 - INFO - Inserted document with id 69fff1d96708be9476e346c2 from source: openlibrary_api
+2026-05-10 04:47:53,298 - INFO - Inserted document with id 69fff1d96708be9476e346c3 from source: openlibrary_api
+2026-05-10 04:47:53,298 - INFO - Inserted document with id 69fff1d96708be9476e346c4 from source: openlibrary_api
+2026-05-10 04:47:53,300 - INFO - Inserted document with id 69fff1d96708be9476e346c5 from source: openlibrary_api
+2026-05-10 04:47:53,300 - INFO - Inserted document with id 69fff1d96708be9476e346c6 from source: openlibrary_api
+2026-05-10 04:47:53,302 - INFO - Inserted document with id 69fff1d96708be9476e346c7 from source: openlibrary_api
+2026-05-10 04:47:53,302 - INFO - Inserted document with id 69fff1d96708be9476e346c8 from source: openlibrary_api
+2026-05-10 04:47:53,303 - INFO - Inserted document with id 69fff1d96708be9476e346c9 from source: openlibrary_api
+2026-05-10 04:47:53,304 - INFO - Inserted document with id 69fff1d96708be9476e346ca from source: openlibrary_api
+2026-05-10 04:47:53,305 - INFO - Inserted document with id 69fff1d96708be9476e346cb from source: openlibrary_api
+2026-05-10 04:47:53,305 - INFO - Inserted document with id 69fff1d96708be9476e346cc from source: openlibrary_api
+2026-05-10 04:47:53,306 - INFO - Inserted document with id 69fff1d96708be9476e346cd from source: openlibrary_api
+2026-05-10 04:47:53,307 - INFO - Inserted document with id 69fff1d96708be9476e346ce from source: openlibrary_api
+2026-05-10 04:47:53,308 - INFO - Inserted document with id 69fff1d96708be9476e346cf from source: openlibrary_api
+2026-05-10 04:47:53,309 - INFO - Inserted document with id 69fff1d96708be9476e346d0 from source: openlibrary_api
+2026-05-10 04:47:53,310 - INFO - Inserted document with id 69fff1d96708be9476e346d1 from source: openlibrary_api
+2026-05-10 04:47:53,310 - INFO - Inserted document with id 69fff1d96708be9476e346d2 from source: openlibrary_api
+2026-05-10 04:47:53,311 - INFO - Inserted document with id 69fff1d96708be9476e346d3 from source: openlibrary_api
+2026-05-10 04:47:53,312 - INFO - Inserted document with id 69fff1d96708be9476e346d4 from source: openlibrary_api
+2026-05-10 04:47:53,312 - INFO - Inserted document with id 69fff1d96708be9476e346d5 from source: openlibrary_api
+2026-05-10 04:47:53,313 - INFO - Inserted document with id 69fff1d96708be9476e346d6 from source: openlibrary_api
+2026-05-10 04:47:53,314 - INFO - Inserted document with id 69fff1d96708be9476e346d7 from source: openlibrary_api
+2026-05-10 04:47:53,314 - INFO - Inserted document with id 69fff1d96708be9476e346d8 from source: openlibrary_api
+2026-05-10 04:47:53,315 - INFO - Inserted document with id 69fff1d96708be9476e346d9 from source: openlibrary_api
+2026-05-10 04:47:53,316 - INFO - Inserted document with id 69fff1d96708be9476e346da from source: openlibrary_api
+2026-05-10 04:47:53,316 - INFO - Inserted document with id 69fff1d96708be9476e346db from source: openlibrary_api
+2026-05-10 04:47:53,317 - INFO - Inserted document with id 69fff1d96708be9476e346dc from source: openlibrary_api
+2026-05-10 04:47:53,318 - INFO - Inserted document with id 69fff1d96708be9476e346dd from source: openlibrary_api
+2026-05-10 04:47:53,319 - INFO - Inserted document with id 69fff1d96708be9476e346de from source: openlibrary_api
+2026-05-10 04:47:53,320 - INFO - Inserted document with id 69fff1d96708be9476e346df from source: openlibrary_api
+2026-05-10 04:47:53,320 - INFO - Inserted document with id 69fff1d96708be9476e346e0 from source: openlibrary_api
+2026-05-10 04:47:53,321 - INFO - Inserted document with id 69fff1d96708be9476e346e1 from source: openlibrary_api
+2026-05-10 04:47:53,322 - INFO - Inserted document with id 69fff1d96708be9476e346e2 from source: openlibrary_api
+2026-05-10 04:47:53,322 - INFO - Inserted document with id 69fff1d96708be9476e346e3 from source: openlibrary_api
+2026-05-10 04:47:53,323 - INFO - Inserted document with id 69fff1d96708be9476e346e4 from source: openlibrary_api
+2026-05-10 04:47:53,324 - INFO - Inserted document with id 69fff1d96708be9476e346e5 from source: openlibrary_api
+2026-05-10 04:47:53,325 - INFO - Inserted document with id 69fff1d96708be9476e346e6 from source: openlibrary_api
+2026-05-10 04:47:53,326 - INFO - Inserted document with id 69fff1d96708be9476e346e7 from source: openlibrary_api
+2026-05-10 04:47:53,327 - INFO - Inserted document with id 69fff1d96708be9476e346e8 from source: openlibrary_api
+2026-05-10 04:47:53,328 - INFO - Inserted document with id 69fff1d96708be9476e346e9 from source: openlibrary_api
+2026-05-10 04:47:53,328 - INFO - Inserted document with id 69fff1d96708be9476e346ea from source: openlibrary_api
+2026-05-10 04:47:53,329 - INFO - Inserted document with id 69fff1d96708be9476e346eb from source: openlibrary_api
+2026-05-10 04:47:53,330 - INFO - Inserted document with id 69fff1d96708be9476e346ec from source: openlibrary_api
+2026-05-10 04:47:53,331 - INFO - Inserted document with id 69fff1d96708be9476e346ed from source: openlibrary_api
+2026-05-10 04:47:53,331 - INFO - API pipeline completed successfully
+2026-05-10 04:47:53,331 - INFO - === Starting Lab 10 Analytics Pipeline ===
+2026-05-10 04:47:53,338 - INFO - Loaded 100 rows from cleaned data.
+2026-05-10 04:47:53,339 - INFO - Executing MongoDB aggregation pipeline.
+2026-05-10 04:47:53,452 - INFO - Aggregation returned 20 rows.
+2026-05-10 04:47:53,466 - INFO - Reshaping DataFrame to long format. id_cols=['key', 'title'], value_cols=['rating', 'ratings_count', 'number_of_pages_median']
+2026-05-10 04:47:53,470 - INFO - Melted DataFrame shape: (213, 4)
+2026-05-10 04:47:53,471 - INFO - Parsing 'first_publish_year' to datetime and extracting components.
+2026-05-10 04:47:53,475 - INFO - Resampling data to yearly frequency using 'publish_date'.
+2026-05-10 04:47:53,489 - INFO - Computing rolling averages for 'rating' with windows [3, 5].
+2026-05-10 04:47:53,508 - INFO - Demonstration - Join Type: inner | Row Count: 71
+2026-05-10 04:47:53,513 - INFO - Demonstration - Join Type: outer | Row Count: 100
+2026-05-10 04:47:53,516 - INFO - Demonstration - Join Type: left  | Row Count: 71
+2026-05-10 04:47:53,519 - INFO - Demonstration - Join Type: right | Row Count: 100
+2026-05-10 04:47:53,520 - INFO - Merging MySQL and MongoDB data on 'key' using 'inner' join.
+2026-05-10 04:47:53,522 - INFO - Merge completed. Result shape: (71, 14)
+2026-05-10 04:47:53,523 - INFO - Calculating top 10 genres by rating.
+2026-05-10 04:47:55,045 - INFO - Chart saved to data/processed/outputs\top_genres.png
+2026-05-10 04:47:55,046 - INFO - Calculating engagement ratio by genre.
+2026-05-10 04:47:55,346 - INFO - Chart saved to data/processed/outputs\engagement_ratio.png
+2026-05-10 04:47:55,346 - INFO - Analyzing publishing trends from 1900 to 2024.
+2026-05-10 04:47:55,636 - INFO - Chart saved to data/processed/outputs\publishing_trends.png
+2026-05-10 04:47:55,637 - INFO - Calculating language distribution for top 10 languages.
+2026-05-10 04:47:55,960 - INFO - Chart saved to data/processed/outputs\lang_dist.png
+2026-05-10 04:47:55,960 - INFO - === Lab 10 Analytics Pipeline Finished ===
+2026-05-10 04:47:55,960 - INFO - ========== Pipeline Finished ==========
