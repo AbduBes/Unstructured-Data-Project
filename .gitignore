@@ -7,3 +7,4 @@ __pycache__/
 google_drive/
 /token.json
 /GEMINI.md
+src/analytics/db_connector.py

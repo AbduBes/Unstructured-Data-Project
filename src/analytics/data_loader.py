@@ -42,6 +42,57 @@ def optimize_dtypes(df):
     print(f"Memory optimized: {before_mem:.2f} MB -> {after_mem:.2f} MB")
     return df
 
+def get_mongo_aggregation_pipeline():
+    """
+    Defines a 4-stage MongoDB aggregation pipeline.
+    Stages:
+    1. $match: Filter for books with valid first_publish_year.
+    2. $group: Group by language and compute average ratings_average.
+    3. $sort: Sort by average rating descending.
+    4. $project: Shape the output fields.
+    """
+    return [
+        {
+            "$match": {
+                "data.first_publish_year": {"$exists": True, "$ne": None}
+            }
+        },
+        {
+            "$group": {
+                "_id": "$data.language",
+                "avg_rating": {"$avg": "$data.ratings_average"},
+                "book_count": {"$sum": 1}
+            }
+        },
+        {
+            "$sort": {"avg_rating": -1}
+        },
+        {
+            "$project": {
+                "language": "$_id",
+                "avg_rating": 1,
+                "book_count": 1,
+                "_id": 0
+            }
+        }
+    ]
+
+def get_aggregated_mongo_data():
+    """
+    Executes the aggregation pipeline and returns a DataFrame.
+    """
+    logging.info("Executing MongoDB aggregation pipeline.")
+    client = MongoClient("mongodb://localhost:27017/")
+    db = client["book_pipeline"]
+    collection = db["raw_books"]
+    
+    pipeline = get_mongo_aggregation_pipeline()
+    result = list(collection.aggregate(pipeline))
+    
+    df = pd.DataFrame(result)
+    logging.info(f"Aggregation returned {len(df)} rows.")
+    return df
+
 def run_data_tasks():
     logging.info("=== Starting Data Loading Tasks ===")
     
