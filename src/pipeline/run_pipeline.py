@@ -1,5 +1,7 @@
 import sys
 import os
+import pandas as pd
+import sqlite3
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', 'src')))
 
 from utils.logger import logging
@@ -9,6 +11,100 @@ from parsing.parsers import extract_book_fields
 from parsing.pdf_parser import process_all_pdfs
 from parsing.word_parser import process_all_word_docs
 from parsing.excel_parser import process_all_excel_files
+from cleaning.clean_pipeline import run_cleaning_pipeline
+from analytics.data_combiner import merge_mysql_mongodb, demonstrate_join_types
+from analytics.data_loader import get_aggregated_mongo_data
+from analytics.aggregator import genre_summary, yearly_trends
+from analytics.pivot_builder import build_pivot_table, wide_to_long
+from analytics.time_series import parse_and_extract_dates, resample_yearly, compute_rolling_averages
+from analytics.insight_reporter import (
+    top_genres_by_rating, 
+    engagement_ratio_by_genre, 
+    yearly_publishing_trends, 
+    language_distribution
+)
+
+def run_lab10_analytics():
+    """Execute the full Lab 10 analytics pipeline."""
+    logging.info("=== Starting Lab 10 Analytics Pipeline ===")
+    try:
+        csv_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', 'data', 'processed', 'cleaned', 'cleaned_books.csv'))
+        analytics_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', 'data', 'processed', 'analytics'))
+        output_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', 'data', 'processed', 'outputs'))
+        
+        if not os.path.exists(csv_path):
+            logging.info("Cleaned data not found. Running cleaning pipeline first.")
+            run_cleaning_pipeline()
+        
+        df = pd.read_csv(csv_path)
+        logging.info(f"Loaded {len(df)} rows from cleaned data.")
+        
+        # 1. MongoDB Aggregation Pipeline (4-stage)
+        agg_mongo_df = get_aggregated_mongo_data()
+        print("\n--- MongoDB Aggregation Result (Top Languages) ---")
+        print(agg_mongo_df.head())
+        
+        # 2. MySQL simulation
+        conn = sqlite3.connect(':memory:')
+        df.to_sql('books', conn, index=False)
+        mysql_df = pd.read_sql_query("""
+            SELECT key, title, rating, ratings_count, edition_count, number_of_pages_median, has_fulltext 
+            FROM books 
+            WHERE rating > 0 AND ratings_count > 0
+        """, conn)
+        conn.close()
+        
+        # 3. Data Reshaping (Melt)
+        melted_df = wide_to_long(
+            mysql_df, 
+            id_cols=['key', 'title'], 
+            value_cols=['rating', 'ratings_count', 'number_of_pages_median']
+        )
+        logging.info(f"Melted DataFrame shape: {melted_df.shape}")
+        
+        # 4. Time Series Analysis
+        # Ensure first_publish_year is in df
+        df_ts = df.dropna(subset=['first_publish_year']).copy()
+        df_ts = parse_and_extract_dates(df_ts)
+        yearly_books = resample_yearly(df_ts)
+        df_ts = compute_rolling_averages(df_ts, value_col='rating', windows=[3, 5])
+        print("\n--- Time Series Analysis (Rolling Averages) ---")
+        print(df_ts[['title', 'publish_date', 'rolling_avg_3', 'rolling_avg_5']].tail())
+
+        # MongoDB simulation for joins
+        mongo_df = df[['key', 'title', 'author_name', 'publisher', 'genres', 'language', 'first_publish_year', 'overview']].copy()
+        
+        # Demonstrate joins
+        demonstrate_join_types(mysql_df, mongo_df)
+        
+        # Merge
+        merged_df = merge_mysql_mongodb(mysql_df, mongo_df, on='key', how='inner')
+        rename_cols = {
+            'genres_mysql': 'genres', 
+            'title_mysql': 'title', 
+            'rating_mysql': 'rating', 
+            'ratings_count_mysql': 'ratings_count',
+            'first_publish_year_mysql': 'first_publish_year',
+            'number_of_pages_median_mysql': 'number_of_pages_median',
+            'author_name_mysql': 'author_name'
+        }
+        merged_df = merged_df.rename(columns=rename_cols)
+        
+        # Ensure dirs exist
+        os.makedirs(analytics_dir, exist_ok=True)
+        os.makedirs(output_dir, exist_ok=True)
+        
+        # Analytics & Reporting
+        top_genres_by_rating(merged_df)
+        engagement_ratio_by_genre(merged_df)
+        yearly_publishing_trends(merged_df, start=1900, end=2024)
+        language_distribution(merged_df)
+        
+        logging.info("=== Lab 10 Analytics Pipeline Finished ===")
+    except Exception as e:
+        logging.error(f"Lab 10 pipeline failed: {e}", exc_info=True)
+        raise
+
 
 
 def run_api_pipeline():
@@ -61,11 +157,12 @@ def run_document_pipeline():
 
 
 def run_pipeline():
-    """Orchestrate the full pipeline: API + document extraction."""
+    """Orchestrate the full pipeline: API + document extraction + Lab 10 analytics."""
     logging.info("========== Pipeline Started ==========")
 
     run_api_pipeline()
     #run_document_pipeline()
+    run_lab10_analytics()
 
     logging.info("========== Pipeline Finished ==========")
 
