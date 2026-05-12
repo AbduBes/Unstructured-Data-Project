@@ -13,15 +13,20 @@ from utils.logger import logging
 
 url = "https://openlibrary.org/search.json"
 
-def fetch_books(query="harry potter", pages=3):
+def fetch_books(query="dune", pages=1):
     all_books = []
-
+    
+    # Notice this is a single STRING, not a list []
+    # These are the exact fields you used in your successful browser test
+# Added publisher, subject, number_of_pages_median, and subtitle to the list!
+    target_fields_string = "key,edition_key,title,author_name,language,first_publish_year,edition_count,ratings_average,ratings_count,publisher,subject,subject_facet,number_of_pages_median,subtitle,has_fulltext"
     for page in range(1, pages + 1):
         params = {
             "q": query,
-            "page": page
+            "page": page,
+            "fields": target_fields_string  # Pass the explicit string here!
         }
-
+        
         response = safe_request(url, params)
 
         if response:
@@ -51,13 +56,19 @@ def save_raw_data(data, page_num):
 
 def safe_request(url, params, retries=3):
     response = None
+    
+    # Introduce our script properly to unlock full API features
+    headers = {
+        "User-Agent": "UnstructuredDataProject/1.0 (contact@example.com)"
+    }
 
     for i in range(retries):
         try:
-            response = requests.get(url, params=params)
+            # Pass the headers into the get request
+            response = requests.get(url, params=params, headers=headers)
             response.raise_for_status()
 
-            logging.info(f"Successfully fetched data from {url} (Page {params['page']})")
+            logging.info(f"Successfully fetched data from {url} (Page {params.get('page')})")
 
             return response
 
@@ -73,7 +84,7 @@ def safe_request(url, params, retries=3):
     return None
 
 if __name__ == "__main__":
-    books = fetch_books(query="harry potter", pages=3)
+    books = fetch_books(query="Dune", pages=3)
 
     for book_page in books:
         save_raw_data(book_page["data"], book_page["page"])
