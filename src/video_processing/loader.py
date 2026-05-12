@@ -1,10 +1,11 @@
 import logging
-from moviepy.editor import VideoFileClip
+from moviepy import VideoFileClip
 
 logging.basicConfig(filename="pipeline.log", level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 
 def inspect_and_extract_audio(video_path, output_audio_path):
     """Loads video, prints properties, and extracts audio."""
+    clip = None
     try:
         clip = VideoFileClip(video_path)
         

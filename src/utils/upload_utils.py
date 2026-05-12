@@ -46,10 +46,29 @@ def upload_image(local_path, folder_id=FOLDER_ID):
         file = service.files().create(body=file_metadata, media_body=media, fields='id').execute()
         file_url = f"https://drive.google.com/file/d/{file['id']}/view"
         print(f"Uploaded {local_path.name} -> {file_url}")
-        return file_url
+        return file['id'], file_url
     except Exception as e:
         print(f"Upload failed: {e}")
-        return None
+        return None, None
+
+def share_file(file_id, email):
+    service = authenticate_drive()
+    try:
+        user_permission = {
+            'type': 'user',
+            'role': 'reader',
+            'emailAddress': email
+        }
+        service.permissions().create(
+            fileId=file_id,
+            body=user_permission,
+            fields='id'
+        ).execute()
+        print(f"Shared file {file_id} with {email}")
+        return True
+    except Exception as e:
+        print(f"Sharing failed: {e}")
+        return False
     
 def upload_batch(metadata_list, folder_id=FOLDER_ID):
     for meta in metadata_list:

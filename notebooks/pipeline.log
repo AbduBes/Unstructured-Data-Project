@@ -1,0 +1,224 @@
+2026-05-07 23:11:47,093 - INFO - Merging MySQL and MongoDB data on 'key' using 'inner' join.
+2026-05-07 23:11:47,104 - INFO - Merge completed. Result shape: (71, 15)
+2026-05-07 23:12:08,855 - INFO - Merging MySQL and MongoDB data on 'key' using 'inner' join.
+2026-05-07 23:12:08,860 - INFO - Merge completed. Result shape: (71, 15)
+2026-05-07 23:13:20,400 - INFO - Merging MySQL and MongoDB data on 'key' using 'inner' join.
+2026-05-07 23:13:20,405 - INFO - Merge completed. Result shape: (71, 15)
+2026-05-07 23:17:35,631 - INFO - Merging MySQL and MongoDB data on 'key' using 'inner' join.
+2026-05-07 23:17:35,638 - INFO - Merge completed. Result shape: (71, 15)
+2026-05-07 23:17:35,722 - INFO - Demonstration - Join Type: inner, Row Count: 71
+2026-05-07 23:17:35,734 - INFO - Demonstration - Join Type: outer, Row Count: 71
+2026-05-07 23:17:35,738 - INFO - Demonstration - Join Type: left, Row Count: 71
+2026-05-07 23:17:35,742 - INFO - Demonstration - Join Type: right, Row Count: 71
+2026-05-07 23:18:22,547 - INFO - Merging MySQL and MongoDB data on 'key' using 'inner' join.
+2026-05-07 23:18:22,551 - INFO - Merge completed. Result shape: (71, 15)
+2026-05-07 23:18:22,641 - INFO - Demonstration - Join Type: inner, Row Count: 71
+2026-05-07 23:18:22,646 - INFO - Demonstration - Join Type: outer, Row Count: 71
+2026-05-07 23:18:22,649 - INFO - Demonstration - Join Type: left, Row Count: 71
+2026-05-07 23:18:22,654 - INFO - Demonstration - Join Type: right, Row Count: 71
+2026-05-07 23:19:08,657 - INFO - Merging MySQL and MongoDB data on 'key' using 'inner' join.
+2026-05-07 23:19:08,667 - INFO - Merge completed. Result shape: (71, 15)
+2026-05-07 23:19:12,047 - INFO - Demonstration - Join Type: inner, Row Count: 71
+2026-05-07 23:19:12,052 - INFO - Demonstration - Join Type: outer, Row Count: 71
+2026-05-07 23:19:12,057 - INFO - Demonstration - Join Type: left, Row Count: 71
+2026-05-07 23:19:12,061 - INFO - Demonstration - Join Type: right, Row Count: 71
+2026-05-08 01:00:30,530 - INFO - Merging MySQL and MongoDB data on 'key' using 'inner' join.
+2026-05-08 01:00:30,536 - INFO - Merge completed. Result shape: (71, 17)
+2026-05-08 01:00:30,615 - INFO - Demonstration - Join Type: inner, Row Count: 71
+2026-05-08 01:00:30,620 - INFO - Demonstration - Join Type: outer, Row Count: 71
+2026-05-08 01:00:30,623 - INFO - Demonstration - Join Type: left, Row Count: 71
+2026-05-08 01:00:30,625 - INFO - Demonstration - Join Type: right, Row Count: 71
+2026-05-08 01:00:30,957 - INFO - Calculating genre summary.
+2026-05-08 01:00:30,987 - INFO - Calculating yearly trends from 1900 to 2024.
+2026-05-08 01:00:44,748 - INFO - Merging MySQL and MongoDB data on 'key' using 'inner' join.
+2026-05-08 01:00:44,752 - INFO - Merge completed. Result shape: (71, 17)
+2026-05-08 01:00:44,830 - INFO - Demonstration - Join Type: inner, Row Count: 71
+2026-05-08 01:00:44,834 - INFO - Demonstration - Join Type: outer, Row Count: 71
+2026-05-08 01:00:44,837 - INFO - Demonstration - Join Type: left, Row Count: 71
+2026-05-08 01:00:44,841 - INFO - Demonstration - Join Type: right, Row Count: 71
+2026-05-08 01:00:45,135 - INFO - Calculating genre summary.
+2026-05-08 01:00:45,157 - INFO - Calculating yearly trends from 1900 to 2024.
+2026-05-08 01:12:59,650 - INFO - Merging MySQL and MongoDB data on 'key' using 'inner' join.
+2026-05-08 01:12:59,655 - INFO - Merge completed. Result shape: (71, 17)
+2026-05-08 01:12:59,731 - INFO - Demonstration - Join Type: inner, Row Count: 71
+2026-05-08 01:12:59,734 - INFO - Demonstration - Join Type: outer, Row Count: 71
+2026-05-08 01:12:59,736 - INFO - Demonstration - Join Type: left, Row Count: 71
+2026-05-08 01:12:59,738 - INFO - Demonstration - Join Type: right, Row Count: 71
+2026-05-08 01:13:00,055 - INFO - Calculating genre summary.
+2026-05-08 01:13:00,075 - INFO - Calculating yearly trends from 1900 to 2024.
+2026-05-08 01:15:36,593 - INFO - Merging MySQL and MongoDB data on 'key' using 'inner' join.
+2026-05-08 01:15:36,598 - INFO - Merge completed. Result shape: (71, 17)
+2026-05-08 01:15:36,679 - INFO - Demonstration - Join Type: inner, Row Count: 71
+2026-05-08 01:15:36,687 - INFO - Demonstration - Join Type: outer, Row Count: 71
+2026-05-08 01:15:36,689 - INFO - Demonstration - Join Type: left, Row Count: 71
+2026-05-08 01:15:36,691 - INFO - Demonstration - Join Type: right, Row Count: 71
+2026-05-08 01:15:36,992 - INFO - Calculating genre summary.
+2026-05-08 01:15:37,010 - INFO - Calculating yearly trends from 1900 to 2024.
+2026-05-08 01:15:37,519 - INFO - Calculating top 3 books per group 'genres' based on 'rating'.
+2026-05-08 01:16:58,874 - INFO - Merging MySQL and MongoDB data on 'key' using 'inner' join.
+2026-05-08 01:16:58,878 - INFO - Merge completed. Result shape: (71, 18)
+2026-05-08 01:16:58,953 - INFO - Demonstration - Join Type: inner, Row Count: 71
+2026-05-08 01:16:58,955 - INFO - Demonstration - Join Type: outer, Row Count: 71
+2026-05-08 01:16:58,959 - INFO - Demonstration - Join Type: left, Row Count: 71
+2026-05-08 01:16:58,962 - INFO - Demonstration - Join Type: right, Row Count: 71
+2026-05-08 01:16:59,220 - INFO - Calculating genre summary.
+2026-05-08 01:16:59,232 - INFO - Calculating yearly trends from 1900 to 2024.
+2026-05-08 01:16:59,699 - INFO - Calculating top 3 books per group 'genres' based on 'rating'.
+2026-05-10 04:52:51,980 - INFO - Executing MongoDB aggregation pipeline.
+2026-05-10 04:52:52,056 - INFO - Aggregation returned 20 rows.
+2026-05-10 04:52:52,176 - INFO - Reshaping DataFrame to long format. id_cols=['key', 'title'], value_cols=['rating', 'ratings_count', 'number_of_pages_median']
+2026-05-10 04:52:52,200 - INFO - Parsing 'first_publish_year' to datetime and extracting components.
+2026-05-10 04:52:52,212 - INFO - Resampling data to yearly frequency using 'publish_date'.
+2026-05-10 04:52:52,227 - INFO - Computing rolling averages for 'rating' with windows [3, 5].
+2026-05-10 04:52:52,261 - INFO - Merging MySQL and MongoDB data on 'key' using 'inner' join.
+2026-05-10 04:52:52,264 - INFO - Merge completed. Result shape: (71, 18)
+2026-05-10 04:52:52,291 - INFO - Demonstration - Join Type: inner | Row Count: 71
+2026-05-10 04:52:52,294 - INFO - Demonstration - Join Type: outer | Row Count: 71
+2026-05-10 04:52:52,296 - INFO - Demonstration - Join Type: left  | Row Count: 71
+2026-05-10 04:52:52,299 - INFO - Demonstration - Join Type: right | Row Count: 71
+2026-05-10 04:52:52,634 - INFO - Calculating genre summary.
+2026-05-10 04:52:52,649 - INFO - Calculating genre summary.
+2026-05-10 04:52:52,677 - INFO - Calculating yearly trends from 1900 to 2024.
+2026-05-10 04:52:53,297 - INFO - Calculating top 3 books per group 'genres' based on 'rating'.
+2026-05-10 04:52:53,323 - INFO - Calculating top 10 genres by rating.
+2026-05-10 04:53:34,569 - INFO - Executing MongoDB aggregation pipeline.
+2026-05-10 04:53:34,589 - INFO - Aggregation returned 20 rows.
+2026-05-10 04:53:34,689 - INFO - Reshaping DataFrame to long format. id_cols=['key', 'title'], value_cols=['rating', 'ratings_count', 'number_of_pages_median']
+2026-05-10 04:53:34,719 - INFO - Parsing 'first_publish_year' to datetime and extracting components.
+2026-05-10 04:53:34,728 - INFO - Resampling data to yearly frequency using 'publish_date'.
+2026-05-10 04:53:34,739 - INFO - Computing rolling averages for 'rating' with windows [3, 5].
+2026-05-10 04:53:34,770 - INFO - Merging MySQL and MongoDB data on 'key' using 'inner' join.
+2026-05-10 04:53:34,775 - INFO - Merge completed. Result shape: (71, 18)
+2026-05-10 04:53:34,800 - INFO - Demonstration - Join Type: inner | Row Count: 71
+2026-05-10 04:53:34,803 - INFO - Demonstration - Join Type: outer | Row Count: 71
+2026-05-10 04:53:34,805 - INFO - Demonstration - Join Type: left  | Row Count: 71
+2026-05-10 04:53:34,807 - INFO - Demonstration - Join Type: right | Row Count: 71
+2026-05-10 04:53:35,094 - INFO - Calculating genre summary.
+2026-05-10 04:53:35,100 - INFO - Calculating genre summary.
+2026-05-10 04:53:35,115 - INFO - Calculating yearly trends from 1900 to 2024.
+2026-05-10 04:53:35,600 - INFO - Calculating top 3 books per group 'genres' based on 'rating'.
+2026-05-10 04:53:35,622 - INFO - Calculating top 10 genres by rating.
+2026-05-10 04:53:35,822 - INFO - Chart saved to data/processed/outputs\top_genres.png
+2026-05-10 04:53:35,844 - INFO - Calculating engagement ratio by genre.
+2026-05-10 04:53:36,060 - INFO - Chart saved to data/processed/outputs\engagement_ratio.png
+2026-05-10 04:53:36,077 - INFO - Analyzing publishing trends from 1950 to 2024.
+2026-05-10 04:54:19,762 - INFO - Executing MongoDB aggregation pipeline.
+2026-05-10 04:54:19,802 - INFO - Aggregation returned 20 rows.
+2026-05-10 04:54:19,904 - INFO - Reshaping DataFrame to long format. id_cols=['key', 'title'], value_cols=['rating', 'ratings_count', 'number_of_pages_median']
+2026-05-10 04:54:19,926 - INFO - Parsing 'first_publish_year' to datetime and extracting components.
+2026-05-10 04:54:19,936 - INFO - Resampling data to yearly frequency using 'publish_date'.
+2026-05-10 04:54:19,947 - INFO - Computing rolling averages for 'rating' with windows [3, 5].
+2026-05-10 04:54:19,976 - INFO - Merging MySQL and MongoDB data on 'key' using 'inner' join.
+2026-05-10 04:54:19,979 - INFO - Merge completed. Result shape: (71, 18)
+2026-05-10 04:54:20,003 - INFO - Demonstration - Join Type: inner | Row Count: 71
+2026-05-10 04:54:20,008 - INFO - Demonstration - Join Type: outer | Row Count: 71
+2026-05-10 04:54:20,010 - INFO - Demonstration - Join Type: left  | Row Count: 71
+2026-05-10 04:54:20,012 - INFO - Demonstration - Join Type: right | Row Count: 71
+2026-05-10 04:54:20,264 - INFO - Calculating genre summary.
+2026-05-10 04:54:20,275 - INFO - Calculating genre summary.
+2026-05-10 04:54:20,299 - INFO - Calculating yearly trends from 1900 to 2024.
+2026-05-10 04:54:20,843 - INFO - Calculating top 3 books per group 'genres' based on 'rating'.
+2026-05-10 04:54:20,871 - INFO - Calculating top 10 genres by rating.
+2026-05-10 04:54:21,070 - INFO - Chart saved to data/processed/outputs\top_genres.png
+2026-05-10 04:54:21,097 - INFO - Calculating engagement ratio by genre.
+2026-05-10 04:54:21,349 - INFO - Chart saved to data/processed/outputs\engagement_ratio.png
+2026-05-10 04:54:21,379 - INFO - Analyzing publishing trends from 1950 to 2024.
+2026-05-10 04:54:21,579 - INFO - Chart saved to data/processed/outputs\publishing_trends.png
+2026-05-10 04:54:21,595 - INFO - Calculating language distribution for top 10 languages.
+2026-05-10 04:54:21,762 - INFO - Chart saved to data/processed/outputs\lang_dist.png
+2026-05-10 04:54:36,630 - INFO - Executing MongoDB aggregation pipeline.
+2026-05-10 04:54:36,661 - INFO - Aggregation returned 20 rows.
+2026-05-10 04:54:36,769 - INFO - Reshaping DataFrame to long format. id_cols=['key', 'title'], value_cols=['rating', 'ratings_count', 'number_of_pages_median']
+2026-05-10 04:54:36,790 - INFO - Parsing 'first_publish_year' to datetime and extracting components.
+2026-05-10 04:54:36,802 - INFO - Resampling data to yearly frequency using 'publish_date'.
+2026-05-10 04:54:36,813 - INFO - Computing rolling averages for 'rating' with windows [3, 5].
+2026-05-10 04:54:36,850 - INFO - Merging MySQL and MongoDB data on 'key' using 'inner' join.
+2026-05-10 04:54:36,854 - INFO - Merge completed. Result shape: (71, 18)
+2026-05-10 04:54:36,883 - INFO - Demonstration - Join Type: inner | Row Count: 71
+2026-05-10 04:54:36,886 - INFO - Demonstration - Join Type: outer | Row Count: 71
+2026-05-10 04:54:36,889 - INFO - Demonstration - Join Type: left  | Row Count: 71
+2026-05-10 04:54:36,891 - INFO - Demonstration - Join Type: right | Row Count: 71
+2026-05-10 04:54:37,147 - INFO - Calculating genre summary.
+2026-05-10 04:54:37,153 - INFO - Calculating genre summary.
+2026-05-10 04:54:37,170 - INFO - Calculating yearly trends from 1900 to 2024.
+2026-05-10 04:54:37,701 - INFO - Calculating top 3 books per group 'genres' based on 'rating'.
+2026-05-10 04:54:37,734 - INFO - Calculating top 10 genres by rating.
+2026-05-10 04:54:37,911 - INFO - Chart saved to data/processed/outputs\top_genres.png
+2026-05-10 04:54:37,927 - INFO - Calculating engagement ratio by genre.
+2026-05-10 04:54:38,191 - INFO - Chart saved to data/processed/outputs\engagement_ratio.png
+2026-05-10 04:54:38,206 - INFO - Analyzing publishing trends from 1950 to 2024.
+2026-05-10 04:54:38,430 - INFO - Chart saved to data/processed/outputs\publishing_trends.png
+2026-05-10 04:54:38,444 - INFO - Calculating language distribution for top 10 languages.
+2026-05-10 04:54:38,589 - INFO - Chart saved to data/processed/outputs\lang_dist.png
+2026-05-10 04:56:09,825 - INFO - Executing MongoDB aggregation pipeline.
+2026-05-10 04:56:09,856 - INFO - Aggregation returned 20 rows.
+2026-05-10 04:56:09,963 - INFO - Reshaping DataFrame to long format. id_cols=['key', 'title'], value_cols=['rating', 'ratings_count', 'number_of_pages_median']
+2026-05-10 04:56:09,985 - INFO - Parsing 'first_publish_year' to datetime and extracting components.
+2026-05-10 04:56:09,997 - INFO - Resampling data to yearly frequency using 'publish_date'.
+2026-05-10 04:56:10,008 - INFO - Computing rolling averages for 'rating' with windows [3, 5].
+2026-05-10 04:56:10,040 - INFO - Merging MySQL and MongoDB data on 'key' using 'inner' join.
+2026-05-10 04:56:10,046 - INFO - Merge completed. Result shape: (71, 18)
+2026-05-10 04:56:10,068 - INFO - Demonstration - Join Type: inner | Row Count: 71
+2026-05-10 04:56:10,071 - INFO - Demonstration - Join Type: outer | Row Count: 71
+2026-05-10 04:56:10,074 - INFO - Demonstration - Join Type: left  | Row Count: 71
+2026-05-10 04:56:10,077 - INFO - Demonstration - Join Type: right | Row Count: 71
+2026-05-10 04:56:10,311 - INFO - Calculating genre summary.
+2026-05-10 04:56:10,320 - INFO - Calculating genre summary.
+2026-05-10 04:56:10,335 - INFO - Calculating yearly trends from 1900 to 2024.
+2026-05-10 04:56:10,857 - INFO - Calculating top 3 books per group 'genres' based on 'rating'.
+2026-05-10 04:56:10,878 - INFO - Calculating top 10 genres by rating.
+2026-05-10 04:56:11,119 - INFO - Chart saved to data/processed/outputs\top_genres.png
+2026-05-10 04:56:11,137 - INFO - Calculating engagement ratio by genre.
+2026-05-10 04:56:11,375 - INFO - Chart saved to data/processed/outputs\engagement_ratio.png
+2026-05-10 04:56:11,390 - INFO - Analyzing publishing trends from 1950 to 2024.
+2026-05-10 04:56:11,620 - INFO - Chart saved to data/processed/outputs\publishing_trends.png
+2026-05-10 04:56:11,638 - INFO - Calculating language distribution for top 10 languages.
+2026-05-10 04:56:11,870 - INFO - Chart saved to data/processed/outputs\lang_dist.png
+2026-05-10 04:56:26,318 - INFO - Executing MongoDB aggregation pipeline.
+2026-05-10 04:56:26,343 - INFO - Aggregation returned 20 rows.
+2026-05-10 04:56:26,447 - INFO - Reshaping DataFrame to long format. id_cols=['key', 'title'], value_cols=['rating', 'ratings_count', 'number_of_pages_median']
+2026-05-10 04:56:26,470 - INFO - Parsing 'first_publish_year' to datetime and extracting components.
+2026-05-10 04:56:26,479 - INFO - Resampling data to yearly frequency using 'publish_date'.
+2026-05-10 04:56:26,491 - INFO - Computing rolling averages for 'rating' with windows [3, 5].
+2026-05-10 04:56:26,522 - INFO - Merging MySQL and MongoDB data on 'key' using 'inner' join.
+2026-05-10 04:56:26,525 - INFO - Merge completed. Result shape: (71, 18)
+2026-05-10 04:56:26,549 - INFO - Demonstration - Join Type: inner | Row Count: 71
+2026-05-10 04:56:26,552 - INFO - Demonstration - Join Type: outer | Row Count: 71
+2026-05-10 04:56:26,554 - INFO - Demonstration - Join Type: left  | Row Count: 71
+2026-05-10 04:56:26,556 - INFO - Demonstration - Join Type: right | Row Count: 71
+2026-05-10 04:56:26,877 - INFO - Calculating genre summary.
+2026-05-10 04:56:26,883 - INFO - Calculating genre summary.
+2026-05-10 04:56:26,905 - INFO - Calculating yearly trends from 1900 to 2024.
+2026-05-10 04:56:27,388 - INFO - Calculating top 3 books per group 'genres' based on 'rating'.
+2026-05-10 04:56:27,415 - INFO - Calculating top 10 genres by rating.
+2026-05-10 04:56:27,639 - INFO - Chart saved to data/processed/outputs\top_genres.png
+2026-05-10 04:56:27,655 - INFO - Calculating engagement ratio by genre.
+2026-05-10 04:56:27,869 - INFO - Chart saved to data/processed/outputs\engagement_ratio.png
+2026-05-10 04:56:27,894 - INFO - Analyzing publishing trends from 1950 to 2024.
+2026-05-10 04:56:28,072 - INFO - Chart saved to data/processed/outputs\publishing_trends.png
+2026-05-10 04:56:28,089 - INFO - Calculating language distribution for top 10 languages.
+2026-05-10 04:56:28,285 - INFO - Chart saved to data/processed/outputs\lang_dist.png
+2026-05-10 05:04:36,847 - INFO - Executing MongoDB aggregation pipeline.
+2026-05-10 05:04:36,873 - INFO - Aggregation returned 20 rows.
+2026-05-10 05:04:36,981 - INFO - Reshaping DataFrame to long format. id_cols=['key', 'title'], value_cols=['rating', 'ratings_count', 'number_of_pages_median']
+2026-05-10 05:04:37,006 - INFO - Parsing 'first_publish_year' to datetime and extracting components.
+2026-05-10 05:04:37,019 - INFO - Resampling data to yearly frequency using 'publish_date'.
+2026-05-10 05:04:37,033 - INFO - Computing rolling averages for 'rating' with windows [3, 5].
+2026-05-10 05:04:37,068 - INFO - Merging MySQL and MongoDB data on 'key' using 'inner' join.
+2026-05-10 05:04:37,075 - INFO - Merge completed. Result shape: (71, 18)
+2026-05-10 05:04:37,101 - INFO - Demonstration - Join Type: inner | Row Count: 71
+2026-05-10 05:04:37,106 - INFO - Demonstration - Join Type: outer | Row Count: 71
+2026-05-10 05:04:37,109 - INFO - Demonstration - Join Type: left  | Row Count: 71
+2026-05-10 05:04:37,112 - INFO - Demonstration - Join Type: right | Row Count: 71
+2026-05-10 05:04:37,521 - INFO - Calculating genre summary.
+2026-05-10 05:04:37,527 - INFO - Calculating genre summary.
+2026-05-10 05:04:37,541 - INFO - Calculating yearly trends from 1900 to 2024.
+2026-05-10 05:04:38,472 - INFO - Calculating top 3 books per group 'genres' based on 'rating'.
+2026-05-10 05:04:38,556 - INFO - Calculating top 10 genres by rating.
+2026-05-10 05:04:39,223 - INFO - Chart saved to data/processed/outputs\top_genres.png
+2026-05-10 05:04:39,267 - INFO - Calculating engagement ratio by genre.
+2026-05-10 05:04:39,907 - INFO - Chart saved to data/processed/outputs\engagement_ratio.png
+2026-05-10 05:04:39,940 - INFO - Analyzing publishing trends from 1950 to 2024.
+2026-05-10 05:04:40,500 - INFO - Chart saved to data/processed/outputs\publishing_trends.png
+2026-05-10 05:04:40,552 - INFO - Calculating language distribution for top 10 languages.
+2026-05-10 05:04:41,024 - INFO - Chart saved to data/processed/outputs\lang_dist.png
