@@ -23,6 +23,62 @@ from analytics.insight_reporter import (
     yearly_publishing_trends, 
     language_distribution
 )
+from embeddings.chroma_store import get_client, get_or_create_collection, add_books, get_collection_info
+from embeddings.embedder import load_model, generate_embeddings, combine_book_fields
+from embeddings.similarity import multi_metric_search
+import time
+
+def run_embedding_demo(df: pd.DataFrame):
+    """Demonstrates multi-metric search on the dataset."""
+    logging.info("=== Starting Multi-Metric Search Demo ===")
+    try:
+        combined_text = combine_book_fields(df)
+        texts = combined_text.tolist()
+        
+        # Load existing embeddings if available
+        embedding_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', 'data', 'processed', 'embeddings'))
+        embedding_file = os.path.join(embedding_path, 'book_embeddings.npy')
+        
+        if os.path.exists(embedding_file):
+            embeddings = np.load(embedding_file)
+            query = "A high-stakes science fiction adventure set in a distant galaxy"
+            multi_metric_search(query, texts, embeddings, top_n=5)
+        else:
+            logging.warning("Embeddings file not found. Skipping demo.")
+            
+    except Exception as e:
+        logging.error(f"Multi-metric search demo failed: {e}")
+
+def run_embedding_pipeline(df: pd.DataFrame):
+    """Embeds books into ChromaDB."""
+    logging.info("=== Starting Embedding Pipeline ===")
+    try:
+        embedding_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', 'data', 'processed', 'embeddings'))
+        embedding_file = os.path.join(embedding_path, 'book_embeddings.npy')
+        os.makedirs(embedding_path, exist_ok=True)
+        
+        client = get_client(path=os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', 'data', 'embeddings', 'chroma_db')))
+        collection = get_or_create_collection(client, name='books_collection', reset=False)
+        info = get_collection_info(collection)
+        
+        if os.path.exists(embedding_file) and info['count'] == len(df):
+            logging.info("Embeddings already exist, skipping generation")
+        else:
+            combined_text = combine_book_fields(df)
+            start_time = time.time()
+            embeddings = generate_embeddings(combined_text.tolist())
+            duration = time.time() - start_time
+            np.save(embedding_file, embeddings)
+            
+            logging.info(f"Generated {len(embeddings)} embeddings, shape {embeddings.shape}, time taken: {duration:.2f}s")
+            
+            add_books(collection, df, embeddings)
+            final_info = get_collection_info(collection)
+            logging.info(f"Final collection count: {final_info['count']}")
+            
+    except Exception as e:
+        logging.error(f"Embedding pipeline failed: {e}", exc_info=True)
+        # Continue so other steps are not broken
 
 def run_lab10_analytics():
     """Execute the full Lab 10 analytics pipeline."""
@@ -156,6 +212,12 @@ def run_document_pipeline():
     logging.info("Document extraction pipeline completed successfully")
 
 
+import numpy as np
+import time
+
+# ... [imports] ...
+# [previous functions]
+
 def run_pipeline():
     """Orchestrate the full pipeline: API + document extraction + Lab 10 analytics."""
     logging.info("========== Pipeline Started ==========")
@@ -163,6 +225,12 @@ def run_pipeline():
     run_api_pipeline()
     #run_document_pipeline()
     run_lab10_analytics()
+    
+    csv_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', 'data', 'processed', 'cleaned', 'cleaned_books.csv'))
+    if os.path.exists(csv_path):
+        df = pd.read_csv(csv_path)
+        run_embedding_pipeline(df)
+        run_embedding_demo(df)
 
     logging.info("========== Pipeline Finished ==========")
 
