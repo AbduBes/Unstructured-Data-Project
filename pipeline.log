@@ -4117,3 +4117,201 @@ KeyError: 'genres'
 2026-05-15 21:34:44,763 - INFO - 2. Testing $gte operator (Year >= 2000)
 2026-05-15 21:34:45,019 - INFO - 3. Testing $in operator (Genre in [Fiction, Science Fiction])
 2026-05-15 21:34:45,279 - INFO - 4. Testing $and operator (Language: eng AND Rating >= 4.0)
+2026-05-20 00:04:23,442 - WARNING - python-dotenv could not parse statement starting at line 4
+2026-05-20 00:04:23,453 - WARNING - python-dotenv could not parse statement starting at line 4
+2026-05-20 00:04:23,510 - WARNING - python-dotenv could not parse statement starting at line 4
+2026-05-20 00:04:23,540 - WARNING - python-dotenv could not parse statement starting at line 4
+2026-05-20 00:04:23,820 - WARNING - python-dotenv could not parse statement starting at line 4
+2026-05-20 00:04:25,188 - WARNING - python-dotenv could not parse statement starting at line 4
+2026-05-20 00:04:25,217 - WARNING - python-dotenv could not parse statement starting at line 4
+2026-05-20 00:04:58,411 - INFO - Loading SentenceTransformer model: all-MiniLM-L6-v2
+2026-05-20 00:04:58,413 - INFO - No device provided, using cpu
+2026-05-20 00:04:59,102 - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-20 00:04:59,106 - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-05-20 00:04:59,142 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-05-20 00:04:59,329 - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-20 00:04:59,364 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-05-20 00:04:59,376 - INFO - Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+2026-05-20 00:04:59,545 - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-20 00:04:59,583 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-05-20 00:04:59,755 - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-05-20 00:04:59,797 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md "HTTP/1.1 200 OK"
+2026-05-20 00:05:00,011 - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-20 00:05:00,081 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-05-20 00:05:00,268 - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-20 00:05:00,304 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-05-20 00:05:00,505 - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-05-20 00:05:00,725 - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-20 00:05:00,760 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-05-20 00:05:01,203 - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-05-20 00:05:01,374 - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-20 00:05:01,550 - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-20 00:05:01,722 - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-20 00:05:01,894 - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-20 00:05:01,931 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-20 00:05:02,130 - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-20 00:05:02,167 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-05-20 00:05:02,346 - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-20 00:05:02,380 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-05-20 00:05:02,554 - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-20 00:05:02,586 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-20 00:05:02,770 - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-05-20 00:05:02,951 - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-05-20 00:05:03,235 - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-20 00:05:03,273 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-05-20 00:05:03,458 - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-05-20 00:05:03,470 - INFO - ========== Pipeline Started ==========
+2026-05-20 00:05:03,470 - INFO - === Starting API Pipeline ===
+2026-05-20 00:05:04,966 - INFO - Successfully fetched data from https://openlibrary.org/search.json (Page 1)
+2026-05-20 00:05:05,061 - INFO - Inserted document with id 6a0cde905f9780932fa06c5c from source: openlibrary_api
+2026-05-20 00:05:05,063 - INFO - Inserted document with id 6a0cde915f9780932fa06c5d from source: openlibrary_api
+2026-05-20 00:05:05,064 - INFO - Inserted document with id 6a0cde915f9780932fa06c5e from source: openlibrary_api
+2026-05-20 00:05:05,064 - INFO - Inserted document with id 6a0cde915f9780932fa06c5f from source: openlibrary_api
+2026-05-20 00:05:05,065 - INFO - Inserted document with id 6a0cde915f9780932fa06c60 from source: openlibrary_api
+2026-05-20 00:05:05,067 - INFO - Inserted document with id 6a0cde915f9780932fa06c61 from source: openlibrary_api
+2026-05-20 00:05:05,069 - INFO - Inserted document with id 6a0cde915f9780932fa06c62 from source: openlibrary_api
+2026-05-20 00:05:05,070 - INFO - Inserted document with id 6a0cde915f9780932fa06c63 from source: openlibrary_api
+2026-05-20 00:05:05,071 - INFO - Inserted document with id 6a0cde915f9780932fa06c64 from source: openlibrary_api
+2026-05-20 00:05:05,072 - INFO - Inserted document with id 6a0cde915f9780932fa06c65 from source: openlibrary_api
+2026-05-20 00:05:05,072 - INFO - Inserted document with id 6a0cde915f9780932fa06c66 from source: openlibrary_api
+2026-05-20 00:05:05,073 - INFO - Inserted document with id 6a0cde915f9780932fa06c67 from source: openlibrary_api
+2026-05-20 00:05:05,074 - INFO - Inserted document with id 6a0cde915f9780932fa06c68 from source: openlibrary_api
+2026-05-20 00:05:05,074 - INFO - Inserted document with id 6a0cde915f9780932fa06c69 from source: openlibrary_api
+2026-05-20 00:05:05,076 - INFO - Inserted document with id 6a0cde915f9780932fa06c6a from source: openlibrary_api
+2026-05-20 00:05:05,077 - INFO - Inserted document with id 6a0cde915f9780932fa06c6b from source: openlibrary_api
+2026-05-20 00:05:05,078 - INFO - Inserted document with id 6a0cde915f9780932fa06c6c from source: openlibrary_api
+2026-05-20 00:05:05,079 - INFO - Inserted document with id 6a0cde915f9780932fa06c6d from source: openlibrary_api
+2026-05-20 00:05:05,081 - INFO - Inserted document with id 6a0cde915f9780932fa06c6e from source: openlibrary_api
+2026-05-20 00:05:05,082 - INFO - Inserted document with id 6a0cde915f9780932fa06c6f from source: openlibrary_api
+2026-05-20 00:05:05,083 - INFO - Inserted document with id 6a0cde915f9780932fa06c70 from source: openlibrary_api
+2026-05-20 00:05:05,084 - INFO - Inserted document with id 6a0cde915f9780932fa06c71 from source: openlibrary_api
+2026-05-20 00:05:05,085 - INFO - Inserted document with id 6a0cde915f9780932fa06c72 from source: openlibrary_api
+2026-05-20 00:05:05,087 - INFO - Inserted document with id 6a0cde915f9780932fa06c73 from source: openlibrary_api
+2026-05-20 00:05:05,087 - INFO - Inserted document with id 6a0cde915f9780932fa06c74 from source: openlibrary_api
+2026-05-20 00:05:05,088 - INFO - Inserted document with id 6a0cde915f9780932fa06c75 from source: openlibrary_api
+2026-05-20 00:05:05,090 - INFO - Inserted document with id 6a0cde915f9780932fa06c76 from source: openlibrary_api
+2026-05-20 00:05:05,091 - INFO - Inserted document with id 6a0cde915f9780932fa06c77 from source: openlibrary_api
+2026-05-20 00:05:05,092 - INFO - Inserted document with id 6a0cde915f9780932fa06c78 from source: openlibrary_api
+2026-05-20 00:05:05,093 - INFO - Inserted document with id 6a0cde915f9780932fa06c79 from source: openlibrary_api
+2026-05-20 00:05:05,094 - INFO - Inserted document with id 6a0cde915f9780932fa06c7a from source: openlibrary_api
+2026-05-20 00:05:05,095 - INFO - Inserted document with id 6a0cde915f9780932fa06c7b from source: openlibrary_api
+2026-05-20 00:05:05,096 - INFO - Inserted document with id 6a0cde915f9780932fa06c7c from source: openlibrary_api
+2026-05-20 00:05:05,097 - INFO - Inserted document with id 6a0cde915f9780932fa06c7d from source: openlibrary_api
+2026-05-20 00:05:05,098 - INFO - Inserted document with id 6a0cde915f9780932fa06c7e from source: openlibrary_api
+2026-05-20 00:05:05,099 - INFO - Inserted document with id 6a0cde915f9780932fa06c7f from source: openlibrary_api
+2026-05-20 00:05:05,100 - INFO - Inserted document with id 6a0cde915f9780932fa06c80 from source: openlibrary_api
+2026-05-20 00:05:05,101 - INFO - Inserted document with id 6a0cde915f9780932fa06c81 from source: openlibrary_api
+2026-05-20 00:05:05,101 - INFO - Inserted document with id 6a0cde915f9780932fa06c82 from source: openlibrary_api
+2026-05-20 00:05:05,102 - INFO - Inserted document with id 6a0cde915f9780932fa06c83 from source: openlibrary_api
+2026-05-20 00:05:05,103 - INFO - Inserted document with id 6a0cde915f9780932fa06c84 from source: openlibrary_api
+2026-05-20 00:05:05,103 - INFO - Inserted document with id 6a0cde915f9780932fa06c85 from source: openlibrary_api
+2026-05-20 00:05:05,104 - INFO - Inserted document with id 6a0cde915f9780932fa06c86 from source: openlibrary_api
+2026-05-20 00:05:05,105 - INFO - Inserted document with id 6a0cde915f9780932fa06c87 from source: openlibrary_api
+2026-05-20 00:05:05,106 - INFO - Inserted document with id 6a0cde915f9780932fa06c88 from source: openlibrary_api
+2026-05-20 00:05:05,107 - INFO - Inserted document with id 6a0cde915f9780932fa06c89 from source: openlibrary_api
+2026-05-20 00:05:05,108 - INFO - Inserted document with id 6a0cde915f9780932fa06c8a from source: openlibrary_api
+2026-05-20 00:05:05,109 - INFO - Inserted document with id 6a0cde915f9780932fa06c8b from source: openlibrary_api
+2026-05-20 00:05:05,110 - INFO - Inserted document with id 6a0cde915f9780932fa06c8c from source: openlibrary_api
+2026-05-20 00:05:05,111 - INFO - Inserted document with id 6a0cde915f9780932fa06c8d from source: openlibrary_api
+2026-05-20 00:05:05,112 - INFO - Inserted document with id 6a0cde915f9780932fa06c8e from source: openlibrary_api
+2026-05-20 00:05:05,113 - INFO - Inserted document with id 6a0cde915f9780932fa06c8f from source: openlibrary_api
+2026-05-20 00:05:05,114 - INFO - Inserted document with id 6a0cde915f9780932fa06c90 from source: openlibrary_api
+2026-05-20 00:05:05,115 - INFO - Inserted document with id 6a0cde915f9780932fa06c91 from source: openlibrary_api
+2026-05-20 00:05:05,116 - INFO - Inserted document with id 6a0cde915f9780932fa06c92 from source: openlibrary_api
+2026-05-20 00:05:05,117 - INFO - Inserted document with id 6a0cde915f9780932fa06c93 from source: openlibrary_api
+2026-05-20 00:05:05,118 - INFO - Inserted document with id 6a0cde915f9780932fa06c94 from source: openlibrary_api
+2026-05-20 00:05:05,119 - INFO - Inserted document with id 6a0cde915f9780932fa06c95 from source: openlibrary_api
+2026-05-20 00:05:05,120 - INFO - Inserted document with id 6a0cde915f9780932fa06c96 from source: openlibrary_api
+2026-05-20 00:05:05,121 - INFO - Inserted document with id 6a0cde915f9780932fa06c97 from source: openlibrary_api
+2026-05-20 00:05:05,122 - INFO - Inserted document with id 6a0cde915f9780932fa06c98 from source: openlibrary_api
+2026-05-20 00:05:05,123 - INFO - Inserted document with id 6a0cde915f9780932fa06c99 from source: openlibrary_api
+2026-05-20 00:05:05,124 - INFO - Inserted document with id 6a0cde915f9780932fa06c9a from source: openlibrary_api
+2026-05-20 00:05:05,125 - INFO - Inserted document with id 6a0cde915f9780932fa06c9b from source: openlibrary_api
+2026-05-20 00:05:05,126 - INFO - Inserted document with id 6a0cde915f9780932fa06c9c from source: openlibrary_api
+2026-05-20 00:05:05,127 - INFO - Inserted document with id 6a0cde915f9780932fa06c9d from source: openlibrary_api
+2026-05-20 00:05:05,128 - INFO - Inserted document with id 6a0cde915f9780932fa06c9e from source: openlibrary_api
+2026-05-20 00:05:05,128 - INFO - Inserted document with id 6a0cde915f9780932fa06c9f from source: openlibrary_api
+2026-05-20 00:05:05,129 - INFO - Inserted document with id 6a0cde915f9780932fa06ca0 from source: openlibrary_api
+2026-05-20 00:05:05,131 - INFO - Inserted document with id 6a0cde915f9780932fa06ca1 from source: openlibrary_api
+2026-05-20 00:05:05,132 - INFO - Inserted document with id 6a0cde915f9780932fa06ca2 from source: openlibrary_api
+2026-05-20 00:05:05,132 - INFO - Inserted document with id 6a0cde915f9780932fa06ca3 from source: openlibrary_api
+2026-05-20 00:05:05,133 - INFO - Inserted document with id 6a0cde915f9780932fa06ca4 from source: openlibrary_api
+2026-05-20 00:05:05,134 - INFO - Inserted document with id 6a0cde915f9780932fa06ca5 from source: openlibrary_api
+2026-05-20 00:05:05,135 - INFO - Inserted document with id 6a0cde915f9780932fa06ca6 from source: openlibrary_api
+2026-05-20 00:05:05,135 - INFO - Inserted document with id 6a0cde915f9780932fa06ca7 from source: openlibrary_api
+2026-05-20 00:05:05,136 - INFO - Inserted document with id 6a0cde915f9780932fa06ca8 from source: openlibrary_api
+2026-05-20 00:05:05,138 - INFO - Inserted document with id 6a0cde915f9780932fa06ca9 from source: openlibrary_api
+2026-05-20 00:05:05,139 - INFO - Inserted document with id 6a0cde915f9780932fa06caa from source: openlibrary_api
+2026-05-20 00:05:05,141 - INFO - Inserted document with id 6a0cde915f9780932fa06cab from source: openlibrary_api
+2026-05-20 00:05:05,142 - INFO - Inserted document with id 6a0cde915f9780932fa06cac from source: openlibrary_api
+2026-05-20 00:05:05,143 - INFO - Inserted document with id 6a0cde915f9780932fa06cad from source: openlibrary_api
+2026-05-20 00:05:05,144 - INFO - Inserted document with id 6a0cde915f9780932fa06cae from source: openlibrary_api
+2026-05-20 00:05:05,146 - INFO - Inserted document with id 6a0cde915f9780932fa06caf from source: openlibrary_api
+2026-05-20 00:05:05,147 - INFO - Inserted document with id 6a0cde915f9780932fa06cb0 from source: openlibrary_api
+2026-05-20 00:05:05,148 - INFO - Inserted document with id 6a0cde915f9780932fa06cb1 from source: openlibrary_api
+2026-05-20 00:05:05,149 - INFO - Inserted document with id 6a0cde915f9780932fa06cb2 from source: openlibrary_api
+2026-05-20 00:05:05,150 - INFO - Inserted document with id 6a0cde915f9780932fa06cb3 from source: openlibrary_api
+2026-05-20 00:05:05,151 - INFO - Inserted document with id 6a0cde915f9780932fa06cb4 from source: openlibrary_api
+2026-05-20 00:05:05,152 - INFO - Inserted document with id 6a0cde915f9780932fa06cb5 from source: openlibrary_api
+2026-05-20 00:05:05,153 - INFO - Inserted document with id 6a0cde915f9780932fa06cb6 from source: openlibrary_api
+2026-05-20 00:05:05,154 - INFO - Inserted document with id 6a0cde915f9780932fa06cb7 from source: openlibrary_api
+2026-05-20 00:05:05,155 - INFO - Inserted document with id 6a0cde915f9780932fa06cb8 from source: openlibrary_api
+2026-05-20 00:05:05,156 - INFO - Inserted document with id 6a0cde915f9780932fa06cb9 from source: openlibrary_api
+2026-05-20 00:05:05,157 - INFO - Inserted document with id 6a0cde915f9780932fa06cba from source: openlibrary_api
+2026-05-20 00:05:05,158 - INFO - Inserted document with id 6a0cde915f9780932fa06cbb from source: openlibrary_api
+2026-05-20 00:05:05,159 - INFO - Inserted document with id 6a0cde915f9780932fa06cbc from source: openlibrary_api
+2026-05-20 00:05:05,160 - INFO - Inserted document with id 6a0cde915f9780932fa06cbd from source: openlibrary_api
+2026-05-20 00:05:05,161 - INFO - Inserted document with id 6a0cde915f9780932fa06cbe from source: openlibrary_api
+2026-05-20 00:05:05,162 - INFO - Inserted document with id 6a0cde915f9780932fa06cbf from source: openlibrary_api
+2026-05-20 00:05:05,162 - INFO - API pipeline completed successfully
+2026-05-20 00:05:05,163 - INFO - === Starting Lab 10 Analytics Pipeline ===
+2026-05-20 00:05:05,168 - INFO - Loaded 100 rows from cleaned data.
+2026-05-20 00:05:05,168 - INFO - Executing MongoDB aggregation pipeline.
+2026-05-20 00:05:05,338 - INFO - Aggregation returned 20 rows.
+2026-05-20 00:05:05,364 - INFO - Reshaping DataFrame to long format. id_cols=['key', 'title'], value_cols=['rating', 'ratings_count', 'number_of_pages_median']
+2026-05-20 00:05:05,368 - INFO - Melted DataFrame shape: (213, 4)
+2026-05-20 00:05:05,369 - INFO - Parsing 'first_publish_year' to datetime and extracting components.
+2026-05-20 00:05:05,378 - INFO - Resampling data to yearly frequency using 'publish_date'.
+2026-05-20 00:05:05,395 - INFO - Computing rolling averages for 'rating' with windows [3, 5].
+2026-05-20 00:05:05,417 - INFO - Demonstration - Join Type: inner | Row Count: 71
+2026-05-20 00:05:05,424 - INFO - Demonstration - Join Type: outer | Row Count: 100
+2026-05-20 00:05:05,428 - INFO - Demonstration - Join Type: left  | Row Count: 71
+2026-05-20 00:05:05,432 - INFO - Demonstration - Join Type: right | Row Count: 100
+2026-05-20 00:05:05,433 - INFO - Merging MySQL and MongoDB data on 'key' using 'inner' join.
+2026-05-20 00:05:05,436 - INFO - Merge completed. Result shape: (71, 14)
+2026-05-20 00:05:05,437 - INFO - Calculating top 10 genres by rating.
+2026-05-20 00:05:06,733 - INFO - Chart saved to data/processed/outputs\top_genres.png
+2026-05-20 00:05:06,733 - INFO - Calculating engagement ratio by genre.
+2026-05-20 00:05:07,002 - INFO - Chart saved to data/processed/outputs\engagement_ratio.png
+2026-05-20 00:05:07,003 - INFO - Analyzing publishing trends from 1900 to 2024.
+2026-05-20 00:05:07,250 - INFO - Chart saved to data/processed/outputs\publishing_trends.png
+2026-05-20 00:05:07,250 - INFO - Calculating language distribution for top 10 languages.
+2026-05-20 00:05:07,589 - INFO - Chart saved to data/processed/outputs\lang_dist.png
+2026-05-20 00:05:07,589 - INFO - === Lab 10 Analytics Pipeline Finished ===
+2026-05-20 00:05:07,593 - INFO - === Starting Embedding Pipeline ===
+2026-05-20 00:05:07,594 - INFO - Initialising ChromaDB PersistentClient at: C:\Users\Laptop\Desktop\Unstructured Data Project\Unstructured-Data-Project\data\embeddings\chroma_db
+2026-05-20 00:05:07,595 - WARNING - python-dotenv could not parse statement starting at line 4
+2026-05-20 00:05:07,837 - INFO - Loaded existing collection: books_collection with cosine similarity.
+2026-05-20 00:05:07,892 - INFO - Collection 'books_collection' contains 100 items.
+2026-05-20 00:05:07,893 - INFO - Embeddings already exist, skipping generation
+2026-05-20 00:05:07,893 - INFO - === Starting Multi-Metric Search Demo ===
+2026-05-20 00:05:07,893 - INFO - Combining book fields into descriptive strings for embedding.
+2026-05-20 00:05:07,899 - INFO - Performing multi-metric search for query: 'A high-stakes science fiction adventure set in a distant galaxy'
+2026-05-20 00:05:07,899 - INFO - Generating embeddings for 1 texts.
+2026-05-20 00:05:08,049 - INFO - Embeddings generated. Output shape: (1, 384)
+2026-05-20 00:05:08,055 - INFO - Multi-metric search completed. Found top 5 matches.
+2026-05-20 00:05:08,055 - INFO - === Starting Visualization Pipeline ===
+2026-05-20 00:05:08,061 - INFO - Loaded 100 books from data\processed\cleaned\cleaned_books.csv
+2026-05-20 00:05:12,215 - INFO - Saved avg_rating_over_years  (PNG + PDF)
+2026-05-20 00:05:20,176 - INFO - Saved subject_rating_boxplot  (PNG + PDF)
+2026-05-20 00:05:22,360 - INFO - Saved correlation_heatmap  (PNG + PDF)
+2026-05-20 00:05:27,857 - INFO - Saved subject_count_bar  (PNG + PDF)
+2026-05-20 00:05:34,314 - INFO - Saved rating_vs_edition_count  (PNG + PDF)
+2026-05-20 00:05:34,924 - INFO - Saved pages_distribution  (PNG + PDF)
+2026-05-20 00:05:35,673 - INFO - Saved interactive chart: outputs\visualizations\interactive\editions_vs_pages_interactive.html
+2026-05-20 00:05:35,801 - INFO - Saved interactive chart: outputs\visualizations\interactive\top_books_ratings_bar.html
+2026-05-20 00:05:35,881 - INFO - Saved interactive chart: outputs\visualizations\interactive\books_per_year_line.html
+2026-05-20 00:05:36,243 - INFO - Saved interactive chart: outputs\visualizations\interactive\subject_rating_boxplot_interactive.html
+2026-05-20 00:05:36,356 - INFO - Saved interactive chart: outputs\visualizations\interactive\interactive_dashboard.html
+2026-05-20 00:05:36,358 - INFO - Visualization pipeline completed successfully
+2026-05-20 00:05:36,358 - INFO - ========== Pipeline Finished ==========
