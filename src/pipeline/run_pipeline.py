@@ -23,6 +23,7 @@ from analytics.insight_reporter import (
     yearly_publishing_trends, 
     language_distribution
 )
+from visualization.chart_generator import generate_all
 from embeddings.chroma_store import get_client, get_or_create_collection, add_books, get_collection_info
 from embeddings.embedder import load_model, generate_embeddings, combine_book_fields
 from embeddings.similarity import multi_metric_search
@@ -218,8 +219,18 @@ import time
 # ... [imports] ...
 # [previous functions]
 
+def run_visualizations_pipeline():
+    """Generate all static and interactive charts for the book dataset."""
+    logging.info("=== Starting Visualization Pipeline ===")
+    try:
+        generate_all()
+        logging.info("Visualization pipeline completed successfully")
+    except Exception as e:
+        logging.error(f"Visualization pipeline failed: {e}", exc_info=True)
+
+
 def run_pipeline():
-    """Orchestrate the full pipeline: API + document extraction + Lab 10 analytics."""
+    """Orchestrate the full pipeline: API + document extraction + Lab 10 analytics + Visualizations."""
     logging.info("========== Pipeline Started ==========")
 
     run_api_pipeline()
@@ -231,6 +242,9 @@ def run_pipeline():
         df = pd.read_csv(csv_path)
         run_embedding_pipeline(df)
         run_embedding_demo(df)
+    
+    # New visualization step
+    run_visualizations_pipeline()
 
     logging.info("========== Pipeline Finished ==========")
 
