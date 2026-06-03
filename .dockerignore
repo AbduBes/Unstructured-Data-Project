@@ -1,0 +1,36 @@
+# Keep the Docker build context (and final image) lean.
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Python caches & build artifacts
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Version control & IDE
+.git/
+.gitignore
+.vscode/
+.idea/
+
+# Notebooks, logs and generated outputs aren't needed at runtime
+notebooks/
+outputs/
+*.log
+
+# Credentials / local config that must never enter the image
+token.json
+*.env
+.env
+
+# Exclude the bulk of the data tree, but keep the cleaned CSV the dashboard
+# uses as a graceful fallback when MongoDB is unavailable.
+data/
+!data/processed/
+data/processed/*
+!data/processed/cleaned/
