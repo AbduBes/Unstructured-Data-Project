@@ -1,0 +1,38 @@
+# ---------------------------------------------------------------------------
+# Docker Compose for the Book Analytics dashboard (Lab 13)
+#
+# Brings up the full stack with a single command:
+#     docker compose up --build
+#
+#   web : the Dash dashboard (built from the local Dockerfile, Gunicorn server)
+#   db  : MongoDB, reachable from `web` by the service name `db`
+#
+# The dashboard reads its MongoDB connection details from environment
+# variables, so inside the Compose network it talks to mongodb://db:27017/.
+# ---------------------------------------------------------------------------
+services:
+  web:
+    build: .
+    container_name: book_dashboard
+    ports:
+      - "8050:8050"
+    environment:
+      MONGO_URI: "mongodb://db:27017/"
+      MONGO_DB: "book_pipeline"
+      MONGO_COLLECTION: "books"
+    depends_on:
+      - db
+    restart: unless-stopped
+
+  db:
+    image: mongo:7
+    container_name: book_mongo
+    ports:
+      # Published so the seed script can be run from the host machine.
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+    restart: unless-stopped
+
+volumes:
+  mongo_data:

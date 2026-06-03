@@ -229,6 +229,32 @@ def run_visualizations_pipeline():
         logging.error(f"Visualization pipeline failed: {e}", exc_info=True)
 
 
+def print_dashboard_instructions():
+    """Print how to launch the Lab 13 dashboard.
+
+    The dashboard is a long-running web server, unlike the batch steps above
+    that run and finish, so the pipeline does not start it automatically. It
+    simply prints the commands for running the app locally or with Docker.
+    """
+    message = """
+==================== Dashboard Ready (Lab 13) ====================
+The data pipeline has finished. To explore the results interactively,
+start the Dash dashboard:
+
+  Local (development):
+    python app.py
+    # then open http://127.0.0.1:8050
+
+  Docker (full stack: dashboard + MongoDB):
+    docker compose up --build
+    python scripts/seed_mongo.py     # seed the database (one time)
+    # then open http://localhost:8050
+==================================================================
+"""
+    print(message)
+    logging.info("Printed Lab 13 dashboard launch instructions.")
+
+
 def run_pipeline():
     """Orchestrate the full pipeline: API + document extraction + Lab 10 analytics + Visualizations."""
     logging.info("========== Pipeline Started ==========")
@@ -236,15 +262,18 @@ def run_pipeline():
     run_api_pipeline()
     #run_document_pipeline()
     run_lab10_analytics()
-    
+
     csv_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', 'data', 'processed', 'cleaned', 'cleaned_books.csv'))
     if os.path.exists(csv_path):
         df = pd.read_csv(csv_path)
         run_embedding_pipeline(df)
         run_embedding_demo(df)
-    
+
     # New visualization step
     run_visualizations_pipeline()
+
+    # Lab 13: tell the user how to launch the interactive dashboard.
+    print_dashboard_instructions()
 
     logging.info("========== Pipeline Finished ==========")
 
