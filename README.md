@@ -38,6 +38,42 @@ The project will be considered successful if it meets the following benchmarks:
 * **Performance:** The pipeline can process a 100,000-word novel (ingestion to visualization) in under **60 seconds**.
 * **Insight:** Successfully identify at least three significant "Sentiment Shifts" where modern reviews differ emotionally from the book's internal narrative tone.
 
+---
+
+## Lab 13 — Interactive Book Analytics Dashboard
+
+Lab 13 turns the cleaned book dataset into a **live, interactive Dash web app**
+served by **Gunicorn** and orchestrated with **MongoDB** via **Docker Compose**.
+
+**Deployed app:** _TODO — paste the public URL here after deploying (bonus task)._
+
+### Architecture
+| File | Role |
+|------|------|
+| `app.py` | Dash entry point — creates the app, loads the layout, registers callbacks, exposes `server` for Gunicorn |
+| `src/dashboard/data_access.py` | MongoDB queries with a graceful CSV fallback, plus filter helpers |
+| `src/dashboard/layout.py` | Page layout: KPI cards, filters, four charts, live ticker |
+| `src/dashboard/callbacks.py` | 6 reactive `@callback`s (4 charts + KPI cards + live ticker) |
+| `scripts/seed_mongo.py` | One-time MongoDB seeding from the cleaned CSV |
+| `Dockerfile` / `docker-compose.yml` / `.dockerignore` | Containerised deployment |
+
+### Run locally
+```bash
+python app.py            # open http://127.0.0.1:8050
+```
+
+### Run the full stack with Docker
+```bash
+docker compose up --build       # starts the dashboard (web) + MongoDB (db)
+python scripts/seed_mongo.py     # seed the database (one time)
+# open http://localhost:8050
+docker compose down              # stop (add -v to also wipe the Mongo volume)
+```
+
+See [`notebooks/lab13_dashboard.ipynb`](notebooks/lab13_dashboard.ipynb) for the
+full walkthrough and deployment documentation.
+
+---
 
 sample_1.jpeg:
 ImageWidth: 3072

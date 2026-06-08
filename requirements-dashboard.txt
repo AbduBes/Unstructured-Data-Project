@@ -1,0 +1,13 @@
+# Lean dependency set for the Lab 13 dashboard Docker image.
+# The project's full requirements.txt also pulls in heavy ML libraries
+# (torch, chromadb, sentence-transformers, jupyter ...) that the live
+# dashboard does not need. Installing only these keeps the image small and
+# the build fast, while .dockerignore keeps the build context lean.
+dash>=2.17.0
+dash-bootstrap-components>=1.6.0
+plotly>=5.22.0
+pandas>=2.1.0
+numpy>=1.26.0
+pymongo>=4.6.0
+gunicorn>=22.0.0
+websockets>=12.0.0
