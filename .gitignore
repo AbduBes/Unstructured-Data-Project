@@ -9,3 +9,7 @@ google_drive/
 /GEMINI.md
 src/analytics/db_connector.py
 /.claude
+
+# Logs and IDE files
+*.log
+.idea/
