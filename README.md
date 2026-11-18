@@ -1,162 +1,118 @@
-# Unstructured-Data-Project
+# Book Data Pipeline & Analytics Dashboard
 
+![tests](https://github.com/AbduBes/Unstructured-Data-Project/actions/workflows/tests.yml/badge.svg)
 
-## Project: Multi-Source Unstructured Literature Analysis
+An end-to-end data pipeline that collects book data from the **Open Library API**, cleans it, stores it in **MongoDB**, analyses it with **pandas** and SQL, supports **semantic and hybrid search** over the books with sentence embeddings and **ChromaDB**, and serves the results in an interactive **Dash** dashboard deployed with **Docker Compose**.
 
-Project Idea
+It also includes modules for unstructured file types: parsing PDF, Word and Excel documents, and processing images, audio and video (including speech-to-text with Whisper).
 
-The **Literary Intelligence Pipeline** is an unstructured data project designed to extract, analyze, and compare thematic patterns between classic literature and modern critical discourse.
-By processing raw text from public domain novels and semi-structured academic reviews, the project aims to identify "sentiment drift"—how the emotional perception of a book's themes has changed from its publication date to modern-day analysis.Data Sources
+![Publications and average rating over the years](outputs/visualizations/static/avg_rating_over_years.png)
 
-To ensure a robust analysis of unstructured data, this project utilizes:
+## Pipeline
 
-* **Project Gutenberg:** A repository of over 70,000 free eBooks. We will extract raw `.txt` files of classic novels (e.g., *Pride and Prejudice*, *Moby Dick*).
-* **Goodreads API / Open Library:** To fetch modern user-generated reviews and unstructured critical metadata to compare historical text against contemporary reception.
-
-Data Types Handled
-
-* **Unstructured Text:** Full-length novel chapters, prose, and dialogue.
-* **Semi-Structured JSON:** API responses containing book metadata, ratings, and timestamped reviews.
-* **Sequential Data:** Time-series sentiment scores extracted from the text.
-
-Pipeline Architecture
-
-The following diagram illustrates the flow from raw data ingestion to the final analytical dashboard.
-
-Expected Challenges
-
-* **Language Evolution:** Classic literature often uses archaic vocabulary and syntax that standard NLP libraries (like SpaCy or NLTK) may misclassify during Sentiment Analysis or POS (Part-of-Speech) tagging.
-* **Data Volume & Cleaning:** Handling full-length novels requires significant memory management. Cleaning "OCR noise" (transcription errors) from older digital copies is essential for accuracy.
-* **Sarcasm & Context:** Literary devices like irony or unreliable narrators are notoriously difficult for machine learning models to interpret correctly without deep contextual embeddings.
-
----
-Success Criteria
-
-The project will be considered successful if it meets the following benchmarks:
-
-* **Accuracy:** Achieve at least **80% agreement** between the model’s thematic extraction and established literary benchmarks (e.g., SparkNotes or CliffsNotes themes).
-* **Performance:** The pipeline can process a 100,000-word novel (ingestion to visualization) in under **60 seconds**.
-* **Insight:** Successfully identify at least three significant "Sentiment Shifts" where modern reviews differ emotionally from the book's internal narrative tone.
-
----
-
-## Lab 13 — Interactive Book Analytics Dashboard
-
-Lab 13 turns the cleaned book dataset into a **live, interactive Dash web app**
-served by **Gunicorn** and orchestrated with **MongoDB** via **Docker Compose**.
-
-**Deployed app:** _TODO — paste the public URL here after deploying (bonus task)._
-
-### Architecture
-| File | Role |
-|------|------|
-| `app.py` | Dash entry point — creates the app, loads the layout, registers callbacks, exposes `server` for Gunicorn |
-| `src/dashboard/data_access.py` | MongoDB queries with a graceful CSV fallback, plus filter helpers |
-| `src/dashboard/layout.py` | Page layout: KPI cards, filters, four charts, live ticker |
-| `src/dashboard/callbacks.py` | 6 reactive `@callback`s (4 charts + KPI cards + live ticker) |
-| `scripts/seed_mongo.py` | One-time MongoDB seeding from the cleaned CSV |
-| `Dockerfile` / `docker-compose.yml` / `.dockerignore` | Containerised deployment |
-
-### Run locally
-```bash
-python app.py            # open http://127.0.0.1:8050
+```mermaid
+flowchart LR
+    A[Open Library API] --> B[Parse & flatten JSON]
+    B --> C[Clean<br/>strings · missing values · duplicates · types]
+    C --> D[(MongoDB)]
+    C --> E[(SQL table)]
+    D --> F[Analytics<br/>aggregations · pivots · time series · joins]
+    E --> F
+    C --> G[Embeddings<br/>sentence-transformers → ChromaDB]
+    G --> H[Semantic search]
+    F --> I[Static & interactive charts]
+    D --> J[Dash dashboard<br/>Gunicorn + Docker]
 ```
 
-### Run the full stack with Docker
+## Key findings
+
+Based on a sample of 100 books returned by Open Library for the query "dune" (first published 1893–2023, 56 distinct subjects):
+
+- **Popular books get reprinted.** The number of editions is strongly correlated with the number of ratings (**r = 0.62**). Older books also tend to have more editions (**r = −0.52** with publication year).
+- **Longer isn't better.** Page count has only a weak negative correlation with average rating (**r = −0.19**).
+- **Ratings are sparse.** **29%** of books have no rating count, which the cleaning step has to handle before any averages are computed.
+- **One book dominates engagement.** *Dune* (Frank Herbert) has 414 ratings with a 4.30 average, more than three times the next most-rated book, *Dune Messiah* (132).
+
+![Correlation matrix](outputs/visualizations/static/correlation_heatmap.png)
+
+## Features
+
+| Area | What it does | Code |
+|---|---|---|
+| Ingestion | Paginated Open Library search with retries; maps nested API records to flat rows | `src/api`, `src/parsing/parsers.py` |
+| Documents | Extracts text and tables from PDF, Word and Excel files | `src/parsing` |
+| Cleaning | Whitespace/casing fixes, regex cleaning, missing-value handling, de-duplication, type conversion, validation | `src/cleaning` |
+| Storage | MongoDB (pymongo) and S3-compatible object storage (boto3, tested against LocalStack) | `src/storage` |
+| Analytics | MongoDB aggregation pipelines, joins between a SQL table and MongoDB data (inner/outer/left/right), pivot/melt reshaping, yearly resampling and rolling averages | `src/analytics` |
+| Semantic search | Sentence-transformer embeddings stored in ChromaDB; cosine, dot-product and Euclidean similarity; hybrid keyword + semantic search merged with Reciprocal Rank Fusion | `src/embeddings` |
+| Media | Image resizing/cropping/thumbnails/EXIF; audio trimming and conversion; video keyframes and Whisper transcription | `src/image_processing`, `src/audio_processing`, `src/video_processing` |
+| Visualisation | Matplotlib/Seaborn static charts and Plotly interactive charts | `src/visualization`, `outputs/visualizations` |
+| Dashboard | Dash app with KPI cards, filters (subject, year range, title search), four linked charts and a live ticker; reads from MongoDB and falls back to CSV | `app.py`, `src/dashboard` |
+
+## Getting started
+
+Requires Python 3.11+.
+
 ```bash
-docker compose up --build       # starts the dashboard (web) + MongoDB (db)
-python scripts/seed_mongo.py     # seed the database (one time)
+git clone https://github.com/AbduBes/Unstructured-Data-Project.git
+cd Unstructured-Data-Project
+python -m venv .venv && source .venv/bin/activate   # Windows: .venv\Scripts\activate
+pip install -r requirements.txt
+cp .env.example .env    # only needed for the Google Drive upload utilities
+```
+
+**Run the pipeline.** This fetches the data, cleans it, runs the analytics and generates the charts. Output goes to `data/`, which is not committed.
+
+```bash
+python src/pipeline/run_pipeline.py
+```
+
+**Run the dashboard locally.** Then open http://127.0.0.1:8050.
+
+```bash
+python app.py
+```
+
+**Run the dashboard with Docker.** This starts the dashboard and MongoDB together.
+
+```bash
+docker compose up --build
+python scripts/seed_mongo.py      # one-time: load the cleaned data into MongoDB
 # open http://localhost:8050
-docker compose down              # stop (add -v to also wipe the Mongo volume)
+docker compose down               # add -v to also delete the MongoDB volume
 ```
 
-See [`notebooks/lab13_dashboard.ipynb`](notebooks/lab13_dashboard.ipynb) for the
-full walkthrough and deployment documentation.
+## Tests
 
----
+Unit tests cover the API record parsing, the cleaning steps and the dashboard's data-access and filtering logic. They run automatically on every push through GitHub Actions.
 
-sample_1.jpeg:
-ImageWidth: 3072
-ImageLength: 4080
-GPSInfo: 3116
-ResolutionUnit: 2
-ExifOffset: 211
-Make: Xiaomi
-Model: 2201117TY
-DateTime: 2025:09:29 12:44:54
-Orientation: 1
-YCbCrPositioning: 1
-XResolution: 72.0
-YResolution: 72.0
-{
-  "camera_make": "Xiaomi",
-  "camera_model": "2201117TY",
-  "date_taken": "2025:09:29 12:44:54",
-  "exposure": "None",
-  "aperture": "None",
-  "iso": null,
-  "focal_length": "None",
-  "orientation": 1,
-  "gps": {
-    "GPSLatitudeRef": "\u0000",
-    "GPSLatitude": [
-      "nan",
-      "nan",
-      "nan"
-    ],
-    "GPSLongitudeRef": "\u0000",
-    "GPSLongitude": [
-      "nan",
-      "nan",
-      "nan"
-    ],
-    "GPSAltitudeRef": "b'\\x00'",
-    "GPSAltitude": "nan",
-    "GPSTimeStamp": [
-      "nan",
-      "nan",
-      "nan"
-    ],
-    "GPSProcessingMethod": "b'\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00'",
-    "GPSDateStamp": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000"
-  }
-}
+```bash
+pip install pytest
+pytest -v
+```
 
+## Project structure
 
-sample_2.jpeg:
-GPSInfo: 1341
-ExifOffset: 123
-Make: Xiaomi
-Model: 2201117TY
-Orientation: 1
-DateTime: 2026:04:01 02:55:51
-{
-  "camera_make": "Xiaomi",
-  "camera_model": "2201117TY",
-  "date_taken": "2026:04:01 02:55:51",
-  "exposure": "None",
-  "aperture": "None",
-  "iso": null,
-  "focal_length": "None",
-  "orientation": 1,
-  "gps": {
-    "GPSLatitudeRef": "\u0000",
-    "GPSLatitude": [
-      "nan",
-      "nan",
-      "nan"
-    ],
-    "GPSLongitudeRef": "\u0000",
-    "GPSLongitude": [
-      "nan",
-      "nan",
-      "nan"
-    ],
-    "GPSTimeStamp": [
-      "nan",
-      "nan",
-      "nan"
-    ],
-    "GPSDateStamp": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000"
-  }
-}
+```
+├── app.py                  # Dash entry point (exposes `server` for Gunicorn)
+├── src/
+│   ├── api/                # Open Library client
+│   ├── parsing/            # JSON, PDF, Word, Excel parsers
+│   ├── cleaning/           # cleaning steps + unit tests
+│   ├── storage/            # MongoDB and S3 helpers
+│   ├── analytics/          # aggregations, joins, time series, reports
+│   ├── embeddings/         # embeddings, ChromaDB, similarity search
+│   ├── visualization/      # static and interactive charts
+│   ├── dashboard/          # dashboard layout, callbacks, data access
+│   ├── image_processing/ audio_processing/ video_processing/
+│   └── pipeline/run_pipeline.py
+├── scripts/                # MongoDB seeding, chart generation
+├── notebooks/              # step-by-step walkthroughs of each stage
+├── outputs/visualizations/ # generated charts (PNG, PDF, HTML)
+├── tests/                  # unit tests
+└── Dockerfile, docker-compose.yml
+```
+
+## Tech stack
+
+Python · pandas · NumPy · MongoDB · SQL · ChromaDB · sentence-transformers · faster-whisper · Matplotlib · Seaborn · Plotly · Dash · Gunicorn · Docker · pytest · GitHub Actions

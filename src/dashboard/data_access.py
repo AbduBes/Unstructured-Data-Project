@@ -78,7 +78,7 @@ def _normalise(df: pd.DataFrame) -> pd.DataFrame:
     df = df.copy()
 
     # Mongo's internal id is never useful to the UI.
-    df.drop(columns=[c for c in ("_id",) if c in df.columns], inplace=True)
+    df = df.drop(columns=[c for c in ("_id",) if c in df.columns])
 
     for col in NUMERIC_COLS:
         if col in df.columns:

@@ -1,0 +1,7 @@
+# Normalise line endings
+* text=auto
+
+# Generated chart exports and notebooks shouldn't count toward
+# GitHub's language stats, so the repo is shown as Python.
+outputs/** linguist-generated
+*.ipynb linguist-documentation

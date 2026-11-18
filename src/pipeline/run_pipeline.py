@@ -1,5 +1,6 @@
 import sys
 import os
+import numpy as np
 import pandas as pd
 import sqlite3
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', 'src')))

@@ -1,4 +1,4 @@
-# Lean dependency set for the Lab 13 dashboard Docker image.
+# Lean dependency set for the dashboard Docker image.
 # The project's full requirements.txt also pulls in heavy ML libraries
 # (torch, chromadb, sentence-transformers, jupyter ...) that the live
 # dashboard does not need. Installing only these keeps the image small and
